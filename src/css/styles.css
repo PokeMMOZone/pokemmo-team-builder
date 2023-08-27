@@ -1,29 +1,61 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #212121;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 50px auto;
+header {
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+main {
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.pokemon-team {
+#team-builder {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-.pokemon-selector {
-    margin: 10px 0;
-    padding: 5px;
-    font-size: 16px;
+.pokemon-slot {
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(33.33% - 20px); /* Three Pokémon per row, accounting for the gap */
+    box-sizing: border-box;
+    position: relative;
 }
 
-/* You can add more styles, animations, or transitions as you see fit */
+.pokemon-image {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.type-icon, .item-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pokemon-info > div {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+}

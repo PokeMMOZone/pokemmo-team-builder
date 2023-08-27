@@ -10,12 +10,54 @@
 
 <body>
     <h1>PokeMMO Team Builder</h1>
-    <select class="pokemon-dropdown"></select>
-    <select class="pokemon-dropdown"></select>
-    <select class="pokemon-dropdown"></select>
-    <select class="pokemon-dropdown"></select>
-    <select class="pokemon-dropdown"></select>
-    <select class="pokemon-dropdown"></select>
+
+    <!-- Begin Pokémon 1 Block -->
+    <div class="pokemon-slot">
+        <select class="species-dropdown"></select>
+        <img src="https://via.placeholder.com/64x64" alt="Pokemon Image" class="pokemon-image">
+        <input type="text" placeholder="Level" class="level-input">
+        <select class="item-dropdown">
+            <option value="dummyItem">Dummy Item</option>
+        </select>
+        <select class="ability-dropdown">
+            <option value="dummyAbility">Dummy Ability</option>
+        </select>
+        <select class="nature-dropdown">
+            <option value="dummyNature">Dummy Nature</option>
+        </select>
+        <div class="ivs">
+            HP: <input type="text"> Atk: <input type="text"> Def: <input type="text"> SpA: <input type="text"> SpD:
+            <input type="text"> Spe: <input type="text">
+        </div>
+        <div class="evs">
+            HP: <input type="text"> Atk: <input type="text"> Def: <input type="text"> SpA: <input type="text"> SpD:
+            <input type="text"> Spe: <input type="text">
+        </div>
+        <div class="moves">
+            <select>
+                <option value="dummyMove1">Dummy Move 1</option>
+            </select>
+            <select>
+                <option value="dummyMove2">Dummy Move 2</option>
+            </select>
+            <select>
+                <option value="dummyMove3">Dummy Move 3</option>
+            </select>
+            <select>
+                <option value="dummyMove4">Dummy Move 4</option>
+            </select>
+        </div>
+    </div>
+    <!-- End Pokémon 1 Block -->
+
+    <!-- You can copy and paste the "pokemon-slot" block for Pokémon 2 to 6. -->
+
+    <br>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2023 PokeMMO Team Builder. All Rights Reserved.</p>
+    </footer>
 
     <script type="text/javascript" src="data/pokemon.js"></script>
     <script type="text/javascript" src="js/main.js"></script>

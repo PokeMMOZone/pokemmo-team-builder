@@ -1,7 +1,7 @@
-const pokemonDropdowns = document.querySelectorAll(".pokemon-dropdown");
+const pokemonDropdowns = document.querySelectorAll(".species-dropdown");
 
 pokemonDropdowns.forEach(dropdown => {
-    pokemon.forEach(poke => {
+    pokemonData.forEach(poke => {
         const option = document.createElement("option");
         option.value = poke.id;
         option.innerText = poke.name;
