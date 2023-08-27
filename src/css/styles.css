@@ -38,7 +38,9 @@ main {
     box-sizing: border-box;
     position: relative;
     overflow: hidden; 
+    background-color: #4A4A4A;  /* Grey background added here */
 }
+
 
 .stat-block {
     display: flex;
