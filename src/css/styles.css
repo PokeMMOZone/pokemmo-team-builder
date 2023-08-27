@@ -36,14 +36,18 @@ main {
     margin-bottom: 0; /* removed the margin-bottom */
 }
 
-.nickname-input {
-    width: 100%;
+/* Generic input styling */
+input, select {
     padding: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
     border: 1px solid #555;
     background-color: #333;
     color: #e0e0e0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.nickname-input {
+    width: 100%;
 }
 
 .stat-block {
