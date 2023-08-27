@@ -25,6 +25,13 @@ function validateEVInput(input) {
     }
 }
 
+function validateLevelInput(input) {
+    if (input.value > 100) {
+        input.value = 100;
+    } else if (input.value < 1) {
+        input.value = 1;
+    }
+}
 function createPokemonSlotStructure() {
     return `
     <select class="species-dropdown"></select>
@@ -156,6 +163,10 @@ function createPokemonSlot() {
     evInputs.forEach(input => {
         input.addEventListener('change', () => validateEVInput(input));
     });
+
+    // Add validation for the level input
+    const levelInput = slot.querySelector('.level-input');
+    levelInput.addEventListener('change', () => validateLevelInput(levelInput));
 }
 
 function initializePokemonSlots() {
