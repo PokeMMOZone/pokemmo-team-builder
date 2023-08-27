@@ -1,0 +1,16 @@
+{
+  "name": "pokemmo-team-builder",
+  "version": "0.1.0",
+  "description": "A team builder intended for PokeMMO",
+  "scripts": {
+    "create-dirs": "mkdir -p dist dist/css dist/data dist/js",
+    "copy-html": "cp src/*.html dist/",
+    "copy-css": "cp src/css/* dist/css/",
+    "copy-js": "cp src/js/* dist/js/",
+    "copy-data": "cp src/data/* dist/data/",
+    "build": "npm run create-dirs && npm run copy-html && npm run copy-css && npm run copy-js && npm run copy-data"
+  },
+  "keywords": ["pokemmo", "pokemon", "team builder", "team planner", "competitive pokemon", "pokemon team", "strategy", "game tool"],
+  "author": "Gamer2020",
+  "license": "GPL-3.0"
+}
