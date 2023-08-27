@@ -30,14 +30,55 @@ function createPokemonSlot() {
     <select class="nature-dropdown">
         <option value="dummyNature">Dummy Nature</option>
     </select>
-    <div class="ivs">
-        HP: <input type="text"> Atk: <input type="text"> Def: <input type="text"> SpA: <input type="text"> SpD:
-        <input type="text"> Spe: <input type="text">
+    
+    <div class="stat-block">
+        <div class="stat-column stat-names">
+            <span>Stat</span>
+            <span>HP:</span>
+            <span>Atk:</span>
+            <span>Def:</span>
+            <span>SpA:</span>
+            <span>SpD:</span>
+            <span>Spe:</span>
+        </div>
+        <div class="stat-column base-stats">
+            <span>Base</span>
+            <span>100</span>
+            <span>100</span>
+            <span>100</span>
+            <span>100</span>
+            <span>100</span>
+            <span>100</span>
+        </div>
+        <div class="stat-column ivs">
+            <span>IVs</span>
+            <input type="text" value="31">
+            <input type="text" value="31">
+            <input type="text" value="31">
+            <input type="text" value="31">
+            <input type="text" value="31">
+            <input type="text" value="31">
+        </div>
+        <div class="stat-column evs">
+            <span>EVs</span>
+            <input type="text" value="0">
+            <input type="text" value="0">
+            <input type="text" value="0">
+            <input type="text" value="0">
+            <input type="text" value="0">
+            <input type="text" value="0">
+        </div>
+        <div class="stat-column calculated-stats">
+            <span>Stats</span>
+            <span>200</span>
+            <span>200</span>
+            <span>200</span>
+            <span>200</span>
+            <span>200</span>
+            <span>200</span>
+        </div>
     </div>
-    <div class="evs">
-        HP: <input type="text"> Atk: <input type="text"> Def: <input type="text"> SpA: <input type="text"> SpD:
-        <input type="text"> Spe: <input type="text">
-    </div>
+
     <div class="moves">
         <select>
             <option value="dummyMove1">Dummy Move 1</option>
@@ -52,13 +93,18 @@ function createPokemonSlot() {
             <option value="dummyMove4">Dummy Move 4</option>
         </select>
     </div>
-    `;
+`;
 
+
+    // Append the slot first, then populate its dropdown.
     container.appendChild(slot);
 
+    // Find the dropdown within this slot and populate it.
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
 }
+
+
 
 // This function will initialize the Pokémon slots when the page loads
 function initializePokemonSlots() {

@@ -36,6 +36,34 @@ main {
     position: relative;
 }
 
+.stat-block {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stat-column {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.stat-column > span:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.stat-names span,
+.base-stats span,
+.ivs span,
+.evs span,
+.calculated-stats span {
+    display: block;
+    margin-bottom: 5px;
+}
+
 .pokemon-image {
     width: 64px;
     height: 64px;
