@@ -24,7 +24,6 @@ main {
 #pokemonContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 20px; /* adjusted for both row and column gaps */
 }
 
 .pokemon-slot {

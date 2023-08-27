@@ -9,6 +9,22 @@ function populateDropdown(dropdown) {
     });
 }
 
+function validateIVInput(input) {
+    if (input.value > 31) {
+        input.value = 31;
+    } else if (input.value < 0) {
+        input.value = 0;
+    }
+}
+
+function validateEVInput(input) {
+    if (input.value > 252) {
+        input.value = 252;
+    } else if (input.value < 0) {
+        input.value = 0;
+    }
+}
+
 function createPokemonSlotStructure() {
     return `
     <select class="species-dropdown"></select>
@@ -70,21 +86,21 @@ function createPokemonSlotStructure() {
         </div>
         <div class="stat-column ivs">
             <span>IVs</span>
-            <input type="number" min="0" max="31" value="31">
-            <input type="number" min="0" max="31" value="31">
-            <input type="number" min="0" max="31" value="31">
-            <input type="number" min="0" max="31" value="31">
-            <input type="number" min="0" max="31" value="31">
-            <input type="number" min="0" max="31" value="31">
+            <input type="number" min="0" max="31" value="31" step="1">
+            <input type="number" min="0" max="31" value="31" step="1">
+            <input type="number" min="0" max="31" value="31" step="1">
+            <input type="number" min="0" max="31" value="31" step="1">
+            <input type="number" min="0" max="31" value="31" step="1">
+            <input type="number" min="0" max="31" value="31" step="1">
         </div>
         <div class="stat-column evs">
             <span>EVs</span>
-            <input type="number" min="0" max="252" value="0">
-            <input type="number" min="0" max="252" value="0">
-            <input type="number" min="0" max="252" value="0">
-            <input type="number" min="0" max="252" value="0">
-            <input type="number" min="0" max="252" value="0">
-            <input type="number" min="0" max="252" value="0">
+            <input type="number" min="0" max="252" value="0" step="4">
+            <input type="number" min="0" max="252" value="0" step="4">
+            <input type="number" min="0" max="252" value="0" step="4">
+            <input type="number" min="0" max="252" value="0" step="4">
+            <input type="number" min="0" max="252" value="0" step="4">
+            <input type="number" min="0" max="252" value="0" step="4">
         </div>
         <div class="stat-column calculated-stats">
             <span>Stats</span>
@@ -130,6 +146,16 @@ function createPokemonSlot() {
 
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
+
+    const ivInputs = slot.querySelectorAll('.ivs input');
+    ivInputs.forEach(input => {
+        input.addEventListener('change', () => validateIVInput(input));
+    });
+
+    const evInputs = slot.querySelectorAll('.evs input');
+    evInputs.forEach(input => {
+        input.addEventListener('change', () => validateEVInput(input));
+    });
 }
 
 function initializePokemonSlots() {
