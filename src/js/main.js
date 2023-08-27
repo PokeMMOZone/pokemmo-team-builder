@@ -1,9 +1,5 @@
 const container = document.getElementById("pokemonContainer");
 
-// Initial count for the Pokémon slots. 
-// This can be removed since we are initializing with 6 slots by default.
-let slotCount = 6;
-
 function populateDropdown(dropdown) {
     pokemonData.forEach(poke => {
         const option = document.createElement("option");
@@ -13,21 +9,19 @@ function populateDropdown(dropdown) {
     });
 }
 
-function createPokemonSlot() {
-    const slot = document.createElement("div");
-    slot.className = "pokemon-slot";
-
-    slot.innerHTML = `
+function createPokemonSlotStructure() {
+    return `
     <select class="species-dropdown"></select>
-    <img src="https://via.placeholder.com/64x64" alt="Pokemon Image" class="pokemon-image">
-    
+    <img src="https://placehold.co/64x64" alt="Pokemon Image" class="pokemon-image">
+    <input type="text" placeholder="Nickname" class="nickname-input">
+
     <div>
         <label>Level:</label>
-        <input type="number" value="50" class="level-input">
+        <input type="number" min="1" max="100" value="50" class="level-input" style="width: 60px;">
     </div>
-    
+
     <div>
-        <img src="https://via.placeholder.com/40x40" alt="Item Image" class="item-icon">
+        <img src="https://placehold.co/40x40" alt="Item Image" class="item-icon">
         <select class="item-dropdown">
             <option value="dummyItem">Dummy Item</option>
         </select>
@@ -54,7 +48,7 @@ function createPokemonSlot() {
             <option value="female">Female</option>
         </select>
     </div>
-    
+
     <div class="stat-block">
         <div class="stat-column stat-names">
             <span>Stat</span>
@@ -76,21 +70,21 @@ function createPokemonSlot() {
         </div>
         <div class="stat-column ivs">
             <span>IVs</span>
-            <input type="number" value="31">
-            <input type="number" value="31">
-            <input type="number" value="31">
-            <input type="number" value="31">
-            <input type="number" value="31">
-            <input type="number" value="31">
+            <input type="number" min="0" max="31" value="31">
+            <input type="number" min="0" max="31" value="31">
+            <input type="number" min="0" max="31" value="31">
+            <input type="number" min="0" max="31" value="31">
+            <input type="number" min="0" max="31" value="31">
+            <input type="number" min="0" max="31" value="31">
         </div>
         <div class="stat-column evs">
             <span>EVs</span>
-            <input type="number" value="0">
-            <input type="number" value="0">
-            <input type="number" value="0">
-            <input type="number" value="0">
-            <input type="number" value="0">
-            <input type="number" value="0">
+            <input type="number" min="0" max="252" value="0">
+            <input type="number" min="0" max="252" value="0">
+            <input type="number" min="0" max="252" value="0">
+            <input type="number" min="0" max="252" value="0">
+            <input type="number" min="0" max="252" value="0">
+            <input type="number" min="0" max="252" value="0">
         </div>
         <div class="stat-column calculated-stats">
             <span>Stats</span>
@@ -102,7 +96,6 @@ function createPokemonSlot() {
             <span>200</span>
         </div>
     </div>
-
     <div class="moves">
         <div>
             <select>
@@ -125,26 +118,24 @@ function createPokemonSlot() {
             </select>
         </div>
     </div>
-`;
+    `;
+}
 
+function createPokemonSlot() {
+    const slot = document.createElement("div");
+    slot.className = "pokemon-slot col-md-4 col-sm-6";
+    slot.innerHTML = createPokemonSlotStructure();
 
-
-    // Append the slot first, then populate its dropdown.
     container.appendChild(slot);
 
-    // Find the dropdown within this slot and populate it.
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
 }
 
-
-
-// This function will initialize the Pokémon slots when the page loads
 function initializePokemonSlots() {
-    for (let i = 0; i < slotCount; i++) {
+    for (let i = 0; i < 6; i++) {
         createPokemonSlot();
     }
 }
 
-// Call the function to generate the slots on page load
 initializePokemonSlots();

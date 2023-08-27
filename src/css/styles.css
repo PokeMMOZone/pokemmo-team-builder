@@ -6,13 +6,10 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: #333;
+header, footer {
     text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    background-color: #333;
+    padding: 10px 0;
 }
 
 h1, h2, h3 {
@@ -24,23 +21,31 @@ main {
     padding: 20px;
 }
 
-#team-builder {
+#pokemonContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px 20px; /* adjusted for both row and column gaps */
 }
 
 .pokemon-slot {
     border: 1px solid #444;
     border-radius: 10px;
     padding: 10px;
-    width: calc(33.33% - 20px);
+    width: calc(33.3333% - 20px);
     box-sizing: border-box;
-    position: relative;
-    overflow: hidden; 
-    background-color: #4A4A4A;  /* Grey background added here */
+    background-color: #4A4A4A;
+    margin-bottom: 0; /* removed the margin-bottom */
 }
 
+.nickname-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #e0e0e0;
+}
 
 .stat-block {
     display: flex;
@@ -49,7 +54,7 @@ main {
 }
 
 .stat-column {
-    flex: 1; 
+    flex: 1;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
@@ -67,8 +72,9 @@ main {
     height: 25px;
     width: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
+    max-width: 60px;
 }
 
 .base-stats span {
@@ -96,5 +102,4 @@ main {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #333;
 }
