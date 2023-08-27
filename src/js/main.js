@@ -1,12 +1,8 @@
-const pokemonDropdowns = document.querySelectorAll(".species-dropdown");
-const addSlotButton = document.getElementById("addSlot");
-const removeSlotButton = document.getElementById("removeSlot");
 const container = document.getElementById("pokemonContainer");
 
-// Initial count for the Pokémon slots.
-let slotCount = container.getElementsByClassName("pokemon-slot").length;
-
-document.querySelectorAll('.species-dropdown').forEach(populateDropdown);
+// Initial count for the Pokémon slots. 
+// This can be removed since we are initializing with 6 slots by default.
+let slotCount = 6;
 
 function populateDropdown(dropdown) {
     pokemonData.forEach(poke => {
@@ -16,41 +12,6 @@ function populateDropdown(dropdown) {
         dropdown.appendChild(option);
     });
 }
-
-addSlotButton.addEventListener("click", function() {
-    if (slotCount < 6) {
-        createPokemonSlot();
-        slotCount++;
-
-        // If we've reached the max number of slots, disable the "Add" button.
-        if (slotCount === 6) {
-            addSlotButton.disabled = true;
-        }
-
-        // Ensure the remove button is enabled if we have more than one slot.
-        if (slotCount > 1) {
-            removeSlotButton.disabled = false;
-        }
-    }
-});
-
-
-removeSlotButton.addEventListener("click", function() {
-    if (slotCount > 1) {
-        container.removeChild(container.getElementsByClassName("pokemon-slot")[slotCount - 1]);
-        slotCount--;
-    }
-
-    // If we reach the min number of slots, disable the "Remove" button.
-    if (slotCount === 1) {
-        removeSlotButton.disabled = true;
-    }
-
-    // Ensure the add button is enabled if we have fewer than six slots.
-    if (slotCount < 6) {
-        addSlotButton.disabled = false;
-    }
-});
 
 function createPokemonSlot() {
     const slot = document.createElement("div");
@@ -93,10 +54,18 @@ function createPokemonSlot() {
     </div>
     `;
 
-    // Append the slot first, then populate its dropdown.
     container.appendChild(slot);
 
-    // Find the dropdown within this slot and populate it.
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
 }
+
+// This function will initialize the Pokémon slots when the page loads
+function initializePokemonSlots() {
+    for (let i = 0; i < slotCount; i++) {
+        createPokemonSlot();
+    }
+}
+
+// Call the function to generate the slots on page load
+initializePokemonSlots();
