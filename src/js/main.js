@@ -20,16 +20,40 @@ function createPokemonSlot() {
     slot.innerHTML = `
     <select class="species-dropdown"></select>
     <img src="https://via.placeholder.com/64x64" alt="Pokemon Image" class="pokemon-image">
-    <input type="text" placeholder="Level" class="level-input">
-    <select class="item-dropdown">
-        <option value="dummyItem">Dummy Item</option>
-    </select>
-    <select class="ability-dropdown">
-        <option value="dummyAbility">Dummy Ability</option>
-    </select>
-    <select class="nature-dropdown">
-        <option value="dummyNature">Dummy Nature</option>
-    </select>
+    
+    <div>
+        <label>Level:</label>
+        <input type="number" value="50" class="level-input">
+    </div>
+    
+    <div>
+        <img src="https://via.placeholder.com/40x40" alt="Item Image" class="item-icon">
+        <select class="item-dropdown">
+            <option value="dummyItem">Dummy Item</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Ability:</label>
+        <select class="ability-dropdown">
+            <option value="dummyAbility">Dummy Ability</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Nature:</label>
+        <select class="nature-dropdown">
+            <option value="dummyNature">Dummy Nature</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Gender:</label>
+        <select class="gender-dropdown">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
     
     <div class="stat-block">
         <div class="stat-column stat-names">
@@ -52,21 +76,21 @@ function createPokemonSlot() {
         </div>
         <div class="stat-column ivs">
             <span>IVs</span>
-            <input type="text" value="31">
-            <input type="text" value="31">
-            <input type="text" value="31">
-            <input type="text" value="31">
-            <input type="text" value="31">
-            <input type="text" value="31">
+            <input type="number" value="31">
+            <input type="number" value="31">
+            <input type="number" value="31">
+            <input type="number" value="31">
+            <input type="number" value="31">
+            <input type="number" value="31">
         </div>
         <div class="stat-column evs">
             <span>EVs</span>
-            <input type="text" value="0">
-            <input type="text" value="0">
-            <input type="text" value="0">
-            <input type="text" value="0">
-            <input type="text" value="0">
-            <input type="text" value="0">
+            <input type="number" value="0">
+            <input type="number" value="0">
+            <input type="number" value="0">
+            <input type="number" value="0">
+            <input type="number" value="0">
+            <input type="number" value="0">
         </div>
         <div class="stat-column calculated-stats">
             <span>Stats</span>
@@ -80,20 +104,29 @@ function createPokemonSlot() {
     </div>
 
     <div class="moves">
-        <select>
-            <option value="dummyMove1">Dummy Move 1</option>
-        </select>
-        <select>
-            <option value="dummyMove2">Dummy Move 2</option>
-        </select>
-        <select>
-            <option value="dummyMove3">Dummy Move 3</option>
-        </select>
-        <select>
-            <option value="dummyMove4">Dummy Move 4</option>
-        </select>
+        <div>
+            <select>
+                <option value="dummyMove1">Dummy Move 1</option>
+            </select>
+        </div>
+        <div>
+            <select>
+                <option value="dummyMove2">Dummy Move 2</option>
+            </select>
+        </div>
+        <div>
+            <select>
+                <option value="dummyMove3">Dummy Move 3</option>
+            </select>
+        </div>
+        <div>
+            <select>
+                <option value="dummyMove4">Dummy Move 4</option>
+            </select>
+        </div>
     </div>
 `;
+
 
 
     // Append the slot first, then populate its dropdown.
