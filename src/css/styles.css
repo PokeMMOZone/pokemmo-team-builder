@@ -144,6 +144,14 @@ input, select {
     vertical-align: middle;
 }
 
+.pokemon-attributes-table td:first-child {
+    width: 30%;  /* Adjust this value as needed */
+}
+
+.pokemon-attributes-table td:last-child select {
+    width: 90%;  /* Adjust this value as needed */
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
