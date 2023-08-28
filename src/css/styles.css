@@ -113,7 +113,14 @@ input, select {
     margin-bottom: 10px;
 }
 
-.type-icon, .item-icon {
+.type-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.item-icon {
     width: 40px;
     height: 40px;
     display: inline-block;
