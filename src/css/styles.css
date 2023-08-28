@@ -22,7 +22,7 @@ main {
 }
 
 main.container {
-    max-width: 95%;
+    max-width: 100%;  /* Adjusted from 95% to 100% */
 }
 
 #pokemonContainer {
@@ -46,19 +46,19 @@ main.container {
 }
 
 .left-section {
-    width: 40%;
+    width: 45%;
     padding-right: 10px;
     float: left;
 }
 
 .right-section {
-    width: 58%;
+    width: 53%;
     padding-left: 10px;
     float: left;
 }
 
 input, select {
-    width: 95%;
+    width: 75%;  /* Adjusted from 95% to 75% */
     padding: 5px;
     border: 1px solid #555;
     background-color: #333;
