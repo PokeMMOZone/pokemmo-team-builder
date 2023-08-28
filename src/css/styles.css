@@ -6,10 +6,10 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     text-align: center;
     background-color: #333;
-    padding: 10px 0;
+    padding: 0px 0;
 }
 
 h1, h2, h3 {
@@ -18,7 +18,7 @@ h1, h2, h3 {
 }
 
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 main.container {
@@ -33,14 +33,13 @@ main.container {
     justify-content: initial;
     background-color: #4A4A4A;
     border: 1px solid #444;
-    border-radius: 0;  /* Removed border-radius */
 }
 
 .pokemon-slot {
-    padding: 10px;
     width: calc(32.5% - 20px);
     box-sizing: border-box;
-    border: 2px solid #888;  /* Added a distinguishable border */
+    margin: 0;  /* Removed margin */
+    border: 2px solid #e0e0e0;  /* Distinguishable border */
 }
 
 .left-section {
