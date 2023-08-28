@@ -38,8 +38,8 @@ main.container {
 .pokemon-slot {
     width: calc(32.5% - 20px);
     box-sizing: border-box;
-    margin: 0;  /* Removed margin */
-    border: 2px solid #e0e0e0;  /* Distinguishable border */
+    margin: 0;
+    border: 2px solid #e0e0e0;
 }
 
 .left-section {
@@ -130,6 +130,18 @@ input, select {
 
 .left-section > *, .right-section > * {
     margin-bottom: 5px;
+}
+
+.pokemon-attributes-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.pokemon-attributes-table td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
 }
 
 footer {

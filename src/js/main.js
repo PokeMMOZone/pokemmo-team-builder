@@ -45,31 +45,41 @@ function createPokemonSlotStructure() {
             <label>Level:</label>
             <input type="number" min="1" max="100" value="50" class="level-input" style="width: 60px;">
         </div>
-        <div>
-            <img src="https://placehold.co/40x40" alt="Item Image" class="item-icon">
-            <select class="item-dropdown">
-                <option value="dummyItem">Dummy Item</option>
-            </select>
-        </div>
-        <div>
-            <label>Ability:</label>
-            <select class="ability-dropdown">
-                <option value="dummyAbility">Dummy Ability</option>
-            </select>
-        </div>
-        <div>
-            <label>Nature:</label>
-            <select class="nature-dropdown">
-                <option value="dummyNature">Dummy Nature</option>
-            </select>
-        </div>
-        <div>
-            <label>Gender:</label>
-            <select class="gender-dropdown">
-                <option value="male" selected>Male</option>
-                <option value="female">Female</option>
-            </select>
-        </div>
+        <table class="pokemon-attributes-table">
+            <tr>
+                <td><img src="https://placehold.co/40x40" alt="Item Image" class="item-icon"></td>
+                <td>
+                    <select class="item-dropdown">
+                        <option value="dummyItem">Dummy Item</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Ability:</label></td>
+                <td>
+                    <select class="ability-dropdown">
+                        <option value="dummyAbility">Dummy Ability</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nature:</label></td>
+                <td>
+                    <select class="nature-dropdown">
+                        <option value="dummyNature">Dummy Nature</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <select class="gender-dropdown">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </div>
     <div class="right-section">
         <div class="stat-block">
@@ -143,6 +153,7 @@ function createPokemonSlotStructure() {
         </div>
     </div>
     `;
+
 }
 
 function createPokemonSlot() {
