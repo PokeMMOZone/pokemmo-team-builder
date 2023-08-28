@@ -117,5 +117,3 @@ const pokemonData = [
         }
     }
 ];
-
-window.pokemon = pokemon;
