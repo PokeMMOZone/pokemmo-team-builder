@@ -9,6 +9,15 @@ function populateDropdown(dropdown) {
     });
 }
 
+function populateNatureDropdown(dropdown) {
+    pokemonNatures.forEach(nature => {
+        const option = document.createElement("option");
+        option.value = nature.name;
+        option.innerText = nature.name;
+        dropdown.appendChild(option);
+    });
+}
+
 function validateIVInput(input) {
     if (input.value > 31) {
         input.value = 31;
@@ -197,6 +206,9 @@ function createPokemonSlot() {
 
     const levelInput = slot.querySelector('.level-input');
     levelInput.addEventListener('change', () => validateLevelInput(levelInput));
+
+    const natureDropdown = slot.querySelector('.nature-dropdown');
+    populateNatureDropdown(natureDropdown);
 
     updateBaseStats(slot, dropdown.value);
 
