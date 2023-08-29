@@ -45,10 +45,10 @@ function updateCalculatedStats(slot) {
     };
 
     if (natureData.increasedStat !== "None") {
-        natureMultiplier[natureData.increasedStat.toLowerCase().replace(' ', '')] = 1.1;
+        natureMultiplier[natureData.increasedStat] = 1.1;
     }
     if (natureData.decreasedStat !== "None") {
-        natureMultiplier[natureData.decreasedStat.toLowerCase().replace(' ', '')] = 0.9;
+        natureMultiplier[natureData.decreasedStat] = 0.9;
     }
 
     const baseStats = pokemonData.find(poke => poke.id === pokemonId).baseStats;
