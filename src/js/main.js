@@ -77,7 +77,6 @@ function createPokemonSlotStructure() {
                 <td><label>Nature:</label></td>
                 <td>
                     <select class="nature-dropdown">
-                        <option value="dummyNature">Dummy Nature</option>
                     </select>
                 </td>
             </tr>
