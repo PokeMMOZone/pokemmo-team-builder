@@ -18,6 +18,49 @@ function populateNatureDropdown(dropdown) {
     });
 }
 
+function calculateStat(base, iv, ev, level, natureMultiplier) {
+    if (base === 'hp') {
+        return Math.floor(((2 * base + iv + Math.floor(ev / 4)) * level) / 100) + level + 10;
+    } else {
+        return Math.floor((Math.floor(((2 * base + iv + Math.floor(ev / 4)) * level) / 100) + 5) * natureMultiplier);
+    }
+}
+
+function updateCalculatedStats(slot) {
+    const pokemonId = slot.querySelector('.species-dropdown').value;
+    const level = parseInt(slot.querySelector('.level-input').value);
+    const nature = slot.querySelector('.nature-dropdown').value;
+    const ivInputs = slot.querySelectorAll('.ivs input');
+    const evInputs = slot.querySelectorAll('.evs input');
+    const calculatedStatElements = slot.querySelectorAll('.calculated-stats span');
+
+    const natureData = pokemonNatures.find(n => n.name === nature);
+    let natureMultiplier = {
+        hp: 1,
+        attack: 1,
+        defense: 1,
+        specialAttack: 1,
+        specialDefense: 1,
+        speed: 1
+    };
+
+    if (natureData.increasedStat !== "None") {
+        natureMultiplier[natureData.increasedStat.toLowerCase().replace(' ', '')] = 1.1;
+    }
+    if (natureData.decreasedStat !== "None") {
+        natureMultiplier[natureData.decreasedStat.toLowerCase().replace(' ', '')] = 0.9;
+    }
+
+    const baseStats = pokemonData.find(poke => poke.id === pokemonId).baseStats;
+    const stats = ['hp', 'attack', 'defense', 'specialAttack', 'specialDefense', 'speed'];
+
+    stats.forEach((stat, index) => {
+        const calculatedStat = calculateStat(baseStats[stat], parseInt(ivInputs[index].value), parseInt(evInputs[index].value), level, natureMultiplier[stat]);
+        calculatedStatElements[index + 1].innerText = calculatedStat; // +1 to skip the "Stats" label
+    });
+}
+
+
 function validateIVInput(input) {
     if (input.value > 31) {
         input.value = 31;
@@ -191,25 +234,39 @@ function createPokemonSlot() {
 
     dropdown.addEventListener('change', () => {
         updateBaseStats(slot, dropdown.value);
+        updateCalculatedStats(slot);
     });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
     ivInputs.forEach(input => {
-        input.addEventListener('change', () => validateIVInput(input));
+        input.addEventListener('change', () => {
+            validateIVInput(input);
+            updateCalculatedStats(slot);
+        });
     });
 
     const evInputs = slot.querySelectorAll('.evs input');
     evInputs.forEach(input => {
-        input.addEventListener('change', () => validateEVInput(input));
+        input.addEventListener('change', () => {
+            validateEVInput(input);
+            updateCalculatedStats(slot);
+        });
     });
 
     const levelInput = slot.querySelector('.level-input');
-    levelInput.addEventListener('change', () => validateLevelInput(levelInput));
+    levelInput.addEventListener('change', () => {
+        validateLevelInput(levelInput);
+        updateCalculatedStats(slot);
+    });
 
     const natureDropdown = slot.querySelector('.nature-dropdown');
-    populateNatureDropdown(natureDropdown);
+    natureDropdown.addEventListener('change', () => {
+        updateCalculatedStats(slot);
+    });
 
+    populateNatureDropdown(natureDropdown);
     updateBaseStats(slot, dropdown.value);
+    updateCalculatedStats(slot);
 
 }
 
