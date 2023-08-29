@@ -38,8 +38,10 @@ function createPokemonSlotStructure() {
     <div class="left-section">
         <select class="species-dropdown"></select>
         <img src="https://placehold.co/64x64" alt="Pokemon Image" class="pokemon-image">
-        <img src="https://placehold.co/40x40" alt="Type 1 Image" class="type-icon">
-        <img src="https://placehold.co/40x40" alt="Type 2 Image" class="type-icon">
+        <div class="type-icon-container">
+            <img src="https://placehold.co/40x40" alt="Type 1 Image" class="type-icon">
+            <img src="https://placehold.co/40x40" alt="Type 2 Image" class="type-icon">
+        </div>
         <input type="text" placeholder="Nickname" class="nickname-input">
         <div>
             <label>Level:</label>

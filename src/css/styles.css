@@ -107,13 +107,19 @@ input, select {
     width: 64px;
     height: 64px;
     display: block;
+    margin: 10px auto; /* Adjusted for vertical spacing and centering */
+}
+
+.type-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .type-icon {
     width: 40px;
     height: 40px;
-    display: inline-block;
     margin: 0 5px;
 }
 
@@ -155,4 +161,12 @@ input, select {
 footer {
     text-align: center;
     padding: 10px 0;
+}
+
+/* Center the species dropdown */
+.species-dropdown {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
 }
