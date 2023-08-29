@@ -158,6 +158,19 @@ function createPokemonSlotStructure() {
 
 }
 
+function updateBaseStats(slot, pokemonId) {
+    const baseStats = pokemonData.find(poke => poke.id === pokemonId).baseStats;
+    const baseStatElements = slot.querySelectorAll('.base-stats span');
+
+    const stats = [baseStats.hp, baseStats.attack, baseStats.defense, baseStats.specialAttack, baseStats.specialDefense, baseStats.speed];
+    
+    baseStatElements.forEach((element, index) => {
+        if (index !== 0) {
+            element.innerText = stats[index - 1];
+        }
+    });
+}
+
 function createPokemonSlot() {
     const slot = document.createElement("div");
     slot.className = "pokemon-slot col-md-4 col-sm-6";
@@ -167,6 +180,10 @@ function createPokemonSlot() {
 
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
+
+    dropdown.addEventListener('change', () => {
+        updateBaseStats(slot, dropdown.value);
+    });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
     ivInputs.forEach(input => {
