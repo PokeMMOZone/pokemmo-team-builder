@@ -18,11 +18,11 @@ function populateNatureDropdown(dropdown) {
     });
 }
 
-function calculateStat(base, iv, ev, level, natureMultiplier) {
-    if (base === 'hp') {
-        return Math.floor(((2 * base + iv + Math.floor(ev / 4)) * level) / 100) + level + 10;
+function calculateStat(base, iv, ev, level, natureMultiplier, isHP = false) {
+    if (isHP) {
+        return Math.floor(0.01 * (2 * base + iv + Math.floor(0.25 * ev)) * level) + level + 10;
     } else {
-        return Math.floor((Math.floor(((2 * base + iv + Math.floor(ev / 4)) * level) / 100) + 5) * natureMultiplier);
+        return Math.floor((Math.floor(0.01 * (2 * base + iv + Math.floor(0.25 * ev)) * level) + 5) * natureMultiplier);
     }
 }
 
@@ -55,11 +55,11 @@ function updateCalculatedStats(slot) {
     const stats = ['hp', 'attack', 'defense', 'specialAttack', 'specialDefense', 'speed'];
 
     stats.forEach((stat, index) => {
-        const calculatedStat = calculateStat(baseStats[stat], parseInt(ivInputs[index].value), parseInt(evInputs[index].value), level, natureMultiplier[stat]);
+        const isHP = stat === 'hp';
+        const calculatedStat = calculateStat(baseStats[stat], parseInt(ivInputs[index].value), parseInt(evInputs[index].value), level, natureMultiplier[stat], isHP);
         calculatedStatElements[index + 1].innerText = calculatedStat; // +1 to skip the "Stats" label
     });
 }
-
 
 function validateIVInput(input) {
     if (input.value > 31) {
