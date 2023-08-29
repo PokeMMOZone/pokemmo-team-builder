@@ -197,6 +197,9 @@ function createPokemonSlot() {
 
     const levelInput = slot.querySelector('.level-input');
     levelInput.addEventListener('change', () => validateLevelInput(levelInput));
+
+    updateBaseStats(slot, dropdown.value);
+
 }
 
 function initializePokemonSlots() {
