@@ -1,5 +1,18 @@
 const pokemonData = [
     {
+        id: '000',
+        name: 'Select a Pokémon',
+        type: ['None'],
+        baseStats: {
+            hp: 0,
+            attack: 0,
+            defense: 0,
+            specialAttack: 0,
+            specialDefense: 0,
+            speed: 0
+        }
+    },
+    {
         id: '001',
         name: 'Bulbasaur',
         type: ['Grass', 'Poison'],
