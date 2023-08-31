@@ -66,14 +66,17 @@ function updateTypeDisplay(slot, types) {
     typeElements[0].innerText = types[0];
     typeElements[0].style.backgroundColor = typeColors[types[0]];
 
-    if (types.length > 1) {
+    if (types[1]) {
         typeElements[1].innerText = types[1];
         typeElements[1].style.backgroundColor = typeColors[types[1]];
+        typeElements[1].style.display = 'block'; // Ensure the second type label is displayed
     } else {
         typeElements[1].innerText = '';
         typeElements[1].style.backgroundColor = 'transparent';
+        typeElements[1].style.display = 'none'; // Hide the second type label if there's only one type
     }
 }
+
 
 function validateIVInput(input) {
     if (input.value > 31) {
