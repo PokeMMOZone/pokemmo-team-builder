@@ -61,6 +61,20 @@ function updateCalculatedStats(slot) {
     });
 }
 
+function updateTypeDisplay(slot, types) {
+    const typeElements = slot.querySelectorAll('.type-label');
+    typeElements[0].innerText = types[0];
+    typeElements[0].style.backgroundColor = typeColors[types[0]];
+
+    if (types.length > 1) {
+        typeElements[1].innerText = types[1];
+        typeElements[1].style.backgroundColor = typeColors[types[1]];
+    } else {
+        typeElements[1].innerText = '';
+        typeElements[1].style.backgroundColor = 'transparent';
+    }
+}
+
 function validateIVInput(input) {
     if (input.value > 31) {
         input.value = 31;
@@ -90,10 +104,10 @@ function createPokemonSlotStructure() {
     <div class="left-section">
         <select class="species-dropdown"></select>
         <img src="https://placehold.co/64x64" alt="Pokemon Image" class="pokemon-image">
-        <div class="type-icon-container">
-            <img src="https://placehold.co/40x40" alt="Type 1 Image" class="type-icon">
-            <img src="https://placehold.co/40x40" alt="Type 2 Image" class="type-icon">
-        </div>
+        <div class="type-label-container">
+            <div class="type-label" data-type="type1">Type1</div>
+            <div class="type-label" data-type="type2">Type2</div>
+        </div> 
         <input type="text" placeholder="Nickname" class="nickname-input">
         <div>
             <label>Level:</label>
@@ -214,7 +228,7 @@ function updateBaseStats(slot, pokemonId) {
     const baseStatElements = slot.querySelectorAll('.base-stats span');
 
     const stats = [baseStats.hp, baseStats.attack, baseStats.defense, baseStats.specialAttack, baseStats.specialDefense, baseStats.speed];
-    
+
     baseStatElements.forEach((element, index) => {
         if (index !== 0) {
             element.innerText = stats[index - 1];
@@ -233,6 +247,8 @@ function createPokemonSlot() {
     populateDropdown(dropdown);
 
     dropdown.addEventListener('change', () => {
+        const selectedPokemon = pokemonData.find(poke => poke.id === dropdown.value);
+        updateTypeDisplay(slot, selectedPokemon.type); // This line updates the type display
         updateBaseStats(slot, dropdown.value);
         updateCalculatedStats(slot);
     });
@@ -266,6 +282,8 @@ function createPokemonSlot() {
 
     populateNatureDropdown(natureDropdown);
     updateBaseStats(slot, dropdown.value);
+    const initialPokemon = pokemonData.find(poke => poke.id === dropdown.value);
+    updateTypeDisplay(slot, initialPokemon.type);
     updateCalculatedStats(slot);
 
 }

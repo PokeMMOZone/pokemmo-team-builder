@@ -110,17 +110,18 @@ input, select {
     margin: 10px auto; /* Adjusted for vertical spacing and centering */
 }
 
-.type-icon-container {
+.type-label-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    gap: 5px;
 }
 
-.type-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px;
+.type-label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
 }
 
 .item-icon {
