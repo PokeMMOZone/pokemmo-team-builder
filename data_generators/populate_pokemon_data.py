@@ -2,6 +2,7 @@ import requests
 import json
 
 BASE_URL = "https://pokeapi.co/api/v2/pokemon/"
+SPECIES_URL = "https://pokeapi.co/api/v2/pokemon-species/"
 OUTPUT_PATH = "./src/data/pokemon.js"
 
 def fetch_pokemon_data(pokemon_id):
@@ -24,28 +25,17 @@ def fetch_pokemon_data(pokemon_id):
         return pokemon_data
     return None
 
-def fetch_forms_data(pokemon_id, index):
-    forms_data = []
-    response = requests.get(BASE_URL + str(pokemon_id) + "/forms")
+def fetch_varieties(pokemon_id):
+    response = requests.get(SPECIES_URL + str(pokemon_id))
+    varieties = []
     if response.status_code == 200:
-        forms = response.json()
-        for form in forms:
-            form_data = {
-                "id": str(index).zfill(3),
-                "name": form['name'].capitalize(),
-                "type": [t['type']['name'].capitalize() for t in form['types']],
-                "baseStats": {
-                    "hp": form['stats'][0]['base_stat'],
-                    "attack": form['stats'][1]['base_stat'],
-                    "defense": form['stats'][2]['base_stat'],
-                    "specialAttack": form['stats'][3]['base_stat'],
-                    "specialDefense": form['stats'][4]['base_stat'],
-                    "speed": form['stats'][5]['base_stat']
-                }
-            }
-            forms_data.append(form_data)
-            index += 1
-    return forms_data, index
+        species_data = response.json()
+        for variety in species_data['varieties']:
+            variety_id = int(variety['pokemon']['url'].split('/')[-2])
+            variety_data = fetch_pokemon_data(variety_id)
+            if variety_data:
+                varieties.append(variety_data)
+    return varieties
 
 def main():
     pokemon_list = [{
@@ -62,15 +52,13 @@ def main():
         }
     }]
 
-    index = 1
-    for i in range(1, 650):  # Assuming 649 Pokémon for gens 1-5
-        data = fetch_pokemon_data(i)
-        if data:
-            pokemon_list.append(data)
-            index += 1
+    # Fetching the total count of Pokémon
+    response = requests.get(BASE_URL)
+    total_count = response.json()['count']
 
-        forms, index = fetch_forms_data(i, index)
-        pokemon_list.extend(forms)
+    for i in range(1, total_count + 1):
+        varieties = fetch_varieties(i)
+        pokemon_list.extend(varieties)
 
     with open(OUTPUT_PATH, 'w') as file:
         file.write("const pokemonData = " + json.dumps(pokemon_list, indent=4) + ";")
