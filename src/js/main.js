@@ -77,6 +77,10 @@ function updateTypeDisplay(slot, types) {
     }
 }
 
+function updatePokemonImage(slot, selectedPokemonId) {
+    const pokemonImage = slot.querySelector('.pokemon-image');
+    pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
+}
 
 function validateIVInput(input) {
     if (input.value > 31) {
@@ -254,6 +258,7 @@ function createPokemonSlot() {
         updateTypeDisplay(slot, selectedPokemon.type); // This line updates the type display
         updateBaseStats(slot, dropdown.value);
         updateCalculatedStats(slot);
+        updatePokemonImage(slot, selectedPokemon.id);
     });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
@@ -287,6 +292,7 @@ function createPokemonSlot() {
     updateBaseStats(slot, dropdown.value);
     const initialPokemon = pokemonData.find(poke => poke.id === dropdown.value);
     updateTypeDisplay(slot, initialPokemon.type);
+    updatePokemonImage(slot, initialPokemon.id);
     updateCalculatedStats(slot);
 
 }
