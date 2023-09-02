@@ -7,6 +7,7 @@ function populateDropdown(dropdown) {
         option.innerText = poke.name;
         dropdown.appendChild(option);
     });
+    $(dropdown).select2({ placeholder: "Select a Pokémon", allowClear: true });
 }
 
 function populateNatureDropdown(dropdown) {
@@ -253,9 +254,14 @@ function createPokemonSlot() {
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
 
-    dropdown.addEventListener('change', () => {
+    $(dropdown).select2({
+        placeholder: "Select a Pokémon",
+        allowClear: true
+    });
+    
+    $(dropdown).on('select2:select', function(e) {
         const selectedPokemon = pokemonData.find(poke => poke.id === dropdown.value);
-        updateTypeDisplay(slot, selectedPokemon.type); // This line updates the type display
+        updateTypeDisplay(slot, selectedPokemon.type);
         updateBaseStats(slot, dropdown.value);
         updateCalculatedStats(slot);
         updatePokemonImage(slot, selectedPokemon.id);

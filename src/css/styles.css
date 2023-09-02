@@ -171,3 +171,44 @@ footer {
     text-align: center;
     width: 100%;
 }
+
+/* Adjusting the select2 dropdown */
+.select2 {
+    width: 100% !important; /* Ensuring it takes full width */
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 4px; /* To match your other inputs */
+    height: 38px; /* Adjust this if the height doesn't match your other inputs */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #e0e0e0;
+    line-height: 38px; /* Adjust this to vertically center the text */
+}
+
+/* Fixing colors for the dropdown */
+.select2-container--default .select2-selection--single {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+/* Fixing colors for the dropdown list */
+.select2-container--default .select2-results__option {
+    color: #e0e0e0;
+    background-color: #212121;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+/* Adjusting the search box */
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}
