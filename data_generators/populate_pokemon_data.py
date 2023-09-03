@@ -4,7 +4,17 @@ import json
 BASE_URL = "https://pokeapi.co/api/v2/pokemon/"
 SPECIES_URL = "https://pokeapi.co/api/v2/pokemon-species/"
 MOVE_URL = "https://pokeapi.co/api/v2/move/"
+ABILITY_URL = "https://pokeapi.co/api/v2/ability/"
 OUTPUT_PATH = "./src/data/pokemon.js"
+
+def fetch_ability_name(ability_url):
+    response = requests.get(ability_url)
+    if response.status_code == 200:
+        ability_data = response.json()
+        for name_entry in ability_data["names"]:
+            if name_entry["language"]["name"] == "en":
+                return name_entry["name"]
+    return None
 
 def fetch_move_name(move_url):
     response = requests.get(move_url)
@@ -20,8 +30,12 @@ def fetch_pokemon_data(pokemon_id):
     if response.status_code == 200:
         data = response.json()
         
-        # Extract abilities
-        abilities = [ability['ability']['name'].capitalize() for ability in data['abilities']]
+        # Extract abilities with proper English names
+        abilities = []
+        for ability in data['abilities']:
+            ability_name = fetch_ability_name(ability['ability']['url'])
+            if ability_name:
+                abilities.append(ability_name)
         
         # Extract moves with proper English names
         moves = []
