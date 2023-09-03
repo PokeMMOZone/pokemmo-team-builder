@@ -111,7 +111,7 @@ function createPokemonSlotStructure() {
     return `
     <div class="left-section">
         <select class="species-dropdown"></select>
-        <img src="https://placehold.co/64x64" alt="Pokemon Image" class="pokemon-image">
+        <img src="https://placehold.co/96x96" alt="Pokemon Image" class="pokemon-image">
         <div class="type-label-container">
             <div class="type-label" data-type="type1">Type1</div>
             <div class="type-label" data-type="type2">Type2</div>

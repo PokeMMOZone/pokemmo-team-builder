@@ -104,8 +104,8 @@ input, select {
 }
 
 .pokemon-image {
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     display: block;
     margin: 10px auto; /* Adjusted for vertical spacing and centering */
 }
