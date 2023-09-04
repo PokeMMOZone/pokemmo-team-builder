@@ -44,6 +44,20 @@ function populateAbilityDropdown(dropdown, pokemonId) {
     $(dropdown).select2({ placeholder: "Select an Ability", allowClear: true });
 }
 
+function populateGenderDropdown(dropdown, pokemonId) {
+    const genders = pokemonData.find(poke => poke.id === pokemonId).gender || ['male', 'female']; // default to both male and female if not specified
+    
+    dropdown.innerHTML = ''; // Clear previous gender options
+    
+    genders.forEach(gender => {
+        const option = document.createElement("option");
+        option.value = gender;
+        option.innerText = gender.charAt(0).toUpperCase() + gender.slice(1); // Capitalize first letter
+        dropdown.appendChild(option);
+    });
+    $(dropdown).select2({ placeholder: "Select a Gender", allowClear: true });
+}
+
 function calculateStat(base, iv, ev, level, natureMultiplier, isHP = false) {
     if (isHP) {
         return Math.floor(0.01 * (2 * base + iv + Math.floor(0.25 * ev)) * level) + level + 10;
@@ -178,8 +192,6 @@ function createPokemonSlotStructure() {
                 <td><label>Gender:</label></td>
                 <td>
                     <select class="gender-dropdown">
-                        <option value="male" selected>Male</option>
-                        <option value="female">Female</option>
                     </select>
                 </td>
             </tr>
@@ -284,6 +296,7 @@ function createPokemonSlot() {
     populateDropdown(dropdown);
 
     const abilityDropdown = slot.querySelector('.ability-dropdown');
+    const genderDropdown = slot.querySelector('.gender-dropdown');
 
     $(dropdown).select2({
         placeholder: "Select a Pokémon",
@@ -297,6 +310,7 @@ function createPokemonSlot() {
         updateCalculatedStats(slot);
         updatePokemonImage(slot, selectedPokemon.id);
         populateAbilityDropdown(abilityDropdown, selectedPokemon.id);
+        populateGenderDropdown(genderDropdown, selectedPokemon.id);
     });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
@@ -341,6 +355,7 @@ function createPokemonSlot() {
     updateTypeDisplay(slot, initialPokemon.type);
     updatePokemonImage(slot, initialPokemon.id);
     populateAbilityDropdown(abilityDropdown, initialPokemon.id)
+    populateGenderDropdown(genderDropdown, initialPokemon.id);
     updateCalculatedStats(slot);
 
 }
