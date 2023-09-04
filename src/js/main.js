@@ -27,6 +27,7 @@ function populateNatureDropdown(dropdown) {
         option.innerText = nature.name;
         dropdown.appendChild(option);
     });
+    $(dropdown).select2({ placeholder: "Select a Nature", allowClear: true });
 }
 
 function populateAbilityDropdown(dropdown, pokemonId) {
