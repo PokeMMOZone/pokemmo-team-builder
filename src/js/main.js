@@ -40,6 +40,7 @@ function populateAbilityDropdown(dropdown, pokemonId) {
         option.innerText = ability;
         dropdown.appendChild(option);
     });
+    $(dropdown).select2({ placeholder: "Select an Ability", allowClear: true });
 }
 
 function calculateStat(base, iv, ev, level, natureMultiplier, isHP = false) {
