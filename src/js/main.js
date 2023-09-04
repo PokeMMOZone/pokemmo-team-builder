@@ -10,6 +10,15 @@ function populateDropdown(dropdown) {
     $(dropdown).select2({ placeholder: "Select a Pokémon", allowClear: true });
 }
 
+function populateItemDropdown(dropdown) {
+    itemsData.forEach(item => {
+        const option = document.createElement("option");
+        option.value = item.id;
+        option.innerText = item.name;
+        dropdown.appendChild(option);
+    });
+}
+
 function populateNatureDropdown(dropdown) {
     pokemonNatures.forEach(nature => {
         const option = document.createElement("option");
@@ -126,7 +135,6 @@ function createPokemonSlotStructure() {
                 <td><img src="https://placehold.co/40x40" alt="Item Image" class="item-icon"></td>
                 <td>
                     <select class="item-dropdown">
-                        <option value="dummyItem">Dummy Item</option>
                     </select>
                 </td>
             </tr>
@@ -294,7 +302,10 @@ function createPokemonSlot() {
         updateCalculatedStats(slot);
     });
 
+    const itemDropdown = slot.querySelector('.item-dropdown');
+
     populateNatureDropdown(natureDropdown);
+    populateItemDropdown(itemDropdown);
     updateBaseStats(slot, dropdown.value);
     const initialPokemon = pokemonData.find(poke => poke.id === dropdown.value);
     updateTypeDisplay(slot, initialPokemon.type);
