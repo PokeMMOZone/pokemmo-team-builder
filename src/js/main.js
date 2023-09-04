@@ -153,7 +153,7 @@ function createPokemonSlotStructure() {
         </div>
         <table class="pokemon-attributes-table">
             <tr>
-                <td><img src="https://placehold.co/40x40" alt="Item Image" class="item-icon"></td>
+                <td><img src="https://placehold.co/30x30" alt="Item Image" class="item-icon"></td>
                 <td>
                     <select class="item-dropdown">
                     </select>
