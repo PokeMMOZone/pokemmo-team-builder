@@ -35,7 +35,7 @@ def fetch_item_data(item_id_or_name):
         item_data = {
             "id": str(data['id']).zfill(3),
             "name": english_name if english_name else data['name'],
-            "description": fetch_item_description(data['url'])
+            "description": fetch_item_description(ITEM_URL + str(item_id_or_name))
         }
         return item_data
     return None
