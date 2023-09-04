@@ -17,6 +17,7 @@ function populateItemDropdown(dropdown) {
         option.innerText = item.name;
         dropdown.appendChild(option);
     });
+    $(dropdown).select2({ placeholder: "Select an Item", allowClear: true });
 }
 
 function populateNatureDropdown(dropdown) {
@@ -90,6 +91,11 @@ function updateTypeDisplay(slot, types) {
 function updatePokemonImage(slot, selectedPokemonId) {
     const pokemonImage = slot.querySelector('.pokemon-image');
     pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
+}
+
+function updateItemImage(slot, selectedItemId) {
+    const itemImage = slot.querySelector('.item-icon');
+    itemImage.src = `img/items/${selectedItemId}.png`;
 }
 
 function validateIVInput(input) {
@@ -303,9 +309,14 @@ function createPokemonSlot() {
     });
 
     const itemDropdown = slot.querySelector('.item-dropdown');
+    $(itemDropdown).on('select2:select', function() {
+        updateItemImage(slot, this.value);
+    });
+    
 
     populateNatureDropdown(natureDropdown);
     populateItemDropdown(itemDropdown);
+    updateItemImage(slot, itemDropdown.value); 
     updateBaseStats(slot, dropdown.value);
     const initialPokemon = pokemonData.find(poke => poke.id === dropdown.value);
     updateTypeDisplay(slot, initialPokemon.type);
