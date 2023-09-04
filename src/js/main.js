@@ -327,6 +327,7 @@ function createPokemonSlot() {
     });
 
     const itemDropdown = slot.querySelector('.item-dropdown');
+    $(itemDropdown).select2({ placeholder: "Select an Item", allowClear: true });
     $(itemDropdown).on('select2:select', function() {
         updateItemImage(slot, this.value);
     });
