@@ -29,6 +29,19 @@ function populateNatureDropdown(dropdown) {
     });
 }
 
+function populateAbilityDropdown(dropdown, pokemonId) {
+    const abilities = pokemonData.find(poke => poke.id === pokemonId).abilities || [];
+    
+    dropdown.innerHTML = ''; // Clear previous abilities
+    
+    abilities.forEach(ability => {
+        const option = document.createElement("option");
+        option.value = ability;
+        option.innerText = ability;
+        dropdown.appendChild(option);
+    });
+}
+
 function calculateStat(base, iv, ev, level, natureMultiplier, isHP = false) {
     if (isHP) {
         return Math.floor(0.01 * (2 * base + iv + Math.floor(0.25 * ev)) * level) + level + 10;
@@ -268,6 +281,8 @@ function createPokemonSlot() {
     const dropdown = slot.querySelector('.species-dropdown');
     populateDropdown(dropdown);
 
+    const abilityDropdown = slot.querySelector('.ability-dropdown');
+
     $(dropdown).select2({
         placeholder: "Select a Pokémon",
         allowClear: true
@@ -279,6 +294,7 @@ function createPokemonSlot() {
         updateBaseStats(slot, dropdown.value);
         updateCalculatedStats(slot);
         updatePokemonImage(slot, selectedPokemon.id);
+        populateAbilityDropdown(abilityDropdown, selectedPokemon.id);
     });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
@@ -321,6 +337,7 @@ function createPokemonSlot() {
     const initialPokemon = pokemonData.find(poke => poke.id === dropdown.value);
     updateTypeDisplay(slot, initialPokemon.type);
     updatePokemonImage(slot, initialPokemon.id);
+    populateAbilityDropdown(abilityDropdown, initialPokemon.id)
     updateCalculatedStats(slot);
 
 }
