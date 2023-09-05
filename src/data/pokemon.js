@@ -9,7 +9,7 @@ const pokemonData = [
             "Select a Pok\u00e9mon"
         ],
         "moves": [
-            "Select a Pok\u00e9mon"
+            ""
         ],
         "gender": [
             "Select a Pok\u00e9mon"

@@ -131,6 +131,30 @@ function updateTypeDisplay(slot, types) {
     }
 }
 
+function updateTypeMove1(slot, types) {
+    const typeElements = slot.querySelectorAll('.movetype-label1');
+    typeElements[0].innerText = types;
+    typeElements[0].style.backgroundColor = typeColors[types];
+}
+
+function updateTypeMove2(slot, types) {
+    const typeElements = slot.querySelectorAll('.movetype-label2');
+    typeElements[0].innerText = types;
+    typeElements[0].style.backgroundColor = typeColors[types];
+}
+
+function updateTypeMove3(slot, types) {
+    const typeElements = slot.querySelectorAll('.movetype-label3');
+    typeElements[0].innerText = types;
+    typeElements[0].style.backgroundColor = typeColors[types];
+}
+
+function updateTypeMove4(slot, types) {
+    const typeElements = slot.querySelectorAll('.movetype-label4');
+    typeElements[0].innerText = types;
+    typeElements[0].style.backgroundColor = typeColors[types];
+}
+
 function updatePokemonImage(slot, selectedPokemonId) {
     const pokemonImage = slot.querySelector('.pokemon-image');
     pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
@@ -376,6 +400,30 @@ function createPokemonSlot() {
         updateItemImage(slot, this.value);
     });
 
+    const movedropdown1 = slot.querySelector('select[name="move1"]');
+    const movedropdown2 = slot.querySelector('select[name="move2"]');
+    const movedropdown3 = slot.querySelector('select[name="move3"]');
+    const movedropdown4 = slot.querySelector('select[name="move4"]');
+
+    $(movedropdown1).on('select2:select', function () {
+        const pokemove1 = movesData.find(move => move.name === movedropdown1.value);
+        updateTypeMove1(slot, pokemove1.type);
+    });
+
+    $(movedropdown2).on('select2:select', function () {
+        const pokemove2 = movesData.find(move => move.name === movedropdown2.value);
+        updateTypeMove2(slot, pokemove2.type);
+    });
+
+    $(movedropdown3).on('select2:select', function () {
+        const pokemove3 = movesData.find(move => move.name === movedropdown3.value);
+        updateTypeMove3(slot, pokemove3.type);
+    });
+
+    $(movedropdown4).on('select2:select', function () {
+        const pokemove4 = movesData.find(move => move.name === movedropdown4.value);
+        updateTypeMove4(slot, pokemove4.type);
+    });
 
     populateNatureDropdown(natureDropdown);
     populateItemDropdown(itemDropdown);
@@ -392,6 +440,11 @@ function createPokemonSlot() {
     populateMoveDropdown(slot.querySelector('select[name="move2"]'), initialPokemon.id);
     populateMoveDropdown(slot.querySelector('select[name="move3"]'), initialPokemon.id);
     populateMoveDropdown(slot.querySelector('select[name="move4"]'), initialPokemon.id);
+
+    updateTypeMove1(slot, "Normal");
+    updateTypeMove2(slot, "Normal");
+    updateTypeMove3(slot, "Normal");
+    updateTypeMove4(slot, "Normal");
 
     updateCalculatedStats(slot);
 
