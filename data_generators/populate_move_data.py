@@ -25,8 +25,8 @@ def fetch_move_data(move_id_or_name):
             "id": str(data['id']).zfill(3),
             "name": fetch_english_name(data) or data['name'],
             "description": fetch_english_description(data) or "Description not available",
-            "type": data["type"]["name"],
-            "category": data["damage_class"]["name"],
+            "type": data["type"]["name"].capitalize(),
+            "category": data["damage_class"]["name"].capitalize(),
             "power": data["power"],
             "accuracy": data["accuracy"],
             "pp": data["pp"]
