@@ -58,6 +58,20 @@ function populateGenderDropdown(dropdown, pokemonId) {
     $(dropdown).select2({ placeholder: "Select a Gender", allowClear: true });
 }
 
+function populateMoveDropdown(dropdown, pokemonId) {
+    const moves = pokemonData.find(poke => poke.id === pokemonId).moves || [];
+    
+    dropdown.innerHTML = '<option value="dummyMove1">Select a Move</option>'; // Clear previous moves
+    
+    moves.forEach(move => {
+        const option = document.createElement("option");
+        option.value = move;
+        option.innerText = move;
+        dropdown.appendChild(option);
+    });
+    $(dropdown).select2({ placeholder: "Select a Move", allowClear: true });
+}
+
 function calculateStat(base, iv, ev, level, natureMultiplier, isHP = false) {
     if (isHP) {
         return Math.floor(0.01 * (2 * base + iv + Math.floor(0.25 * ev)) * level) + level + 10;
@@ -297,6 +311,7 @@ function createPokemonSlot() {
 
     const abilityDropdown = slot.querySelector('.ability-dropdown');
     const genderDropdown = slot.querySelector('.gender-dropdown');
+    const moveDropdowns = slot.querySelectorAll('.moves select');
 
     $(dropdown).select2({
         placeholder: "Select a Pokémon",
@@ -311,6 +326,10 @@ function createPokemonSlot() {
         updatePokemonImage(slot, selectedPokemon.id);
         populateAbilityDropdown(abilityDropdown, selectedPokemon.id);
         populateGenderDropdown(genderDropdown, selectedPokemon.id);
+        moveDropdowns.forEach(dropdown => {
+            populateMoveDropdown(dropdown, selectedPokemon.id);
+        });
+        
     });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
@@ -356,6 +375,9 @@ function createPokemonSlot() {
     updatePokemonImage(slot, initialPokemon.id);
     populateAbilityDropdown(abilityDropdown, initialPokemon.id)
     populateGenderDropdown(genderDropdown, initialPokemon.id);
+    moveDropdowns.forEach(dropdown => {
+        populateMoveDropdown(dropdown, initialPokemon.id);
+    });    
     updateCalculatedStats(slot);
 
 }
