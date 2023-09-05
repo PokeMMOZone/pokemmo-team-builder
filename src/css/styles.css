@@ -107,10 +107,11 @@ input, select {
     width: 96px;
     height: 96px;
     display: block;
-    margin: 10px auto; /* Adjusted for vertical spacing and centering */
+    margin: 10px auto;
+    /* Adjusted for vertical spacing and centering */
 }
 
-.type-label-container{
+.type-label-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +125,43 @@ input, select {
     font-weight: bold;
 }
 
+.move-container {
+    display: flex;
+    align-items: center; /* This ensures vertical alignment if the items have different heights. */
+}
+
+.movetype-label1 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.movetype-label2 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.movetype-label3 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.movetype-label4 {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+}
+
 .item-icon {
     width: 30px;
     height: 30px;
@@ -131,11 +169,11 @@ input, select {
     margin: 0 5px;
 }
 
-.pokemon-info > div {
+.pokemon-info>div {
     margin-bottom: 10px;
 }
 
-.left-section > *, .right-section > * {
+.left-section>*, .right-section>* {
     margin-bottom: 5px;
 }
 
@@ -152,11 +190,13 @@ input, select {
 }
 
 .pokemon-attributes-table td:first-child {
-    width: 30%;  /* Adjust this value as needed */
+    width: 30%;
+    /* Adjust this value as needed */
 }
 
 .pokemon-attributes-table td:last-child select {
-    width: 90%;  /* Adjust this value as needed */
+    width: 90%;
+    /* Adjust this value as needed */
 }
 
 footer {
@@ -174,19 +214,23 @@ footer {
 
 /* Adjusting the select2 dropdown */
 .select2 {
-    width: 100% !important; /* Ensuring it takes full width */
+    width: 100% !important;
+    /* Ensuring it takes full width */
 }
 
 .select2-container--default .select2-selection--single {
     background-color: #333;
     border: 1px solid #555;
-    border-radius: 4px; /* To match your other inputs */
-    height: 38px; /* Adjust this if the height doesn't match your other inputs */
+    border-radius: 4px;
+    /* To match your other inputs */
+    height: 38px;
+    /* Adjust this if the height doesn't match your other inputs */
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #e0e0e0;
-    line-height: 38px; /* Adjust this to vertically center the text */
+    line-height: 38px;
+    /* Adjust this to vertically center the text */
 }
 
 /* Fixing colors for the dropdown */

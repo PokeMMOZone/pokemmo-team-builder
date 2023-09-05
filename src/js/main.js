@@ -260,27 +260,35 @@ function createPokemonSlotStructure() {
             </div>
         </div>
         <div class="moves">
-        <div>
-            <select name="move1">
-                <option value="dummyMove1">Dummy Move 1</option>
-            </select>
+            <div class="move-container">
+                <div class="movetype-label1">Type</div>
+                <select name="move1">
+                    <option value="dummyMove1">Dummy Move 1</option>
+                </select>
+            </div>
+
+            <div class="move-container">
+                <div class="movetype-label2">Type</div>
+                <select name="move2">
+                    <option value="dummyMove2">Dummy Move 2</option>
+                </select>
+            </div>    
+
+            <div class="move-container">
+                <div class="movetype-label3">Type</div>
+                <select name="move3">
+                    <option value="dummyMove3">Dummy Move 3</option>
+                </select>
+            </div>    
+
+            <div class="move-container">
+                <div class="movetype-label4">Type</div>
+                <select name="move4">
+                    <option value="dummyMove4">Dummy Move 4</option>
+                </select>
+            </div>    
+
         </div>
-        <div>
-            <select name="move2">
-                <option value="dummyMove2">Dummy Move 2</option>
-            </select>
-        </div>
-        <div>
-            <select name="move3">
-                <option value="dummyMove3">Dummy Move 3</option>
-            </select>
-        </div>
-        <div>
-            <select name="move4">
-                <option value="dummyMove4">Dummy Move 4</option>
-            </select>
-        </div>
-    </div>
     </div>
     `;
 
