@@ -32,9 +32,9 @@ function populateNatureDropdown(dropdown) {
 
 function populateAbilityDropdown(dropdown, pokemonId) {
     const abilities = pokemonData.find(poke => poke.id === pokemonId).abilities || [];
-    
+
     dropdown.innerHTML = ''; // Clear previous abilities
-    
+
     abilities.forEach(ability => {
         const option = document.createElement("option");
         option.value = ability;
@@ -46,9 +46,9 @@ function populateAbilityDropdown(dropdown, pokemonId) {
 
 function populateGenderDropdown(dropdown, pokemonId) {
     const genders = pokemonData.find(poke => poke.id === pokemonId).gender || ['male', 'female']; // default to both male and female if not specified
-    
+
     dropdown.innerHTML = ''; // Clear previous gender options
-    
+
     genders.forEach(gender => {
         const option = document.createElement("option");
         option.value = gender;
@@ -60,9 +60,9 @@ function populateGenderDropdown(dropdown, pokemonId) {
 
 function populateMoveDropdown(dropdown, pokemonId) {
     const moves = pokemonData.find(poke => poke.id === pokemonId).moves || [];
-    
+
     dropdown.innerHTML = '<option value="dummyMove1">Select a Move</option>'; // Clear previous moves
-    
+
     moves.forEach(move => {
         const option = document.createElement("option");
         option.value = move;
@@ -260,27 +260,27 @@ function createPokemonSlotStructure() {
             </div>
         </div>
         <div class="moves">
-            <div>
-                <select>
-                    <option value="dummyMove1">Dummy Move 1</option>
-                </select>
-            </div>
-            <div>
-                <select>
-                    <option value="dummyMove2">Dummy Move 2</option>
-                </select>
-            </div>
-            <div>
-                <select>
-                    <option value="dummyMove3">Dummy Move 3</option>
-                </select>
-            </div>
-            <div>
-                <select>
-                    <option value="dummyMove4">Dummy Move 4</option>
-                </select>
-            </div>
+        <div>
+            <select name="move1">
+                <option value="dummyMove1">Dummy Move 1</option>
+            </select>
         </div>
+        <div>
+            <select name="move2">
+                <option value="dummyMove2">Dummy Move 2</option>
+            </select>
+        </div>
+        <div>
+            <select name="move3">
+                <option value="dummyMove3">Dummy Move 3</option>
+            </select>
+        </div>
+        <div>
+            <select name="move4">
+                <option value="dummyMove4">Dummy Move 4</option>
+            </select>
+        </div>
+    </div>
     </div>
     `;
 
@@ -311,14 +311,14 @@ function createPokemonSlot() {
 
     const abilityDropdown = slot.querySelector('.ability-dropdown');
     const genderDropdown = slot.querySelector('.gender-dropdown');
-    const moveDropdowns = slot.querySelectorAll('.moves select');
+
 
     $(dropdown).select2({
         placeholder: "Select a Pokémon",
         allowClear: true
     });
-    
-    $(dropdown).on('select2:select', function(e) {
+
+    $(dropdown).on('select2:select', function (e) {
         const selectedPokemon = pokemonData.find(poke => poke.id === dropdown.value);
         updateTypeDisplay(slot, selectedPokemon.type);
         updateBaseStats(slot, dropdown.value);
@@ -326,10 +326,13 @@ function createPokemonSlot() {
         updatePokemonImage(slot, selectedPokemon.id);
         populateAbilityDropdown(abilityDropdown, selectedPokemon.id);
         populateGenderDropdown(genderDropdown, selectedPokemon.id);
-        moveDropdowns.forEach(dropdown => {
-            populateMoveDropdown(dropdown, selectedPokemon.id);
-        });
-        
+
+        // Populating move dropdowns individually by name
+        populateMoveDropdown(slot.querySelector('select[name="move1"]'), selectedPokemon.id);
+        populateMoveDropdown(slot.querySelector('select[name="move2"]'), selectedPokemon.id);
+        populateMoveDropdown(slot.querySelector('select[name="move3"]'), selectedPokemon.id);
+        populateMoveDropdown(slot.querySelector('select[name="move4"]'), selectedPokemon.id);
+
     });
 
     const ivInputs = slot.querySelectorAll('.ivs input');
@@ -361,23 +364,27 @@ function createPokemonSlot() {
 
     const itemDropdown = slot.querySelector('.item-dropdown');
     $(itemDropdown).select2({ placeholder: "Select an Item", allowClear: true });
-    $(itemDropdown).on('select2:select', function() {
+    $(itemDropdown).on('select2:select', function () {
         updateItemImage(slot, this.value);
     });
-    
+
 
     populateNatureDropdown(natureDropdown);
     populateItemDropdown(itemDropdown);
-    updateItemImage(slot, itemDropdown.value); 
+    updateItemImage(slot, itemDropdown.value);
     updateBaseStats(slot, dropdown.value);
     const initialPokemon = pokemonData.find(poke => poke.id === dropdown.value);
     updateTypeDisplay(slot, initialPokemon.type);
     updatePokemonImage(slot, initialPokemon.id);
     populateAbilityDropdown(abilityDropdown, initialPokemon.id)
     populateGenderDropdown(genderDropdown, initialPokemon.id);
-    moveDropdowns.forEach(dropdown => {
-        populateMoveDropdown(dropdown, initialPokemon.id);
-    });    
+
+    // Populating move dropdowns individually by name
+    populateMoveDropdown(slot.querySelector('select[name="move1"]'), initialPokemon.id);
+    populateMoveDropdown(slot.querySelector('select[name="move2"]'), initialPokemon.id);
+    populateMoveDropdown(slot.querySelector('select[name="move3"]'), initialPokemon.id);
+    populateMoveDropdown(slot.querySelector('select[name="move4"]'), initialPokemon.id);
+
     updateCalculatedStats(slot);
 
 }
