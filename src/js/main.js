@@ -390,7 +390,7 @@ function createPokemonSlot() {
     });
 
     const natureDropdown = slot.querySelector('.nature-dropdown');
-    natureDropdown.addEventListener('change', () => {
+    $(natureDropdown).on('select2:select', function () {
         updateCalculatedStats(slot);
     });
 
