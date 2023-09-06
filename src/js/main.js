@@ -173,13 +173,29 @@ function validateIVInput(input) {
     }
 }
 
-function validateEVInput(input) {
-    if (input.value > 252) {
-        input.value = 252;
-    } else if (input.value < 0) {
+function validateEVInput(input, slot) {
+    const value = parseInt(input.value) || 0;
+
+    if (value < 0) {
         input.value = 0;
+    } else if (value > 252) {
+        input.value = 252;
+    }
+
+    // Check the total EVs now
+    const evInputs = slot.querySelectorAll('.evs input');
+    let totalEVs = 0;
+    
+    evInputs.forEach(evInput => {
+        totalEVs += parseInt(evInput.value) || 0;
+    });
+
+    if (totalEVs > 510) {
+        const excessValue = totalEVs - 510;
+        input.value = parseInt(input.value) - excessValue;
     }
 }
+
 
 function validateLevelInput(input) {
     if (input.value > 100) {
@@ -394,7 +410,7 @@ function createPokemonSlot() {
     const evInputs = slot.querySelectorAll('.evs input');
     evInputs.forEach(input => {
         input.addEventListener('change', () => {
-            validateEVInput(input);
+            validateEVInput(input, slot);
             updateCalculatedStats(slot);
         });
     });
