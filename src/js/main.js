@@ -220,13 +220,6 @@ function createPokemonSlotStructure() {
                 </td>
             </tr>
             <tr>
-                <td><label>Nature:</label></td>
-                <td>
-                    <select class="nature-dropdown">
-                    </select>
-                </td>
-            </tr>
-            <tr>
                 <td><label>Gender:</label></td>
                 <td>
                     <select class="gender-dropdown">
@@ -283,6 +276,15 @@ function createPokemonSlotStructure() {
                 <span>200</span>
             </div>
         </div>
+    <table class="pokemon-attributes-table2">
+        <tr>
+            <td><label>Nature:</label></td>
+            <td>
+                <select class="nature-dropdown">
+                </select>
+            </td>
+        </tr>
+    </table>
         <table class="move-types-table">
             <tr>
                 <td><div class="movetype-label1">Type</div></td>

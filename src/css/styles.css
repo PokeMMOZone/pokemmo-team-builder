@@ -198,6 +198,28 @@ input, select {
     /* Adjust this value as needed */
 }
 
+.pokemon-attributes-table2 {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.pokemon-attributes-table2 td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.pokemon-attributes-table2 td:first-child {
+    width: 20%;
+    /* Adjust this value as needed */
+}
+
+.pokemon-attributes-table2 td:last-child select {
+    width: 90%;
+    /* Adjust this value as needed */
+}
+
 .move-types-table {
     width: 100%;
     border-collapse: collapse;
