@@ -125,17 +125,13 @@ input, select {
     font-weight: bold;
 }
 
-.move-container {
-    display: flex;
-    align-items: center; /* This ensures vertical alignment if the items have different heights. */
-}
-
 .movetype-label1 {
     padding: 5px 10px;
     border-radius: 5px;
     margin-right: 10px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .movetype-label2 {
@@ -144,6 +140,7 @@ input, select {
     margin-right: 10px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .movetype-label3 {
@@ -152,6 +149,7 @@ input, select {
     margin-right: 10px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .movetype-label4 {
@@ -160,6 +158,7 @@ input, select {
     margin-right: 10px;
     color: white;
     font-weight: bold;
+    text-align: center;
 }
 
 .item-icon {
@@ -195,6 +194,28 @@ input, select {
 }
 
 .pokemon-attributes-table td:last-child select {
+    width: 90%;
+    /* Adjust this value as needed */
+}
+
+.move-types-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.move-types-table td {
+    border: none;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.move-types-table td:first-child {
+    width: 30%;
+    /* Adjust this value as needed */
+}
+
+.move-types-table td:last-child select {
     width: 90%;
     /* Adjust this value as needed */
 }
