@@ -363,11 +363,21 @@ function createPokemonSlot() {
         populateAbilityDropdown(abilityDropdown, selectedPokemon.id);
         populateGenderDropdown(genderDropdown, selectedPokemon.id);
 
+        const movedropdown1 = slot.querySelector('select[name="move1"]');
+        const movedropdown2 = slot.querySelector('select[name="move2"]');
+        const movedropdown3 = slot.querySelector('select[name="move3"]');
+        const movedropdown4 = slot.querySelector('select[name="move4"]');
+
         // Populating move dropdowns individually by name
-        populateMoveDropdown(slot.querySelector('select[name="move1"]'), selectedPokemon.id);
-        populateMoveDropdown(slot.querySelector('select[name="move2"]'), selectedPokemon.id);
-        populateMoveDropdown(slot.querySelector('select[name="move3"]'), selectedPokemon.id);
-        populateMoveDropdown(slot.querySelector('select[name="move4"]'), selectedPokemon.id);
+        populateMoveDropdown(movedropdown1, selectedPokemon.id);
+        populateMoveDropdown(movedropdown2, selectedPokemon.id);
+        populateMoveDropdown(movedropdown3, selectedPokemon.id);
+        populateMoveDropdown(movedropdown4, selectedPokemon.id);
+    
+        updateTypeMove1(slot, "None");
+        updateTypeMove2(slot, "None");
+        updateTypeMove3(slot, "None");
+        updateTypeMove4(slot, "None");
 
     });
 
@@ -445,10 +455,10 @@ function createPokemonSlot() {
     populateMoveDropdown(slot.querySelector('select[name="move3"]'), initialPokemon.id);
     populateMoveDropdown(slot.querySelector('select[name="move4"]'), initialPokemon.id);
 
-    updateTypeMove1(slot, "Normal");
-    updateTypeMove2(slot, "Normal");
-    updateTypeMove3(slot, "Normal");
-    updateTypeMove4(slot, "Normal");
+    updateTypeMove1(slot, "None");
+    updateTypeMove2(slot, "None");
+    updateTypeMove3(slot, "None");
+    updateTypeMove4(slot, "None");
 
     updateCalculatedStats(slot);
 

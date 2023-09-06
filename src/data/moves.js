@@ -3,7 +3,7 @@ const movesData = [
         "id": "000",
         "name": "Select a Move",
         "description": "Select a Move",
-        "type": "Normal",
+        "type": "None",
         "category": "Physical",
         "power": 0,
         "accuracy": 0,
