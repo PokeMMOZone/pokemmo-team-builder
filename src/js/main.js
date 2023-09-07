@@ -501,16 +501,22 @@ function initializePokemonSlots() {
 initializePokemonSlots();
 
 $(document).ready(function() {
-    // Import from Showdown
     $("#importTeam").click(function() {
-        const showdownFormat = prompt("Please paste the Pokemon Showdown team format:");
-        if(showdownFormat) {
+        // Show the custom modal
+        $('#importShowdownPrompt').modal('show');
+    });
+    
+    $("#submitimportShowdownPrompt").click(function() {
+        const showdownFormat = $("#importShowdownPrompt").val();
+        if (showdownFormat) {
             // Assuming 'importFromPokemonShowdownFormat()' parses the string and returns a team data structure
             // const teamData = importFromPokemonShowdownFormat(showdownFormat);
             // loadTeamData(teamData);
         }
-    });    
-
+        // Close the modal after processing
+        $('#importShowdownPrompt').modal('hide');
+    });
+    
     // Copy the current team to clipboard in Showdown format
     $("#exportTeam").click(function() {
         // Assuming 'exportToPokemonShowdownFormat()' converts your current team data to the desired string format

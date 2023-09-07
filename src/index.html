@@ -42,7 +42,29 @@
         <div id="pokemonContainer" class="row">
             <!-- Pokémon slots will be added here by the JavaScript. -->
         </div>
+
     </main>
+
+    <!-- Custom Prompt Modal -->
+    <div class="modal fade" id="importShowdownPrompt" tabindex="-1" aria-labelledby="importShowdownPromptlabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg"> <!-- 'modal-lg' makes the modal larger -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="importShowdownPromptLabel">Import Team</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="importShowdownPromptInput" class="form-control" rows="10" placeholder="Please paste the Pokemon Showdown team format:"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="submitimportShowdownPrompt">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer Section -->
     <footer class="bg-dark py-3 mt-4">
@@ -53,6 +75,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Select2 JS -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script type="text/javascript" src="data/pokemon.js"></script>
     <script type="text/javascript" src="data/natures.js"></script>
     <script type="text/javascript" src="data/types.js"></script>
