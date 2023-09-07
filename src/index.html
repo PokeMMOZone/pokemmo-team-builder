@@ -20,22 +20,20 @@
 
     <div class="toolbar bg-dark py-2">
         <div class="container d-flex justify-content-between">
-            <div class="d-flex">
-                <button id="importTeam" class="btn btn-primary mr-2">Import</button>
-                <button id="exportTeam" class="btn btn-secondary mr-2">Export</button>
-                <button id="saveTeam" class="btn btn-success mr-2">Save</button>
-            </div>
-            <div class="d-flex">
-                <input type="text" id="teamName" placeholder="Team Name" class="mr-2">
-                <select id="savedTeams" class="mr-2">
-                    <option value="">--Select Saved Team--</option>
-                    <!-- Dynamically added teams will appear here -->
-                </select>
-                <button id="loadTeam" class="btn btn-info mr-2">Load</button>
-                <button id="deleteTeam" class="btn btn-danger mr-2">Delete</button>
-            </div>
+
+            <button id="importTeam" class="btn btn-primary toolbar-button-size mr-2">Import</button>
+            <button id="exportTeam" class="btn btn-secondary toolbar-button-size mr-2">Export</button>
+            <button id="saveTeam" class="btn btn-success toolbar-button-size mr-2">Save</button>
+            <input type="text" id="teamName" placeholder="Team Name" class="mr-2">
+            <select id="savedTeams" class="mr-2">
+                <option value="">--Select Saved Team--</option>
+                <!-- Dynamically added teams will appear here -->
+            </select>
+            <button id="loadTeam" class="btn btn-info toolbar-button-size mr-2">Load</button>
+            <button id="deleteTeam" class="btn btn-danger toolbar-button-size mr-2">Delete</button>
+
         </div>
-    </div>    
+    </div>
 
     <!-- Main content -->
     <main class="container mt-4">
@@ -46,7 +44,8 @@
     </main>
 
     <!-- Custom Prompt Modal -->
-    <div class="modal fade" id="importShowdownPrompt" tabindex="-1" aria-labelledby="importShowdownPromptlabel" aria-hidden="true">
+    <div class="modal fade" id="importShowdownPrompt" tabindex="-1" aria-labelledby="importShowdownPromptlabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg"> <!-- 'modal-lg' makes the modal larger -->
             <div class="modal-content">
                 <div class="modal-header">
@@ -56,7 +55,8 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <textarea id="importShowdownPromptInput" class="form-control" rows="10" placeholder="Please paste the Pokemon Showdown team format:"></textarea>
+                    <textarea id="importShowdownPromptInput" class="form-control" rows="10"
+                        placeholder="Please paste the Pokemon Showdown team format:"></textarea>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
