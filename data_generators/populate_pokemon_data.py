@@ -72,9 +72,9 @@ def fetch_varieties(pokemon_id):
         gender_rate = species_data['gender_rate']
         if gender_rate == -1:  # Unknown gender
             gender_list = ["Unknown"]
-        elif gender_rate == 0:  # Only female
+        elif gender_rate == 8:  # Only female
             gender_list = ["Female"]
-        elif gender_rate == 8:  # Only male
+        elif gender_rate == 0:  # Only male
             gender_list = ["Male"]
         else:
             gender_list = ["Male", "Female"]

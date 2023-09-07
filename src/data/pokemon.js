@@ -1183,6 +1183,7 @@ const pokemonData = [
             "Hail",
             "Facade",
             "Focus Punch",
+            "Follow Me",
             "Helping Hand",
             "Brick Break",
             "Yawn",
@@ -5595,7 +5596,7 @@ const pokemonData = [
             "speed": 41
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -5697,7 +5698,7 @@ const pokemonData = [
             "speed": 56
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -5856,7 +5857,7 @@ const pokemonData = [
             "speed": 76
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -5961,7 +5962,7 @@ const pokemonData = [
             "speed": 50
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -6062,7 +6063,7 @@ const pokemonData = [
             "speed": 65
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -6222,7 +6223,7 @@ const pokemonData = [
             "speed": 85
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -17485,7 +17486,7 @@ const pokemonData = [
             "speed": 87
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -17597,7 +17598,7 @@ const pokemonData = [
             "speed": 76
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -18477,7 +18478,7 @@ const pokemonData = [
             "speed": 50
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -18728,7 +18729,7 @@ const pokemonData = [
             "speed": 90
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -18845,7 +18846,7 @@ const pokemonData = [
             "speed": 100
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -19984,7 +19985,7 @@ const pokemonData = [
             "speed": 95
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -20170,6 +20171,7 @@ const pokemonData = [
             "Will-O-Wisp",
             "Facade",
             "Focus Punch",
+            "Follow Me",
             "Taunt",
             "Helping Hand",
             "Brick Break",
@@ -20532,7 +20534,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -20604,7 +20606,7 @@ const pokemonData = [
             "speed": 100
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -20681,7 +20683,7 @@ const pokemonData = [
             "speed": 100
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -20757,7 +20759,7 @@ const pokemonData = [
             "speed": 100
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -21324,6 +21326,7 @@ const pokemonData = [
             "Buzzy Buzz",
             "Sizzly Slide",
             "Glitzy Glow",
+            "Baddy Bad",
             "Sappy Seed",
             "Freezy Frost",
             "Sparkly Swirl"
@@ -34838,7 +34841,7 @@ const pokemonData = [
             "speed": 35
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -34942,7 +34945,7 @@ const pokemonData = [
             "speed": 70
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -35061,7 +35064,7 @@ const pokemonData = [
             "speed": 65
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -35386,7 +35389,7 @@ const pokemonData = [
             "speed": 100
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -35542,7 +35545,7 @@ const pokemonData = [
             "speed": 55
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -44489,7 +44492,7 @@ const pokemonData = [
             "speed": 85
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -44598,7 +44601,7 @@ const pokemonData = [
             "speed": 85
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -52588,7 +52591,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -52699,7 +52702,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -52830,7 +52833,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -52937,7 +52940,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -56689,7 +56692,7 @@ const pokemonData = [
             "speed": 36
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -56777,7 +56780,7 @@ const pokemonData = [
             "speed": 36
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -56868,7 +56871,7 @@ const pokemonData = [
             "speed": 36
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -56956,7 +56959,7 @@ const pokemonData = [
             "speed": 66
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -57112,7 +57115,7 @@ const pokemonData = [
             "speed": 40
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -59809,7 +59812,7 @@ const pokemonData = [
             "speed": 30
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -64011,7 +64014,7 @@ const pokemonData = [
             "speed": 80
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -64136,7 +64139,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -64475,7 +64478,7 @@ const pokemonData = [
             "speed": 110
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -66340,7 +66343,7 @@ const pokemonData = [
             "speed": 85
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -71348,7 +71351,7 @@ const pokemonData = [
             "speed": 45
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -71441,7 +71444,7 @@ const pokemonData = [
             "speed": 85
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -72200,7 +72203,7 @@ const pokemonData = [
             "speed": 30
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -72289,7 +72292,7 @@ const pokemonData = [
             "speed": 90
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -72370,7 +72373,7 @@ const pokemonData = [
             "speed": 105
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -80852,7 +80855,7 @@ const pokemonData = [
             "speed": 60
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -80949,7 +80952,7 @@ const pokemonData = [
             "speed": 80
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -81035,7 +81038,7 @@ const pokemonData = [
             "speed": 65
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -81126,7 +81129,7 @@ const pokemonData = [
             "speed": 60
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -81220,7 +81223,7 @@ const pokemonData = [
             "speed": 80
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -82306,7 +82309,7 @@ const pokemonData = [
             "speed": 111
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -82411,7 +82414,7 @@ const pokemonData = [
             "speed": 121
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -82525,7 +82528,7 @@ const pokemonData = [
             "speed": 111
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -82638,7 +82641,7 @@ const pokemonData = [
             "speed": 101
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -82955,7 +82958,7 @@ const pokemonData = [
             "speed": 101
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -83057,7 +83060,7 @@ const pokemonData = [
             "speed": 91
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -86025,7 +86028,7 @@ const pokemonData = [
             "speed": 42
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -86116,7 +86119,7 @@ const pokemonData = [
             "speed": 52
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -86193,7 +86196,7 @@ const pokemonData = [
             "speed": 92
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -86284,7 +86287,7 @@ const pokemonData = [
             "speed": 75
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -97330,7 +97333,7 @@ const pokemonData = [
             "speed": 117
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -97412,7 +97415,7 @@ const pokemonData = [
             "speed": 117
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -97681,7 +97684,7 @@ const pokemonData = [
             "speed": 32
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -97769,7 +97772,7 @@ const pokemonData = [
             "speed": 62
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -97870,7 +97873,7 @@ const pokemonData = [
             "speed": 72
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -108152,7 +108155,7 @@ const pokemonData = [
             "speed": 39
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -108224,7 +108227,7 @@ const pokemonData = [
             "speed": 49
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -108312,7 +108315,7 @@ const pokemonData = [
             "speed": 29
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -108337,7 +108340,7 @@ const pokemonData = [
             "speed": 29
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -108412,7 +108415,7 @@ const pokemonData = [
             "speed": 50
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -108490,7 +108493,7 @@ const pokemonData = [
             "speed": 70
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -108590,7 +108593,7 @@ const pokemonData = [
             "speed": 60
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -108615,7 +108618,7 @@ const pokemonData = [
             "speed": 60
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -109243,7 +109246,7 @@ const pokemonData = [
             "speed": 34
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -109314,7 +109317,7 @@ const pokemonData = [
             "speed": 64
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -109337,7 +109340,7 @@ const pokemonData = [
             "speed": 64
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -113282,7 +113285,7 @@ const pokemonData = [
             "speed": 106
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -113353,7 +113356,7 @@ const pokemonData = [
             "speed": 46
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -114140,7 +114143,7 @@ const pokemonData = [
             "speed": 65
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -114207,7 +114210,7 @@ const pokemonData = [
             "speed": 65
         },
         "gender": [
-            "Female"
+            "Male"
         ]
     },
     {
@@ -117375,7 +117378,7 @@ const pokemonData = [
             "speed": 58
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -117443,7 +117446,7 @@ const pokemonData = [
             "speed": 78
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
@@ -117514,7 +117517,7 @@ const pokemonData = [
             "speed": 94
         },
         "gender": [
-            "Male"
+            "Female"
         ]
     },
     {
