@@ -482,21 +482,117 @@ function createPokemonSlot() {
 
 }
 
-function loadSavedTeams() {
-    const selectBox = $("#savedTeams");
-    selectBox.empty();  // Remove all options
-    selectBox.append('<option value="">--Select Saved Team--</option>');
-    for(let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        selectBox.append(`<option value="${key}">${key}</option>`);
-    }
-}
-
 function initializePokemonSlots() {
     for (let i = 0; i < 6; i++) {
         createPokemonSlot();
     }
 }
+
+function loadSavedTeams() {
+    const selectBox = $("#savedTeams");
+    selectBox.empty();  // Remove all options
+    selectBox.append('<option value="--Select Saved Team--">--Select Saved Team--</option>');
+    
+    for(let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const value = localStorage.getItem(key);
+        
+        try {
+            const parsedValue = JSON.parse(value);
+            
+            // Check if the parsed value has a 'team' key
+            if(parsedValue.hasOwnProperty('team')) {
+                selectBox.append(`<option value="${key}">${key}</option>`);
+            }
+        } catch(e) {
+            // If there's an error parsing the value (e.g. it's not valid JSON), simply continue to the next item
+            continue;
+        }
+    }
+}
+
+function getCurrentTeam() {
+    const slots = document.querySelectorAll('.pokemon-slot');
+    const teamMembers = [];
+
+    slots.forEach(slot => {
+        const pokemon = {
+            species: slot.querySelector('.species-dropdown').value,
+            // image: slot.querySelector('.pokemon-image').getAttribute('src'),
+            // type1: slot.querySelector('.type-label[data-type="type1"]').innerText,
+            // type2: slot.querySelector('.type-label[data-type="type2"]').innerText,
+            // nickname: slot.querySelector('.nickname-input').value,
+            // level: slot.querySelector('.level-input').value,
+            // item: slot.querySelector('.item-dropdown').value,
+            // ability: slot.querySelector('.ability-dropdown').value,
+            // gender: slot.querySelector('.gender-dropdown').value,
+            // nature: slot.querySelector('.nature-dropdown').value,
+            // ivs: Array.from(slot.querySelectorAll('.ivs input')).map(iv => iv.value),
+            // evs: Array.from(slot.querySelectorAll('.evs input')).map(ev => ev.value),
+            // calculatedStats: Array.from(slot.querySelectorAll('.calculated-stats span:not(:first-child)')).map(span => span.innerText),
+            // moves: [
+            //     slot.querySelector('select[name="move1"]').value,
+            //     slot.querySelector('select[name="move2"]').value,
+            //     slot.querySelector('select[name="move3"]').value,
+            //     slot.querySelector('select[name="move4"]').value,
+            // ]
+        };
+        teamMembers.push(pokemon);
+    });
+
+    return {
+        team: teamMembers
+    };
+}
+
+function loadTeamData(data) {
+    const teamDataArray = data.team; // Extracting the team array from the object.
+    const slots = document.querySelectorAll('.pokemon-slot');
+
+    slots.forEach((slot, index) => {
+        const pokemon = teamDataArray[index];
+
+        // Check if there's data for this slot
+        if (pokemon) {
+            $(slot.querySelector('.species-dropdown')).val(pokemon.species).trigger('change').trigger('select2:select');
+            // slot.querySelector('.pokemon-image').setAttribute('src', pokemon.image);
+            // slot.querySelector('.type-label[data-type="type1"]').innerText = pokemon.type1;
+            // slot.querySelector('.type-label[data-type="type2"]').innerText = pokemon.type2;
+            // slot.querySelector('.nickname-input').value = pokemon.nickname;
+            // slot.querySelector('.level-input').value = pokemon.level;
+            // slot.querySelector('.item-dropdown').value = pokemon.item;
+            // slot.querySelector('.ability-dropdown').value = pokemon.ability;
+            // slot.querySelector('.gender-dropdown').value = pokemon.gender;
+            // slot.querySelector('.nature-dropdown').value = pokemon.nature;
+
+            // const ivInputs = slot.querySelectorAll('.ivs input');
+            // ivInputs.forEach((input, ivIndex) => {
+            //     input.value = pokemon.ivs[ivIndex];
+            // });
+
+            // const evInputs = slot.querySelectorAll('.evs input');
+            // evInputs.forEach((input, evIndex) => {
+            //     input.value = pokemon.evs[evIndex];
+            // });
+
+            // const statSpans = slot.querySelectorAll('.calculated-stats span:not(:first-child)');
+            // statSpans.forEach((span, statIndex) => {
+            //     span.innerText = pokemon.calculatedStats[statIndex];
+            // });
+
+            // slot.querySelector('select[name="move1"]').value = pokemon.moves[0];
+            // slot.querySelector('select[name="move2"]').value = pokemon.moves[1];
+            // slot.querySelector('select[name="move3"]').value = pokemon.moves[2];
+            // slot.querySelector('select[name="move4"]').value = pokemon.moves[3];
+
+        }
+
+    });
+
+    // After populating the slots with saved data, you may need to refresh any visual components 
+    // like dropdown menus or other dynamic elements that are affected by the above changes.
+}
+
 
 initializePokemonSlots();
 
@@ -536,36 +632,51 @@ $(document).ready(function() {
             return;
         }
         // Assuming you have a function 'getCurrentTeam()' that retrieves the current team data
-        // const teamData = getCurrentTeam();
-        // localStorage.setItem(teamName, JSON.stringify(teamData));
+        const teamData = getCurrentTeam();
+        localStorage.setItem(teamName, JSON.stringify(teamData));
         // Refresh the list of saved teams
-        loadSavedTeams();
+        //loadSavedTeams();
+        const selectBox = $("#savedTeams");
+        selectBox.append('<option value="' + teamName + '">' + teamName + '</option>');
+        $(selectBox).val(teamName).trigger('change').trigger('select2:select');
     });
     
 
     // Load a saved team
     $("#loadTeam").click(function() {
-        // const selectedTeamName = $("#savedTeams").val();
-        // const teamDataString = localStorage.getItem(selectedTeamName);
-        // if(teamDataString) {
-        //     const teamData = JSON.parse(teamDataString);
-        //     // Assuming you have a function 'loadTeamData()' that sets the current team to the provided data
-        //     loadTeamData(teamData);
-        // }
+        const selectedTeamName = $("#savedTeams").val();
+        
+        // Check if the selected name isn't the default text
+        if (selectedTeamName === "--Select Saved Team--") {
+            // alert("Please select a valid team!");  // Optional: Alert the user to choose a valid team.
+            return;  // Exit the function early
+        }
+        
+        const teamDataString = localStorage.getItem(selectedTeamName);
+        if(teamDataString) {
+            const teamData = JSON.parse(teamDataString);
+            // Assuming you have a function 'loadTeamData()' that sets the current team to the provided data
+            loadTeamData(teamData);
+        }
     });
+    
     
 
     // Delete a saved team
     $("#deleteTeam").click(function() {
-        // const selectedTeamName = $("#savedTeams").val();
-        // if(!selectedTeamName) {
-        //     alert("Please select a team to delete!");
-        //     return;
-        // }
-        // localStorage.removeItem(selectedTeamName);
-        // // Refresh the list of saved teams
-        // loadSavedTeams();
+        const selectedTeamName = $("#savedTeams").val();
+        
+        // Check if the selected name isn't provided or is the default text
+        if (!selectedTeamName || selectedTeamName === "--Select Saved Team--") {
+            // alert("Please select a valid team to delete!");
+            return;  // Exit the function early
+        }
+        
+        localStorage.removeItem(selectedTeamName);
+        // Refresh the list of saved teams
+        loadSavedTeams();
     });
+    
     
 });
 
