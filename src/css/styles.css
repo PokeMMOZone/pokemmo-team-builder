@@ -301,5 +301,59 @@ footer {
 }
 
 .toolbar {
-    border-bottom: 1px solid #e0e0e0;
+    background-color: #333; /* Darker shade to match the header/footer */
+    padding: 15px 0; /* Increased padding for better appearance */
+    border-bottom: 1px solid #555; /* Adjusted color to better fit the dark theme */
+}
+
+.toolbar .btn-primary {
+    background-color: #1976d2; 
+    border-color: #1565c0; 
+}
+
+.toolbar .btn-secondary {
+    background-color: #757575; 
+    border-color: #616161; 
+}
+
+.toolbar .btn-success {
+    background-color: #43a047; 
+    border-color: #388e3c; 
+}
+
+.toolbar .btn-info {
+    background-color: #039be5; 
+    border-color: #0288d1; 
+}
+
+.toolbar .btn-danger {
+    background-color: #d32f2f; 
+    border-color: #c62828; 
+}
+
+.toolbar input[type="text"] {
+    background-color: #555;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 5px 10px;
+}
+
+.toolbar select {
+    background-color: #555;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    padding: 5px 10px;
+}
+
+/* If you're using select2 for the select in toolbar, you might also want to add these styles */
+
+.toolbar .select2-container--default .select2-selection--single {
+    background-color: #555;
+    border: 1px solid #444;
+    height: 38px;
+}
+
+.toolbar .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #e0e0e0;
+    line-height: 38px;
 }
