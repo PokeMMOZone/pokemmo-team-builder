@@ -18,6 +18,25 @@
         <h1 class="text-center text-white">PokeMMO Team Builder</h1>
     </header>
 
+    <div class="toolbar bg-light py-2">
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex">
+                <button id="importTeam" class="btn btn-primary mr-2">Import from Showdown</button>
+                <button id="exportTeam" class="btn btn-secondary mr-2">Export to Showdown</button>
+                <button id="saveTeam" class="btn btn-success mr-2">Save Team</button>
+            </div>
+            <div class="d-flex">
+                <input type="text" id="teamName" placeholder="Team Name" class="mr-2">
+                <select id="savedTeams" class="mr-2">
+                    <option value="">--Select Saved Team--</option>
+                    <!-- Dynamically added teams will appear here -->
+                </select>
+                <button id="loadTeam" class="btn btn-info mr-2">Load Team</button>
+                <button id="deleteTeam" class="btn btn-danger mr-2">Delete Team</button>
+            </div>
+        </div>
+    </div>    
+
     <!-- Main content -->
     <main class="container mt-4">
         <div id="pokemonContainer" class="row">

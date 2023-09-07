@@ -482,6 +482,16 @@ function createPokemonSlot() {
 
 }
 
+function loadSavedTeams() {
+    const selectBox = $("#savedTeams");
+    selectBox.empty();  // Remove all options
+    selectBox.append('<option value="">--Select Saved Team--</option>');
+    for(let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        selectBox.append(`<option value="${key}">${key}</option>`);
+    }
+}
+
 function initializePokemonSlots() {
     for (let i = 0; i < 6; i++) {
         createPokemonSlot();
@@ -489,3 +499,69 @@ function initializePokemonSlots() {
 }
 
 initializePokemonSlots();
+
+$(document).ready(function() {
+    // Import from Showdown
+    $("#importTeam").click(function() {
+        const showdownFormat = prompt("Please paste the Pokemon Showdown team format:");
+        if(showdownFormat) {
+            // Assuming 'importFromPokemonShowdownFormat()' parses the string and returns a team data structure
+            // const teamData = importFromPokemonShowdownFormat(showdownFormat);
+            // loadTeamData(teamData);
+        }
+    });    
+
+    // Copy the current team to clipboard in Showdown format
+    $("#exportTeam").click(function() {
+        // Assuming 'exportToPokemonShowdownFormat()' converts your current team data to the desired string format
+        // const showdownFormat = exportToPokemonShowdownFormat();
+        // navigator.clipboard.writeText(showdownFormat).then(function() {
+        //     alert('Team copied to clipboard!');
+        // }, function(err) {
+        //     console.error('Could not copy text: ', err);
+        // });
+    });
+
+    // Save current team to browser storage
+    $("#saveTeam").click(function() {
+        const teamName = $("#teamName").val();
+        if(!teamName) {
+            alert("Please enter a team name!");
+            return;
+        }
+        // Assuming you have a function 'getCurrentTeam()' that retrieves the current team data
+        // const teamData = getCurrentTeam();
+        // localStorage.setItem(teamName, JSON.stringify(teamData));
+        // Refresh the list of saved teams
+        loadSavedTeams();
+    });
+    
+
+    // Load a saved team
+    $("#loadTeam").click(function() {
+        // const selectedTeamName = $("#savedTeams").val();
+        // const teamDataString = localStorage.getItem(selectedTeamName);
+        // if(teamDataString) {
+        //     const teamData = JSON.parse(teamDataString);
+        //     // Assuming you have a function 'loadTeamData()' that sets the current team to the provided data
+        //     loadTeamData(teamData);
+        // }
+    });
+    
+
+    // Delete a saved team
+    $("#deleteTeam").click(function() {
+        // const selectedTeamName = $("#savedTeams").val();
+        // if(!selectedTeamName) {
+        //     alert("Please select a team to delete!");
+        //     return;
+        // }
+        // localStorage.removeItem(selectedTeamName);
+        // // Refresh the list of saved teams
+        // loadSavedTeams();
+    });
+    
+});
+
+// Call this when the document is ready:
+loadSavedTeams();
