@@ -1,9 +1,57 @@
+@media screen and (max-width: 1000px) {
+    .pokemon-slot {
+        width: 100%;
+    }
+    .toolbar .btn-primary,
+    .toolbar .btn-secondary,
+    .toolbar .btn-success,
+    .toolbar .btn-info,
+    .toolbar .btn-danger,
+    .toolbar input[type="text"],
+    .toolbar select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #teamName, #savedTeams {
+        max-width: 100%;
+        width: auto; 
+    }
+
+    .toolbar {
+        box-sizing: border-box;
+        height: auto;
+    }
+    .toolbar > * {
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .toolbar .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .toolbar .container > * {
+        flex: 1 1 100%;  /* This means that the items can grow and shrink and will take up 100% of the width of the container */
+        margin-right: 0;
+        margin-bottom: 5px; /* Some spacing between the elements */
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .pokemon-slot {
+        width: 100%;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #e0e0e0;
     background-color: #212121;
     margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -22,7 +70,8 @@ main {
 }
 
 main.container {
-    max-width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
 }
 
 #pokemonContainer {
@@ -36,22 +85,32 @@ main.container {
 }
 
 .pokemon-slot {
-    width: calc(32.5% - 20px);
+    /* width: calc(32.5% - 20px); */
+    display: flex;
+    flex-wrap: wrap;
     box-sizing: border-box;
     margin: 0;
     border: 2px solid #e0e0e0;
 }
 
 .left-section {
-    width: 45%;
+    width: 43%;
     padding-right: 10px;
-    float: left;
+    /* float: none; */
+    flex: 1;
+    flex-shrink: 0;
 }
 
 .right-section {
-    width: 53%;
+    width: 51%;
     padding-left: 10px;
-    float: left;
+    /* float: none; */
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.left-section, .right-section {
+    overflow: hidden;
 }
 
 input, select {
@@ -300,34 +359,55 @@ footer {
     border: 1px solid #555;
 }
 
+.toolbar * {
+    box-sizing: border-box;
+}
+
 .toolbar {
-    background-color: #333; /* Darker shade to match the header/footer */
-    padding: 15px 0; /* Increased padding for better appearance */
+    background-color: #333;
+    /* Darker shade to match the header/footer */
+    padding: 15px 0;
+    /* Increased padding for better appearance */
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* overflow: hidden; */ /* This will hide any overflow, which can prevent scrollbars */
+}
+
+/* Default flex-direction is row (horizontal) */
+.toolbar .container {
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .toolbar .btn-primary {
-    background-color: #1976d2; 
-    border-color: #1565c0; 
+    background-color: #1976d2;
+    border-color: #1565c0;
+    flex: 1;
 }
 
 .toolbar .btn-secondary {
-    background-color: #757575; 
-    border-color: #616161; 
+    background-color: #757575;
+    border-color: #616161;
+    flex: 1;
 }
 
 .toolbar .btn-success {
-    background-color: #43a047; 
-    border-color: #388e3c; 
+    background-color: #43a047;
+    border-color: #388e3c;
+    flex: 1;
 }
 
 .toolbar .btn-info {
-    background-color: #039be5; 
-    border-color: #0288d1; 
+    background-color: #039be5;
+    border-color: #0288d1;
+    flex: 1;
 }
 
 .toolbar .btn-danger {
-    background-color: #d32f2f; 
-    border-color: #c62828; 
+    background-color: #d32f2f;
+    border-color: #c62828;
+    flex: 1;
 }
 
 .toolbar input[type="text"] {
@@ -335,6 +415,7 @@ footer {
     color: #e0e0e0;
     border: 1px solid #444;
     padding: 5px 10px;
+    flex: 1;
 }
 
 .toolbar select {
@@ -342,6 +423,7 @@ footer {
     color: #e0e0e0;
     border: 1px solid #444;
     padding: 5px 10px;
+    flex: 1;
 }
 
 /* If you're using select2 for the select in toolbar, you might also want to add these styles */
@@ -358,22 +440,28 @@ footer {
 }
 
 .pb-3, .py-3 {
-    padding-bottom: 0!important;
+    padding-bottom: 0 !important;
 }
 
 .pt-3, .py-3 {
-    padding-top: 0!important;
+    padding-top: 0 !important;
 }
 
 .mt-4, .my-4 {
-    margin-top: 0!important;
+    margin-top: 0 !important;
 }
 
 .toolbar-button-size {
-    font-size: 16px; /* Adjust as necessary */
+    font-size: 16px;
+    /* Adjust as necessary */
     font-weight: bold;
-    height: 30px;         /* Adjust this value for desired height */
-    line-height: 20px;   /* Make this value the same as the height to vertically center the text */
-    padding-left: 24px;  /* Horizontal padding */
-    padding-right: 24px; /* Horizontal padding */
+    height: 30px;
+    /* Adjust this value for desired height */
+    line-height: 20px;
+    /* Make this value the same as the height to vertically center the text */
+    padding-left: 24px;
+    /* Horizontal padding */
+    padding-right: 24px;
+    /* Horizontal padding */
+    box-sizing: border-box;
 }
