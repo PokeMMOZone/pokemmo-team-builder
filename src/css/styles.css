@@ -15,7 +15,7 @@
 
     #teamName, #savedTeams {
         max-width: 100%;
-        width: auto; 
+        width: 100%;
     }
 
     .toolbar {
@@ -383,31 +383,31 @@ footer {
 .toolbar .btn-primary {
     background-color: #1976d2;
     border-color: #1565c0;
-    flex: 1;
+    flex: none;
 }
 
 .toolbar .btn-secondary {
     background-color: #757575;
     border-color: #616161;
-    flex: 1;
+    flex: none;
 }
 
 .toolbar .btn-success {
     background-color: #43a047;
     border-color: #388e3c;
-    flex: 1;
+    flex: none;
 }
 
 .toolbar .btn-info {
     background-color: #039be5;
     border-color: #0288d1;
-    flex: 1;
+    flex: none;
 }
 
 .toolbar .btn-danger {
     background-color: #d32f2f;
     border-color: #c62828;
-    flex: 1;
+    flex: none;
 }
 
 .toolbar input[type="text"] {
@@ -415,7 +415,9 @@ footer {
     color: #e0e0e0;
     border: 1px solid #444;
     padding: 5px 10px;
-    flex: 1;
+    flex: none;
+    width: 15%;
+    margin: 0 auto;
 }
 
 .toolbar select {
@@ -423,7 +425,9 @@ footer {
     color: #e0e0e0;
     border: 1px solid #444;
     padding: 5px 10px;
-    flex: 1;
+    flex: none;
+    width: 20%;
+    margin: 0 auto;
 }
 
 /* If you're using select2 for the select in toolbar, you might also want to add these styles */
@@ -464,4 +468,6 @@ footer {
     padding-right: 24px;
     /* Horizontal padding */
     box-sizing: border-box;
+    width: 10%;
+    margin: 0 auto;
 }
