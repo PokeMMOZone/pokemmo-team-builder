@@ -497,6 +497,11 @@ function getPokemonIdFromName(name) {
     return "000";  // or a default value if not found
 }
 
+function getItemIdFromName(itemName) {
+    const item = itemsData.find(i => i.name.toLowerCase() === itemName.toLowerCase());
+    return item ? item.id : "000"; // return "000" if not found
+}
+
 function showdownToJson(text) {
     const lines = text.trim().split('\n');
     const team = [];
@@ -514,8 +519,9 @@ function showdownToJson(text) {
         }
 
         if (line.includes('@')) {
-            const parts = line.split(' @ ');
-            let nameComponents = parts[0].split(' (');
+            const itemName = line.substring(line.lastIndexOf('@') + 1).trim();
+            const namePart = line.substring(0, line.lastIndexOf('@')).trim();
+            let nameComponents = namePart.split(' (');
             
             switch (nameComponents.length) {
                 case 3:
@@ -540,7 +546,7 @@ function showdownToJson(text) {
                     pokemon.nickname = "";
             }
 
-            pokemon.item = parts[1];
+            pokemon.item = getItemIdFromName(itemName);
             pokemon.level = 50;
             pokemon.ability = "";
             pokemon.ivs = [31, 31, 31, 31, 31, 31];
@@ -655,7 +661,7 @@ function loadTeamData(data) {
             $(slot.querySelector('.species-dropdown')).val(pokemon.species).trigger('change').trigger('select2:select');
             slot.querySelector('.nickname-input').value = pokemon.nickname;
             slot.querySelector('.level-input').value = pokemon.level;
-            // $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
+            $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
             $(slot.querySelector('.ability-dropdown')).val(pokemon.ability).trigger('change').trigger('select2:select');
             $(slot.querySelector('.gender-dropdown')).val(pokemon.gender).trigger('change').trigger('select2:select');
 
