@@ -25,10 +25,6 @@ def fetch_item_data(item_id_or_name):
     response = requests.get(ITEM_URL + str(item_id_or_name))
     if response.status_code == 200:
         data = response.json()
-        
-        # Check if item can be held by a pokemon
-        if not data['held_by_pokemon']:
-            return None
 
         english_name = fetch_english_name(data)
         
@@ -53,7 +49,7 @@ def main():
 
     for i in range(1, total_count + 1):
         item_data = fetch_item_data(i)
-        if item_data:  # If the item can be held by a pokemon
+        if item_data:  # No filtering here, adding all items
             items_list.append(item_data)
 
     with open(OUTPUT_PATH, 'w') as file:
