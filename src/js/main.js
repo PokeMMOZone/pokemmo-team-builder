@@ -518,24 +518,20 @@ function getCurrentTeam() {
     slots.forEach(slot => {
         const pokemon = {
             species: slot.querySelector('.species-dropdown').value,
-            // image: slot.querySelector('.pokemon-image').getAttribute('src'),
-            // type1: slot.querySelector('.type-label[data-type="type1"]').innerText,
-            // type2: slot.querySelector('.type-label[data-type="type2"]').innerText,
-            // nickname: slot.querySelector('.nickname-input').value,
-            // level: slot.querySelector('.level-input').value,
-            // item: slot.querySelector('.item-dropdown').value,
-            // ability: slot.querySelector('.ability-dropdown').value,
-            // gender: slot.querySelector('.gender-dropdown').value,
-            // nature: slot.querySelector('.nature-dropdown').value,
-            // ivs: Array.from(slot.querySelectorAll('.ivs input')).map(iv => iv.value),
-            // evs: Array.from(slot.querySelectorAll('.evs input')).map(ev => ev.value),
-            // calculatedStats: Array.from(slot.querySelectorAll('.calculated-stats span:not(:first-child)')).map(span => span.innerText),
-            // moves: [
-            //     slot.querySelector('select[name="move1"]').value,
-            //     slot.querySelector('select[name="move2"]').value,
-            //     slot.querySelector('select[name="move3"]').value,
-            //     slot.querySelector('select[name="move4"]').value,
-            // ]
+            nickname: slot.querySelector('.nickname-input').value,
+            level: slot.querySelector('.level-input').value,
+            item: slot.querySelector('.item-dropdown').value,
+            ability: slot.querySelector('.ability-dropdown').value,
+            gender: slot.querySelector('.gender-dropdown').value,
+            nature: slot.querySelector('.nature-dropdown').value,
+            ivs: Array.from(slot.querySelectorAll('.ivs input')).map(iv => iv.value),
+            evs: Array.from(slot.querySelectorAll('.evs input')).map(ev => ev.value),
+            moves: [
+                slot.querySelector('select[name="move1"]').value,
+                slot.querySelector('select[name="move2"]').value,
+                slot.querySelector('select[name="move3"]').value,
+                slot.querySelector('select[name="move4"]').value,
+            ]
         };
         teamMembers.push(pokemon);
     });
@@ -555,35 +551,29 @@ function loadTeamData(data) {
         // Check if there's data for this slot
         if (pokemon) {
             $(slot.querySelector('.species-dropdown')).val(pokemon.species).trigger('change').trigger('select2:select');
-            // slot.querySelector('.pokemon-image').setAttribute('src', pokemon.image);
-            // slot.querySelector('.type-label[data-type="type1"]').innerText = pokemon.type1;
-            // slot.querySelector('.type-label[data-type="type2"]').innerText = pokemon.type2;
-            // slot.querySelector('.nickname-input').value = pokemon.nickname;
-            // slot.querySelector('.level-input').value = pokemon.level;
-            // slot.querySelector('.item-dropdown').value = pokemon.item;
-            // slot.querySelector('.ability-dropdown').value = pokemon.ability;
-            // slot.querySelector('.gender-dropdown').value = pokemon.gender;
-            // slot.querySelector('.nature-dropdown').value = pokemon.nature;
+            slot.querySelector('.nickname-input').value = pokemon.nickname;
+            slot.querySelector('.level-input').value = pokemon.level;
+            $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
+            $(slot.querySelector('.ability-dropdown')).val(pokemon.ability).trigger('change').trigger('select2:select');
+            slot.querySelector('.gender-dropdown').value = pokemon.gender;
+            slot.querySelector('.nature-dropdown').value = pokemon.nature;
 
-            // const ivInputs = slot.querySelectorAll('.ivs input');
-            // ivInputs.forEach((input, ivIndex) => {
-            //     input.value = pokemon.ivs[ivIndex];
-            // });
+            const ivInputs = slot.querySelectorAll('.ivs input');
+            ivInputs.forEach((input, ivIndex) => {
+                input.value = pokemon.ivs[ivIndex];
+            });
 
-            // const evInputs = slot.querySelectorAll('.evs input');
-            // evInputs.forEach((input, evIndex) => {
-            //     input.value = pokemon.evs[evIndex];
-            // });
+            const evInputs = slot.querySelectorAll('.evs input');
+            evInputs.forEach((input, evIndex) => {
+                input.value = pokemon.evs[evIndex];
+            });
 
-            // const statSpans = slot.querySelectorAll('.calculated-stats span:not(:first-child)');
-            // statSpans.forEach((span, statIndex) => {
-            //     span.innerText = pokemon.calculatedStats[statIndex];
-            // });
+            $(slot.querySelector('select[name="move1"]')).val(pokemon.moves[0]).trigger('change').trigger('select2:select');
+            $(slot.querySelector('select[name="move2"]')).val(pokemon.moves[1]).trigger('change').trigger('select2:select');
+            $(slot.querySelector('select[name="move3"]')).val(pokemon.moves[2]).trigger('change').trigger('select2:select');
+            $(slot.querySelector('select[name="move4"]')).val(pokemon.moves[3]).trigger('change').trigger('select2:select');
 
-            // slot.querySelector('select[name="move1"]').value = pokemon.moves[0];
-            // slot.querySelector('select[name="move2"]').value = pokemon.moves[1];
-            // slot.querySelector('select[name="move3"]').value = pokemon.moves[2];
-            // slot.querySelector('select[name="move4"]').value = pokemon.moves[3];
+            $(slot.querySelector('.nature-dropdown')).val(pokemon.nature).trigger('change').trigger('select2:select');
 
         }
 
@@ -652,6 +642,8 @@ $(document).ready(function() {
             return;  // Exit the function early
         }
         
+        $("#teamName").val(selectedTeamName);
+
         const teamDataString = localStorage.getItem(selectedTeamName);
         if(teamDataString) {
             const teamData = JSON.parse(teamDataString);
