@@ -488,6 +488,76 @@ function initializePokemonSlots() {
     }
 }
 
+function showdownToJson(text) {
+    const lines = text.trim().split('\n');
+    const team = [];
+    let pokemon = {};
+
+    for (let line of lines) {
+        line = line.trim();
+        
+        if (!line) {
+            if (Object.keys(pokemon).length) {
+                team.push(pokemon);
+                pokemon = {};
+            }
+            continue;
+        }
+
+        if (line.includes('@')) {
+            const parts = line.split(' @ ');
+            pokemon.species = parts[0].split(' (')[0];
+            pokemon.item = parts[1];
+            pokemon.nickname = "";
+            pokemon.level = 50;
+            pokemon.ability = "";
+            pokemon.gender = "";
+            pokemon.ivs = [31, 31, 31, 31, 31, 31];
+            pokemon.evs = [0, 0, 0, 0, 0, 0];
+            pokemon.moves = [];
+            pokemon.nature = "";
+        } else if (line.startsWith('Ability:')) {
+            pokemon.ability = line.split(': ')[1];
+        } else if (line.startsWith('EVs:')) {
+            const evData = line.split(': ')[1].split(' / ');
+            for (let ev of evData) {
+                const [value, stat] = ev.split(' ');
+                switch (stat) {
+                    case 'HP': pokemon.evs[0] = parseInt(value); break;
+                    case 'Atk': pokemon.evs[1] = parseInt(value); break;
+                    case 'Def': pokemon.evs[2] = parseInt(value); break;
+                    case 'SpA': pokemon.evs[3] = parseInt(value); break;
+                    case 'SpD': pokemon.evs[4] = parseInt(value); break;
+                    case 'Spe': pokemon.evs[5] = parseInt(value); break;
+                }
+            }
+        } else if (line.startsWith('IVs:')) {
+            const ivData = line.split(': ')[1].split(' / ');
+            for (let iv of ivData) {
+                const [value, stat] = iv.split(' ');
+                switch (stat) {
+                    case 'HP': pokemon.ivs[0] = parseInt(value); break;
+                    case 'Atk': pokemon.ivs[1] = parseInt(value); break;
+                    case 'Def': pokemon.ivs[2] = parseInt(value); break;
+                    case 'SpA': pokemon.ivs[3] = parseInt(value); break;
+                    case 'SpD': pokemon.ivs[4] = parseInt(value); break;
+                    case 'Spe': pokemon.ivs[5] = parseInt(value); break;
+                }
+            }
+        } else if (line.endsWith(' Nature')) {
+            pokemon.nature = line.split(' ')[0];
+        } else if (line.startsWith('- ')) {
+            pokemon.moves.push(line.substring(2));
+        }
+    }
+
+    if (Object.keys(pokemon).length) {
+        team.push(pokemon);
+    }
+
+    return { team: team };
+}
+
 function loadSavedTeams() {
     const selectBox = $("#savedTeams");
     selectBox.empty();  // Remove all options
@@ -592,15 +662,15 @@ $(document).ready(function() {
     });
     
     $("#submitimportShowdownPrompt").click(function() {
-        const showdownFormat = $("#importShowdownPrompt").val();
+        const showdownFormat = $("#importShowdownPromptInput").val();
+        // console.log(showdownFormat);
         if (showdownFormat) {
-            // Assuming 'importFromPokemonShowdownFormat()' parses the string and returns a team data structure
-            // const teamData = importFromPokemonShowdownFormat(showdownFormat);
-            // loadTeamData(teamData);
+            const teamData = showdownToJson(showdownFormat);
+            console.log(teamData);
+            loadTeamData(teamData);
         }
-        // Close the modal after processing
         $('#importShowdownPrompt').modal('hide');
-    });
+    });    
     
     // Copy the current team to clipboard in Showdown format
     $("#exportTeam").click(function() {
