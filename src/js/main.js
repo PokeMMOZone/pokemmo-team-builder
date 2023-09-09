@@ -504,7 +504,7 @@ function showdownToJson(text) {
 
     for (let line of lines) {
         line = line.trim();
-        
+
         if (!line) {
             if (Object.keys(pokemon).length) {
                 team.push(pokemon);
@@ -515,17 +515,39 @@ function showdownToJson(text) {
 
         if (line.includes('@')) {
             const parts = line.split(' @ ');
-            const speciesName = parts[0].split(' (')[0];
-            pokemon.species = getPokemonIdFromName(speciesName);
+            let nameComponents = parts[0].split(' (');
+            
+            switch (nameComponents.length) {
+                case 3:
+                    pokemon.nickname = nameComponents[0].trim();
+                    pokemon.species = getPokemonIdFromName(nameComponents[1]);
+                    pokemon.gender = nameComponents[2] === "M)" ? "Male" : "Female";
+                    break;
+                case 2:
+                    if (nameComponents[1] === "M)" || nameComponents[1] === "F)") {
+                        pokemon.species = getPokemonIdFromName(nameComponents[0]);
+                        pokemon.gender = nameComponents[1] === "M)" ? "Male" : "Female";
+                        pokemon.nickname = "";
+                    } else {
+                        pokemon.nickname = nameComponents[0].trim();
+                        pokemon.species = getPokemonIdFromName(nameComponents[1].replace(')', ''));
+                        pokemon.gender = "";
+                    }
+                    break;
+                default:
+                    pokemon.species = getPokemonIdFromName(nameComponents[0]);
+                    pokemon.gender = "";
+                    pokemon.nickname = "";
+            }
+
             pokemon.item = parts[1];
-            pokemon.nickname = "";
             pokemon.level = 50;
             pokemon.ability = "";
-            pokemon.gender = "";
             pokemon.ivs = [31, 31, 31, 31, 31, 31];
             pokemon.evs = [0, 0, 0, 0, 0, 0];
             pokemon.moves = [];
             pokemon.nature = "";
+
         } else if (line.startsWith('Ability:')) {
             pokemon.ability = line.split(': ')[1];
         } else if (line.startsWith('EVs:')) {
@@ -635,7 +657,7 @@ function loadTeamData(data) {
             slot.querySelector('.level-input').value = pokemon.level;
             // $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
             $(slot.querySelector('.ability-dropdown')).val(pokemon.ability).trigger('change').trigger('select2:select');
-            // slot.querySelector('.gender-dropdown').value = pokemon.gender;
+            slot.querySelector('.gender-dropdown').value = pokemon.gender;
 
             // const ivInputs = slot.querySelectorAll('.ivs input');
             // ivInputs.forEach((input, ivIndex) => {
