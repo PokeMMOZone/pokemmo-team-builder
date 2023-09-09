@@ -556,7 +556,6 @@ function loadTeamData(data) {
             $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
             $(slot.querySelector('.ability-dropdown')).val(pokemon.ability).trigger('change').trigger('select2:select');
             slot.querySelector('.gender-dropdown').value = pokemon.gender;
-            slot.querySelector('.nature-dropdown').value = pokemon.nature;
 
             const ivInputs = slot.querySelectorAll('.ivs input');
             ivInputs.forEach((input, ivIndex) => {
