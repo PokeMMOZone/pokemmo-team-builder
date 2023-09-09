@@ -488,6 +488,15 @@ function initializePokemonSlots() {
     }
 }
 
+function getPokemonIdFromName(name) {
+    for (let pokemon of pokemonData) {
+        if (pokemon.name.toLowerCase() === name.toLowerCase()) {
+            return pokemon.id;
+        }
+    }
+    return "000";  // or a default value if not found
+}
+
 function showdownToJson(text) {
     const lines = text.trim().split('\n');
     const team = [];
@@ -506,7 +515,8 @@ function showdownToJson(text) {
 
         if (line.includes('@')) {
             const parts = line.split(' @ ');
-            pokemon.species = parts[0].split(' (')[0];
+            const speciesName = parts[0].split(' (')[0];
+            pokemon.species = getPokemonIdFromName(speciesName);
             pokemon.item = parts[1];
             pokemon.nickname = "";
             pokemon.level = 50;
@@ -623,26 +633,26 @@ function loadTeamData(data) {
             $(slot.querySelector('.species-dropdown')).val(pokemon.species).trigger('change').trigger('select2:select');
             slot.querySelector('.nickname-input').value = pokemon.nickname;
             slot.querySelector('.level-input').value = pokemon.level;
-            $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
+            // $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
             $(slot.querySelector('.ability-dropdown')).val(pokemon.ability).trigger('change').trigger('select2:select');
-            slot.querySelector('.gender-dropdown').value = pokemon.gender;
+            // slot.querySelector('.gender-dropdown').value = pokemon.gender;
 
-            const ivInputs = slot.querySelectorAll('.ivs input');
-            ivInputs.forEach((input, ivIndex) => {
-                input.value = pokemon.ivs[ivIndex];
-            });
+            // const ivInputs = slot.querySelectorAll('.ivs input');
+            // ivInputs.forEach((input, ivIndex) => {
+            //     input.value = pokemon.ivs[ivIndex];
+            // });
 
-            const evInputs = slot.querySelectorAll('.evs input');
-            evInputs.forEach((input, evIndex) => {
-                input.value = pokemon.evs[evIndex];
-            });
+            // const evInputs = slot.querySelectorAll('.evs input');
+            // evInputs.forEach((input, evIndex) => {
+            //     input.value = pokemon.evs[evIndex];
+            // });
 
-            $(slot.querySelector('select[name="move1"]')).val(pokemon.moves[0]).trigger('change').trigger('select2:select');
-            $(slot.querySelector('select[name="move2"]')).val(pokemon.moves[1]).trigger('change').trigger('select2:select');
-            $(slot.querySelector('select[name="move3"]')).val(pokemon.moves[2]).trigger('change').trigger('select2:select');
-            $(slot.querySelector('select[name="move4"]')).val(pokemon.moves[3]).trigger('change').trigger('select2:select');
+            // $(slot.querySelector('select[name="move1"]')).val(pokemon.moves[0]).trigger('change').trigger('select2:select');
+            // $(slot.querySelector('select[name="move2"]')).val(pokemon.moves[1]).trigger('change').trigger('select2:select');
+            // $(slot.querySelector('select[name="move3"]')).val(pokemon.moves[2]).trigger('change').trigger('select2:select');
+            // $(slot.querySelector('select[name="move4"]')).val(pokemon.moves[3]).trigger('change').trigger('select2:select');
 
-            $(slot.querySelector('.nature-dropdown')).val(pokemon.nature).trigger('change').trigger('select2:select');
+            // $(slot.querySelector('.nature-dropdown')).val(pokemon.nature).trigger('change').trigger('select2:select');
 
         }
 
