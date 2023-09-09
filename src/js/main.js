@@ -185,7 +185,7 @@ function validateEVInput(input, slot) {
     // Check the total EVs now
     const evInputs = slot.querySelectorAll('.evs input');
     let totalEVs = 0;
-    
+
     evInputs.forEach(evInput => {
         totalEVs += parseInt(evInput.value) || 0;
     });
@@ -391,7 +391,7 @@ function createPokemonSlot() {
         populateMoveDropdown(movedropdown2, selectedPokemon.id);
         populateMoveDropdown(movedropdown3, selectedPokemon.id);
         populateMoveDropdown(movedropdown4, selectedPokemon.id);
-    
+
         updateTypeMove1(slot, "None");
         updateTypeMove2(slot, "None");
         updateTypeMove3(slot, "None");
@@ -531,7 +531,7 @@ function showdownToJson(text) {
             const itemName = line.substring(line.lastIndexOf('@') + 1).trim();
             const namePart = line.substring(0, line.lastIndexOf('@')).trim();
             let nameComponents = namePart.split(' (');
-            
+
             switch (nameComponents.length) {
                 case 3:
                     pokemon.nickname = nameComponents[0].trim();
@@ -609,19 +609,19 @@ function loadSavedTeams() {
     const selectBox = $("#savedTeams");
     selectBox.empty();  // Remove all options
     selectBox.append('<option value="--Select Saved Team--">--Select Saved Team--</option>');
-    
-    for(let i = 0; i < localStorage.length; i++) {
+
+    for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         const value = localStorage.getItem(key);
-        
+
         try {
             const parsedValue = JSON.parse(value);
-            
+
             // Check if the parsed value has a 'team' key
-            if(parsedValue.hasOwnProperty('team')) {
+            if (parsedValue.hasOwnProperty('team')) {
                 selectBox.append(`<option value="${key}">${key}</option>`);
             }
-        } catch(e) {
+        } catch (e) {
             // If there's an error parsing the value (e.g. it's not valid JSON), simply continue to the next item
             continue;
         }
@@ -702,13 +702,13 @@ function loadTeamData(data) {
 
 initializePokemonSlots();
 
-$(document).ready(function() {
-    $("#importTeam").click(function() {
+$(document).ready(function () {
+    $("#importTeam").click(function () {
         // Show the custom modal
         $('#importShowdownPrompt').modal('show');
     });
-    
-    $("#submitimportShowdownPrompt").click(function() {
+
+    $("#submitimportShowdownPrompt").click(function () {
         const showdownFormat = $("#importShowdownPromptInput").val();
         // console.log(showdownFormat);
         if (showdownFormat) {
@@ -717,10 +717,13 @@ $(document).ready(function() {
             loadTeamData(teamData);
         }
         $('#importShowdownPrompt').modal('hide');
-    });    
-    
+
+        // Clear the input
+        $("#importShowdownPromptInput").val('');
+    });
+
     // Copy the current team to clipboard in Showdown format
-    $("#exportTeam").click(function() {
+    $("#exportTeam").click(function () {
         // Assuming 'exportToPokemonShowdownFormat()' converts your current team data to the desired string format
         // const showdownFormat = exportToPokemonShowdownFormat();
         // navigator.clipboard.writeText(showdownFormat).then(function() {
@@ -731,9 +734,9 @@ $(document).ready(function() {
     });
 
     // Save current team to browser storage
-    $("#saveTeam").click(function() {
+    $("#saveTeam").click(function () {
         const teamName = $("#teamName").val();
-        if(!teamName) {
+        if (!teamName) {
             alert("Please enter a team name!");
             return;
         }
@@ -746,46 +749,46 @@ $(document).ready(function() {
         selectBox.append('<option value="' + teamName + '">' + teamName + '</option>');
         $(selectBox).val(teamName).trigger('change').trigger('select2:select');
     });
-    
+
 
     // Load a saved team
-    $("#loadTeam").click(function() {
+    $("#loadTeam").click(function () {
         const selectedTeamName = $("#savedTeams").val();
-        
+
         // Check if the selected name isn't the default text
         if (selectedTeamName === "--Select Saved Team--") {
             // alert("Please select a valid team!");  // Optional: Alert the user to choose a valid team.
             return;  // Exit the function early
         }
-        
+
         $("#teamName").val(selectedTeamName);
 
         const teamDataString = localStorage.getItem(selectedTeamName);
-        if(teamDataString) {
+        if (teamDataString) {
             const teamData = JSON.parse(teamDataString);
             // Assuming you have a function 'loadTeamData()' that sets the current team to the provided data
             loadTeamData(teamData);
         }
     });
-    
-    
+
+
 
     // Delete a saved team
-    $("#deleteTeam").click(function() {
+    $("#deleteTeam").click(function () {
         const selectedTeamName = $("#savedTeams").val();
-        
+
         // Check if the selected name isn't provided or is the default text
         if (!selectedTeamName || selectedTeamName === "--Select Saved Team--") {
             // alert("Please select a valid team to delete!");
             return;  // Exit the function early
         }
-        
+
         localStorage.removeItem(selectedTeamName);
         // Refresh the list of saved teams
         loadSavedTeams();
     });
-    
-    
+
+
 });
 
 // Call this when the document is ready:
