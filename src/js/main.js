@@ -511,7 +511,7 @@ function showdownToJson(text) {
         line = line.trim();
 
         if (!line) {
-            if (Object.keys(pokemon).length) {
+            if (Object.keys(pokemon).length && team.length < 6) {
                 team.push(pokemon);
                 pokemon = {};
             }
@@ -589,7 +589,7 @@ function showdownToJson(text) {
         }
     }
 
-    if (Object.keys(pokemon).length) {
+    if (Object.keys(pokemon).length && team.length < 6) {
         team.push(pokemon);
     }
 
