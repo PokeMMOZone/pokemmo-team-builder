@@ -531,12 +531,12 @@ function showdownToJson(text) {
                     } else {
                         pokemon.nickname = nameComponents[0].trim();
                         pokemon.species = getPokemonIdFromName(nameComponents[1].replace(')', ''));
-                        pokemon.gender = "";
+                        pokemon.gender = "Male";
                     }
                     break;
                 default:
                     pokemon.species = getPokemonIdFromName(nameComponents[0]);
-                    pokemon.gender = "";
+                    pokemon.gender = "Male";
                     pokemon.nickname = "";
             }
 
@@ -657,7 +657,7 @@ function loadTeamData(data) {
             slot.querySelector('.level-input').value = pokemon.level;
             // $(slot.querySelector('.item-dropdown')).val(pokemon.item).trigger('change').trigger('select2:select');
             $(slot.querySelector('.ability-dropdown')).val(pokemon.ability).trigger('change').trigger('select2:select');
-            slot.querySelector('.gender-dropdown').value = pokemon.gender;
+            $(slot.querySelector('.gender-dropdown')).val(pokemon.gender).trigger('change').trigger('select2:select');
 
             // const ivInputs = slot.querySelectorAll('.ivs input');
             // ivInputs.forEach((input, ivIndex) => {
