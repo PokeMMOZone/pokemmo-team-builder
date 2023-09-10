@@ -717,7 +717,14 @@ function getCurrentTeam() {
     const slots = document.querySelectorAll('.pokemon-slot');
     const teamMembers = [];
 
+
     slots.forEach(slot => {
+
+        const typelabel1 = slot.querySelectorAll('.movetype-label1');
+        const typelabel2 = slot.querySelectorAll('.movetype-label2');
+        const typelabel3 = slot.querySelectorAll('.movetype-label3');
+        const typelabel4 = slot.querySelectorAll('.movetype-label4');
+
         const pokemon = {
             species: slot.querySelector('.species-dropdown').value,
             nickname: slot.querySelector('.nickname-input').value,
@@ -733,6 +740,12 @@ function getCurrentTeam() {
                 slot.querySelector('select[name="move2"]').value,
                 slot.querySelector('select[name="move3"]').value,
                 slot.querySelector('select[name="move4"]').value,
+            ],
+            hptypes: [
+                typelabel1[0].innerText,
+                typelabel2[0].innerText,
+                typelabel3[0].innerText,
+                typelabel4[0].innerText,
             ]
         };
         teamMembers.push(pokemon);
@@ -776,6 +789,26 @@ function loadTeamData(data) {
                 } else {
                     $(slot.querySelector(`select[name="move${i + 1}"]`)).val('Select a Move').trigger('change').trigger('select2:select');
                 }
+            }
+
+            const movedropdown1 = slot.querySelector('select[name="move1"]');
+            if (movedropdown1.value === "Hidden Power") {
+            updateTypeMove1(slot, pokemon.hptypes[0]);
+            }
+
+            const movedropdown2 = slot.querySelector('select[name="move2"]');
+            if (movedropdown2.value === "Hidden Power") {
+            updateTypeMove2(slot, pokemon.hptypes[1]);
+            }
+
+            const movedropdown3 = slot.querySelector('select[name="move3"]');
+            if (movedropdown3.value === "Hidden Power") {
+            updateTypeMove3(slot, pokemon.hptypes[2]);
+            }
+
+            const movedropdown4 = slot.querySelector('select[name="move4"]');
+            if (movedropdown4.value === "Hidden Power") {
+            updateTypeMove4(slot, pokemon.hptypes[3]);
             }
 
             $(slot.querySelector('.nature-dropdown')).val(pokemon.nature).trigger('change').trigger('select2:select');
