@@ -191,9 +191,6 @@ input, select {
     color: white;
     font-weight: bold;
     text-align: center;
-    position: relative;
-    /* display: inline-block; */
-    cursor: pointer;
 }
 
 .movetype-label2 {
@@ -221,28 +218,6 @@ input, select {
     color: white;
     font-weight: bold;
     text-align: center;
-}
-
-.hptooltipMenu1 {
-    visibility: hidden;
-    background-color: #f9f9f9;
-    color: #333;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 8px 0;
-    position: absolute;   /* absolute positioning */
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.hptooltipMenu1 a {
-    color: #333;
-    padding: 10px 15px;
-    text-decoration: none;
-    display: block;
-    white-space: nowrap;
 }
 
 .item-icon {

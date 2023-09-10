@@ -304,11 +304,6 @@ function createPokemonSlotStructure() {
         <table class="move-types-table">
             <tr>
                 <td><div class="movetype-label1">Type</div></td>
-                <div class="hptooltipMenu1" id="idhpTooltipMenu1">
-                <a href="#" data-itemname="Normal" class="move-type-link">Normal</a>
-                <a href="#" data-itemname="Fighting" class="move-type-link">Fighting</a>
-                <a href="#" data-itemname="Flying" class="move-type-link">Flying</a>           
-                </div>
                 <td>
                     <select name="move1">
 						<option value="dummyMove1">Dummy Move 1</option>
@@ -358,13 +353,20 @@ function updateBaseStats(slot, pokemonId) {
     });
 }
 
-function shouldShowTooltip() {
-    // Add your conditions here. For instance:
-    // return someVariable === someValue;
-
-    // For demonstration, I'll return true to always show the tooltip.
-    // You can replace this with your actual conditions.
-    return true;
+function getNextType(currentType) {
+    const types = Object.keys(typeColors);
+    const currentIndex = types.indexOf(currentType);
+    
+    if (currentIndex === -1 || currentIndex >= types.indexOf('Dark')) {
+        return types[0];  // If the type isn't found or is after 'Dark', return the first type.
+    }
+    
+    let nextIndex = currentIndex + 1;
+    while (types[nextIndex] === 'Fairy' || types[nextIndex] === 'None') {
+        nextIndex++;
+    }
+    
+    return types[nextIndex];
 }
 
 function createPokemonSlot() {
@@ -509,34 +511,8 @@ function createPokemonSlot() {
     });
 
     slot.querySelector('.movetype-label1').addEventListener('click', function (event) {
-        var tooltipMenu = slot.querySelector('#idhpTooltipMenu1');
-        if (shouldShowTooltip()) {
-            if (tooltipMenu.style.visibility === 'visible') {
-                tooltipMenu.style.visibility = 'hidden';
-                tooltipMenu.style.opacity = '0';
-            } else {
-                // Position tooltipMenu to the right of the label
-                tooltipMenu.style.left = (event.currentTarget.getBoundingClientRect().right) + 'px';
-                tooltipMenu.style.top = (event.currentTarget.getBoundingClientRect().top) + 'px';
-
-                tooltipMenu.style.visibility = 'visible';
-                tooltipMenu.style.opacity = '1';
-            }
-        }
-    });
-
-    const moveTypeLinks = slot.querySelectorAll('.move-type-link');
-    moveTypeLinks.forEach(link => {
-        link.addEventListener('click', event => {
-            // console.log(slot);
-            // event.preventDefault();
-            const itemName = event.currentTarget.getAttribute('data-itemname');
-            updateTypeMove1(slot, itemName);
-            // Hide the tooltip menu after an entry is clicked
-            var tooltipMenu = slot.querySelector('#idhpTooltipMenu1');
-            tooltipMenu.style.visibility = 'hidden';
-            tooltipMenu.style.opacity = '0';
-        });
+        const typelabel1 = slot.querySelectorAll('.movetype-label1');
+        updateTypeMove1(slot, getNextType(typelabel1[0].innerText));
     });
 
     populateNatureDropdown(natureDropdown);
