@@ -61,7 +61,7 @@ function populateGenderDropdown(dropdown, pokemonId) {
 function populateMoveDropdown(dropdown, pokemonId) {
     const moves = pokemonData.find(poke => poke.id === pokemonId).moves || [];
 
-    dropdown.innerHTML = '<option value="dummyMove1">Select a Move</option>'; // Clear previous moves
+    dropdown.innerHTML = '<option value="Select a Move">Select a Move</option>'; // Clear previous moves
 
     moves.forEach(move => {
         const option = document.createElement("option");
@@ -684,19 +684,18 @@ function loadTeamData(data) {
                 input.value = pokemon.evs[evIndex];
             });
 
-            $(slot.querySelector('select[name="move1"]')).val(pokemon.moves[0]).trigger('change').trigger('select2:select');
-            $(slot.querySelector('select[name="move2"]')).val(pokemon.moves[1]).trigger('change').trigger('select2:select');
-            $(slot.querySelector('select[name="move3"]')).val(pokemon.moves[2]).trigger('change').trigger('select2:select');
-            $(slot.querySelector('select[name="move4"]')).val(pokemon.moves[3]).trigger('change').trigger('select2:select');
+            // Handle moves, accounting for possibly less than 4 moves
+            for (let i = 0; i < 4; i++) {
+                if (pokemon.moves[i]) {
+                    $(slot.querySelector(`select[name="move${i + 1}"]`)).val(pokemon.moves[i]).trigger('change').trigger('select2:select');
+                } else {
+                    $(slot.querySelector(`select[name="move${i + 1}"]`)).val('Select a Move').trigger('change').trigger('select2:select');
+                }
+            }
 
             $(slot.querySelector('.nature-dropdown')).val(pokemon.nature).trigger('change').trigger('select2:select');
-
         }
-
     });
-
-    // After populating the slots with saved data, you may need to refresh any visual components 
-    // like dropdown menus or other dynamic elements that are affected by the above changes.
 }
 
 
@@ -713,7 +712,7 @@ $(document).ready(function () {
         // console.log(showdownFormat);
         if (showdownFormat) {
             const teamData = showdownToJson(showdownFormat);
-            console.log(teamData);
+            // console.log(teamData);
             loadTeamData(teamData);
         }
         $('#importShowdownPrompt').modal('hide');
