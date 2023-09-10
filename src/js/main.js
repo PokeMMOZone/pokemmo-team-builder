@@ -428,34 +428,72 @@ function createPokemonSlot() {
 
     const itemDropdown = slot.querySelector('.item-dropdown');
     $(itemDropdown).select2({ placeholder: "Select an Item", allowClear: true });
+    
     $(itemDropdown).on('select2:select', function () {
-        updateItemImage(slot, this.value);
+        try {
+            updateItemImage(slot, this.value);
+        } catch (error) {
+            console.error(`Error updating item image: ${error.message}`);
+        }
     });
-
+    
     const movedropdown1 = slot.querySelector('select[name="move1"]');
     const movedropdown2 = slot.querySelector('select[name="move2"]');
     const movedropdown3 = slot.querySelector('select[name="move3"]');
     const movedropdown4 = slot.querySelector('select[name="move4"]');
 
     $(movedropdown1).on('select2:select', function () {
-        const pokemove1 = movesData.find(move => move.name === movedropdown1.value);
-        updateTypeMove1(slot, pokemove1.type);
+        try {
+            const pokemove1 = movesData.find(move => move.name === movedropdown1.value);
+            if (pokemove1) {
+                updateTypeMove1(slot, pokemove1.type);
+            } else {
+                console.error(`Move not found in movesData for value: ${movedropdown1.value}`);
+            }
+        } catch (error) {
+            console.error(`Error updating move 1: ${error.message}`);
+        }
     });
-
+    
     $(movedropdown2).on('select2:select', function () {
-        const pokemove2 = movesData.find(move => move.name === movedropdown2.value);
-        updateTypeMove2(slot, pokemove2.type);
+        try {
+            const pokemove2 = movesData.find(move => move.name === movedropdown2.value);
+            if (pokemove2) {
+                updateTypeMove2(slot, pokemove2.type);
+            } else {
+                console.error(`Move not found in movesData for value: ${movedropdown2.value}`);
+            }
+        } catch (error) {
+            console.error(`Error updating move 2: ${error.message}`);
+        }
     });
-
+    
     $(movedropdown3).on('select2:select', function () {
-        const pokemove3 = movesData.find(move => move.name === movedropdown3.value);
-        updateTypeMove3(slot, pokemove3.type);
+        try {
+            const pokemove3 = movesData.find(move => move.name === movedropdown3.value);
+            if (pokemove3) {
+                updateTypeMove3(slot, pokemove3.type);
+            } else {
+                console.error(`Move not found in movesData for value: ${movedropdown3.value}`);
+            }
+        } catch (error) {
+            console.error(`Error updating move 3: ${error.message}`);
+        }
     });
-
+    
     $(movedropdown4).on('select2:select', function () {
-        const pokemove4 = movesData.find(move => move.name === movedropdown4.value);
-        updateTypeMove4(slot, pokemove4.type);
+        try {
+            const pokemove4 = movesData.find(move => move.name === movedropdown4.value);
+            if (pokemove4) {
+                updateTypeMove4(slot, pokemove4.type);
+            } else {
+                console.error(`Move not found in movesData for value: ${movedropdown4.value}`);
+            }
+        } catch (error) {
+            console.error(`Error updating move 4: ${error.message}`);
+        }
     });
+    
 
     populateNatureDropdown(natureDropdown);
     populateItemDropdown(itemDropdown);
