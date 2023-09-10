@@ -528,10 +528,14 @@ function createPokemonSlot() {
     const moveTypeLinks = slot.querySelectorAll('.move-type-link');
     moveTypeLinks.forEach(link => {
         link.addEventListener('click', event => {
-            console.log(slot);
+            // console.log(slot);
             // event.preventDefault();
             const itemName = event.currentTarget.getAttribute('data-itemname');
             updateTypeMove1(slot, itemName);
+            // Hide the tooltip menu after an entry is clicked
+            var tooltipMenu = slot.querySelector('#idhpTooltipMenu1');
+            tooltipMenu.style.visibility = 'hidden';
+            tooltipMenu.style.opacity = '0';
         });
     });
 
