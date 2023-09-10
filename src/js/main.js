@@ -304,6 +304,11 @@ function createPokemonSlotStructure() {
         <table class="move-types-table">
             <tr>
                 <td><div class="movetype-label1">Type</div></td>
+                <div class="hptooltipMenu1" id="idhpTooltipMenu1">
+                <a href="#" data-itemname="Normal" class="move-type-link">Normal</a>
+                <a href="#" data-itemname="Fighting" class="move-type-link">Fighting</a>
+                <a href="#" data-itemname="Flying" class="move-type-link">Flying</a>           
+                </div>
                 <td>
                     <select name="move1">
 						<option value="dummyMove1">Dummy Move 1</option>
@@ -351,6 +356,15 @@ function updateBaseStats(slot, pokemonId) {
             element.innerText = stats[index - 1];
         }
     });
+}
+
+function shouldShowTooltip() {
+    // Add your conditions here. For instance:
+    // return someVariable === someValue;
+
+    // For demonstration, I'll return true to always show the tooltip.
+    // You can replace this with your actual conditions.
+    return true;
 }
 
 function createPokemonSlot() {
@@ -428,7 +442,7 @@ function createPokemonSlot() {
 
     const itemDropdown = slot.querySelector('.item-dropdown');
     $(itemDropdown).select2({ placeholder: "Select an Item", allowClear: true });
-    
+
     $(itemDropdown).on('select2:select', function () {
         try {
             updateItemImage(slot, this.value);
@@ -436,7 +450,7 @@ function createPokemonSlot() {
             console.error(`Error updating item image: ${error.message}`);
         }
     });
-    
+
     const movedropdown1 = slot.querySelector('select[name="move1"]');
     const movedropdown2 = slot.querySelector('select[name="move2"]');
     const movedropdown3 = slot.querySelector('select[name="move3"]');
@@ -454,7 +468,7 @@ function createPokemonSlot() {
             console.error(`Error updating move 1: ${error.message}`);
         }
     });
-    
+
     $(movedropdown2).on('select2:select', function () {
         try {
             const pokemove2 = movesData.find(move => move.name === movedropdown2.value);
@@ -467,7 +481,7 @@ function createPokemonSlot() {
             console.error(`Error updating move 2: ${error.message}`);
         }
     });
-    
+
     $(movedropdown3).on('select2:select', function () {
         try {
             const pokemove3 = movesData.find(move => move.name === movedropdown3.value);
@@ -480,7 +494,7 @@ function createPokemonSlot() {
             console.error(`Error updating move 3: ${error.message}`);
         }
     });
-    
+
     $(movedropdown4).on('select2:select', function () {
         try {
             const pokemove4 = movesData.find(move => move.name === movedropdown4.value);
@@ -493,7 +507,33 @@ function createPokemonSlot() {
             console.error(`Error updating move 4: ${error.message}`);
         }
     });
-    
+
+    slot.querySelector('.movetype-label1').addEventListener('click', function (event) {
+        var tooltipMenu = slot.querySelector('#idhpTooltipMenu1');
+        if (shouldShowTooltip()) {
+            if (tooltipMenu.style.visibility === 'visible') {
+                tooltipMenu.style.visibility = 'hidden';
+                tooltipMenu.style.opacity = '0';
+            } else {
+                // Position tooltipMenu to the right of the label
+                tooltipMenu.style.left = (event.currentTarget.getBoundingClientRect().right) + 'px';
+                tooltipMenu.style.top = (event.currentTarget.getBoundingClientRect().top) + 'px';
+
+                tooltipMenu.style.visibility = 'visible';
+                tooltipMenu.style.opacity = '1';
+            }
+        }
+    });
+
+    const moveTypeLinks = slot.querySelectorAll('.move-type-link');
+    moveTypeLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            console.log(slot);
+            // event.preventDefault();
+            const itemName = event.currentTarget.getAttribute('data-itemname');
+            updateTypeMove1(slot, itemName);
+        });
+    });
 
     populateNatureDropdown(natureDropdown);
     populateItemDropdown(itemDropdown);
