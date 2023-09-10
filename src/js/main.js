@@ -511,8 +511,35 @@ function createPokemonSlot() {
     });
 
     slot.querySelector('.movetype-label1').addEventListener('click', function (event) {
+        const movedropdown1 = slot.querySelector('select[name="move1"]');
+        if (movedropdown1.value === "Hidden Power") {
         const typelabel1 = slot.querySelectorAll('.movetype-label1');
         updateTypeMove1(slot, getNextType(typelabel1[0].innerText));
+        }
+    });
+
+    slot.querySelector('.movetype-label2').addEventListener('click', function (event) {
+        const movedropdown2 = slot.querySelector('select[name="move2"]');
+        if (movedropdown2.value === "Hidden Power") {
+        const typelabel2 = slot.querySelectorAll('.movetype-label2');
+        updateTypeMove2(slot, getNextType(typelabel2[0].innerText));
+        }
+    });
+
+    slot.querySelector('.movetype-label3').addEventListener('click', function (event) {
+        const movedropdown3 = slot.querySelector('select[name="move3"]');
+        if (movedropdown3.value === "Hidden Power") {
+        const typelabel3 = slot.querySelectorAll('.movetype-label3');
+        updateTypeMove3(slot, getNextType(typelabel3[0].innerText));
+        }
+    });
+
+    slot.querySelector('.movetype-label4').addEventListener('click', function (event) {
+        const movedropdown4 = slot.querySelector('select[name="move4"]');
+        if (movedropdown4.value === "Hidden Power") {
+        const typelabel4 = slot.querySelectorAll('.movetype-label4');
+        updateTypeMove4(slot, getNextType(typelabel4[0].innerText));
+        }
     });
 
     populateNatureDropdown(natureDropdown);
