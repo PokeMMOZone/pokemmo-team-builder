@@ -130,4 +130,5 @@ dist
 .pnp.*
 
 src/img/pokemon/
+src/img/shiny/
 src/img/items/
