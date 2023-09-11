@@ -904,15 +904,16 @@ $(document).ready(function () {
             loadTeamData(teamData);
         }
 
-        $('#copyToClipboard').on('click', function() {
-            const copyText = document.getElementById("exportOutput");
-    
-            // Using the Clipboard API
-            navigator.clipboard.writeText(copyText.value).then(function() {
-                // alert("Copied to clipboard!");
-            }).catch(function(err) {
-                console.error('Could not copy text: ', err);
-            });
+    });
+
+    $('#copyToClipboard').on('click', function () {
+        const copyText = document.getElementById("exportOutput");
+
+        // Using the Clipboard API
+        navigator.clipboard.writeText(copyText.value).then(function () {
+            // alert("Copied to clipboard!");
+        }).catch(function (err) {
+            console.error('Could not copy text: ', err);
         });
 
     });
