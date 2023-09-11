@@ -647,7 +647,7 @@ function showdownToJson(text) {
             pokemon.evs = [0, 0, 0, 0, 0, 0];
             pokemon.moves = [];
             pokemon.hpTypes = [];
-            pokemon.nature = "";
+            pokemon.nature = "Bashful";
 
         } else if (line.startsWith('Ability:')) {
             pokemon.ability = line.split(': ')[1];
