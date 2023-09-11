@@ -410,8 +410,10 @@ footer {
 }
 
 .toolbar .btn-primary {
-    background-color: #1976d2;
-    border-color: #1565c0;
+    /* background-color: #1976d2;
+    border-color: #1565c0; */
+    background-color: #757575;
+    border-color: #616161;
     flex: none;
 }
 
@@ -422,20 +424,26 @@ footer {
 }
 
 .toolbar .btn-success {
-    background-color: #43a047;
-    border-color: #388e3c;
+    /* background-color: #43a047;
+    border-color: #388e3c; */
+    background-color: #757575;
+    border-color: #616161;
     flex: none;
 }
 
 .toolbar .btn-info {
-    background-color: #039be5;
-    border-color: #0288d1;
+    /* background-color: #039be5;
+    border-color: #0288d1; */
+    background-color: #757575;
+    border-color: #616161;
     flex: none;
 }
 
 .toolbar .btn-danger {
-    background-color: #d32f2f;
-    border-color: #c62828;
+    /* background-color: #d32f2f;
+    border-color: #c62828; */
+    background-color: #757575;
+    border-color: #616161;
     flex: none;
 }
 
