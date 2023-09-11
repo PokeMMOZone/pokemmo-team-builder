@@ -2,6 +2,7 @@
     .pokemon-slot {
         width: 100%;
     }
+
     .toolbar .btn-primary,
     .toolbar .btn-secondary,
     .toolbar .btn-success,
@@ -22,7 +23,8 @@
         box-sizing: border-box;
         height: auto;
     }
-    .toolbar > * {
+
+    .toolbar>* {
         box-sizing: border-box;
         height: auto;
     }
@@ -32,10 +34,12 @@
         align-items: stretch;
     }
 
-    .toolbar .container > * {
-        flex: 1 1 100%;  /* This means that the items can grow and shrink and will take up 100% of the width of the container */
+    .toolbar .container>* {
+        flex: 1 1 100%;
+        /* This means that the items can grow and shrink and will take up 100% of the width of the container */
         margin-right: 0;
-        margin-bottom: 5px; /* Some spacing between the elements */
+        margin-bottom: 5px;
+        /* Some spacing between the elements */
     }
 }
 
@@ -192,9 +196,11 @@ input, select {
     font-weight: bold;
     text-align: center;
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;   
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
 }
 
 .movetype-label2 {
@@ -205,9 +211,11 @@ input, select {
     font-weight: bold;
     text-align: center;
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;   
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
 }
 
 .movetype-label3 {
@@ -218,9 +226,11 @@ input, select {
     font-weight: bold;
     text-align: center;
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;   
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
 }
 
 .movetype-label4 {
@@ -231,9 +241,11 @@ input, select {
     font-weight: bold;
     text-align: center;
     user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;   
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
 }
 
 .item-icon {
@@ -387,7 +399,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    /* overflow: hidden; */ /* This will hide any overflow, which can prevent scrollbars */
+    /* overflow: hidden; */
+    /* This will hide any overflow, which can prevent scrollbars */
 }
 
 /* Default flex-direction is row (horizontal) */
@@ -486,4 +499,71 @@ footer {
     box-sizing: border-box;
     width: 10%;
     margin: 0 auto;
+}
+
+/* Modal Styles */
+.modal-container {
+    display: none;
+    /* Initially hidden */
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    z-index: 1000;
+    /* To ensure it's above other elements */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    /* width: 70%; */
+    /* You can adjust as per your requirement */
+    /* max-width: 600px; */
+    /* Adjust based on your layout */
+    background-color: #333333;
+    /* Based on your page's background-color */
+    color: #ffffff;
+    /* Based on your page's text color */
+    /* padding: 20px; */
+    border: 1px solid #444;
+    /* Border color based on your styles */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /* Optional shadow for a bit of depth */
+    font-family: Arial, sans-serif;
+    /* Using your page's font */
+}
+
+/* .modal-header, .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* .modal-header h2, .modal-footer button {
+    margin: 0;
+    Removing default margins
+} */
+
+/* .modal-body {
+    padding: 20px 0;
+} */
+
+/* Close button for modal */
+.modal-close {
+    background: #444;
+    /* Based on your button styles */
+    color: #ffffff;
+    border: none;
+    /* border-radius: 5px;
+    padding: 5px 10px; */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modal-close:hover {
+    background: #555;
 }
