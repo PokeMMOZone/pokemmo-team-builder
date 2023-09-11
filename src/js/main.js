@@ -649,6 +649,16 @@ function showdownToJson(text) {
             pokemon.hpTypes = [];
             pokemon.nature = "Bashful";
 
+        } else if (line.match(/^Level:?\s+\d+$/)) { // Check if the line matches the pattern "Level 100" or "Lvl. 100"
+            const levelMatch = line.match(/\d+/);  // Extract the level from the line
+            if (levelMatch) {
+                pokemon.level = parseInt(levelMatch[0], 10); // Convert the extracted string to an integer
+                if (pokemon.level > 100) {
+                    pokemon.level = 100; // Ensure level is capped at 100
+                } else if (pokemon.level < 1) {
+                    pokemon.level = 1; // Ensure level is at least 1
+                }
+            }
         } else if (line.startsWith('Ability:')) {
             pokemon.ability = line.split(': ')[1];
         } else if (line.startsWith('EVs:')) {
