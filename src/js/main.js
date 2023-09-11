@@ -854,6 +854,7 @@ $(document).ready(function () {
             loadTeamData(teamData);
         }
         $('#importShowdownPrompt').modal('hide');
+        $("#teamName").val('');
 
         // Clear the input
         $("#importShowdownPromptInput").val('');
