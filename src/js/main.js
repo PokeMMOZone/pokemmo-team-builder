@@ -862,13 +862,9 @@ $(document).ready(function () {
 
     // Copy the current team to clipboard in Showdown format
     $("#exportTeam").click(function () {
-        // Assuming 'exportToPokemonShowdownFormat()' converts your current team data to the desired string format
-        // const showdownFormat = exportToPokemonShowdownFormat();
-        // navigator.clipboard.writeText(showdownFormat).then(function() {
-        //     alert('Team copied to clipboard!');
-        // }, function(err) {
-        //     console.error('Could not copy text: ', err);
-        // });
+        const exportData = "blah blah blah";
+        $('#exportOutput').val(exportData);
+        $('#exportModal').modal('show');
     });
 
     // Save current team to browser storage
@@ -907,6 +903,18 @@ $(document).ready(function () {
             // Assuming you have a function 'loadTeamData()' that sets the current team to the provided data
             loadTeamData(teamData);
         }
+
+        $('#copyToClipboard').on('click', function() {
+            const copyText = document.getElementById("exportOutput");
+    
+            // Using the Clipboard API
+            navigator.clipboard.writeText(copyText.value).then(function() {
+                // alert("Copied to clipboard!");
+            }).catch(function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        });
+
     });
 
 
