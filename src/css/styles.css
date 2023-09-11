@@ -531,7 +531,7 @@ footer {
     /* You can adjust as per your requirement */
     /* max-width: 600px; */
     /* Adjust based on your layout */
-    background-color: #333333;
+    background-color: #4A4A4A;
     /* Based on your page's background-color */
     color: #ffffff;
     /* Based on your page's text color */
@@ -560,6 +560,11 @@ footer {
     padding: 20px 0;
 } */
 
+.modal-body .form-control {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
 /* Close button for modal */
 .modal-close {
     background: #444;
@@ -574,4 +579,42 @@ footer {
 
 .modal-close:hover {
     background: #555;
+}
+
+.modal-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 0px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 0px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+
+.modal-header .close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #ffffff5b;
+    opacity: .5;
 }
