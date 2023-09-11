@@ -356,16 +356,16 @@ function updateBaseStats(slot, pokemonId) {
 function getNextType(currentType) {
     const types = Object.keys(typeColors);
     const currentIndex = types.indexOf(currentType);
-    
+
     if (currentIndex === -1 || currentIndex >= types.indexOf('Dark')) {
         return types[0];  // If the type isn't found or is after 'Dark', return the first type.
     }
-    
+
     let nextIndex = currentIndex + 1;
     while (types[nextIndex] === 'Fairy' || types[nextIndex] === 'None') {
         nextIndex++;
     }
-    
+
     return types[nextIndex];
 }
 
@@ -513,32 +513,32 @@ function createPokemonSlot() {
     slot.querySelector('.movetype-label1').addEventListener('click', function (event) {
         const movedropdown1 = slot.querySelector('select[name="move1"]');
         if (movedropdown1.value === "Hidden Power") {
-        const typelabel1 = slot.querySelectorAll('.movetype-label1');
-        updateTypeMove1(slot, getNextType(typelabel1[0].innerText));
+            const typelabel1 = slot.querySelectorAll('.movetype-label1');
+            updateTypeMove1(slot, getNextType(typelabel1[0].innerText));
         }
     });
 
     slot.querySelector('.movetype-label2').addEventListener('click', function (event) {
         const movedropdown2 = slot.querySelector('select[name="move2"]');
         if (movedropdown2.value === "Hidden Power") {
-        const typelabel2 = slot.querySelectorAll('.movetype-label2');
-        updateTypeMove2(slot, getNextType(typelabel2[0].innerText));
+            const typelabel2 = slot.querySelectorAll('.movetype-label2');
+            updateTypeMove2(slot, getNextType(typelabel2[0].innerText));
         }
     });
 
     slot.querySelector('.movetype-label3').addEventListener('click', function (event) {
         const movedropdown3 = slot.querySelector('select[name="move3"]');
         if (movedropdown3.value === "Hidden Power") {
-        const typelabel3 = slot.querySelectorAll('.movetype-label3');
-        updateTypeMove3(slot, getNextType(typelabel3[0].innerText));
+            const typelabel3 = slot.querySelectorAll('.movetype-label3');
+            updateTypeMove3(slot, getNextType(typelabel3[0].innerText));
         }
     });
 
     slot.querySelector('.movetype-label4').addEventListener('click', function (event) {
         const movedropdown4 = slot.querySelector('select[name="move4"]');
         if (movedropdown4.value === "Hidden Power") {
-        const typelabel4 = slot.querySelectorAll('.movetype-label4');
-        updateTypeMove4(slot, getNextType(typelabel4[0].innerText));
+            const typelabel4 = slot.querySelectorAll('.movetype-label4');
+            updateTypeMove4(slot, getNextType(typelabel4[0].innerText));
         }
     });
 
@@ -646,6 +646,7 @@ function showdownToJson(text) {
             pokemon.ivs = [31, 31, 31, 31, 31, 31];
             pokemon.evs = [0, 0, 0, 0, 0, 0];
             pokemon.moves = [];
+            pokemon.hpTypes = [];
             pokemon.nature = "";
 
         } else if (line.startsWith('Ability:')) {
@@ -678,8 +679,17 @@ function showdownToJson(text) {
             }
         } else if (line.endsWith(' Nature')) {
             pokemon.nature = getFullNatureName(line.split(' ')[0]);
+
+        } else if (line.startsWith('- Hidden Power')) {
+            const typeMatch = line.match(/\[([a-zA-Z]+)\]/);
+            const capitalizedType = typeMatch[1].charAt(0).toUpperCase() + typeMatch[1].slice(1).toLowerCase();
+            if (typeMatch && typeMatch[1]) {
+                pokemon.moves.push(`Hidden Power`);
+                pokemon.hpTypes.push(capitalizedType);  // Store the detected type
+            }
         } else if (line.startsWith('- ')) {
             pokemon.moves.push(line.substring(2));
+            pokemon.hpTypes.push("Normal");
         }
     }
 
@@ -741,7 +751,7 @@ function getCurrentTeam() {
                 slot.querySelector('select[name="move3"]').value,
                 slot.querySelector('select[name="move4"]').value,
             ],
-            hptypes: [
+            hpTypes: [
                 typelabel1[0].innerText,
                 typelabel2[0].innerText,
                 typelabel3[0].innerText,
@@ -793,22 +803,22 @@ function loadTeamData(data) {
 
             const movedropdown1 = slot.querySelector('select[name="move1"]');
             if (movedropdown1.value === "Hidden Power") {
-            updateTypeMove1(slot, pokemon.hptypes[0]);
+                updateTypeMove1(slot, pokemon.hpTypes[0]);
             }
 
             const movedropdown2 = slot.querySelector('select[name="move2"]');
             if (movedropdown2.value === "Hidden Power") {
-            updateTypeMove2(slot, pokemon.hptypes[1]);
+                updateTypeMove2(slot, pokemon.hpTypes[1]);
             }
 
             const movedropdown3 = slot.querySelector('select[name="move3"]');
             if (movedropdown3.value === "Hidden Power") {
-            updateTypeMove3(slot, pokemon.hptypes[2]);
+                updateTypeMove3(slot, pokemon.hpTypes[2]);
             }
 
             const movedropdown4 = slot.querySelector('select[name="move4"]');
             if (movedropdown4.value === "Hidden Power") {
-            updateTypeMove4(slot, pokemon.hptypes[3]);
+                updateTypeMove4(slot, pokemon.hpTypes[3]);
             }
 
             $(slot.querySelector('.nature-dropdown')).val(pokemon.nature).trigger('change').trigger('select2:select');
