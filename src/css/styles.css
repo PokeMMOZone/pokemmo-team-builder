@@ -618,3 +618,13 @@ footer {
     text-shadow: 0 1px 0 #ffffff5b;
     opacity: .5;
 }
+
+.shiny-checkbox,
+.alpha-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-left: 2px;
+    width: auto;
+    margin-bottom: 0;
+}
