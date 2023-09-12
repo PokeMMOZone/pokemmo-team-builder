@@ -156,7 +156,18 @@ function updateTypeMove4(slot, types) {
 }
 
 function updatePokemonImage(slot, selectedPokemonId) {
+    // const pokemonImage = slot.querySelector('.pokemon-image');
+    // pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
+
     const pokemonImage = slot.querySelector('.pokemon-image');
+    pokemonImage.crossOrigin = "anonymous";
+
+    // Set an onload event for the image to ensure it's fully loaded before adding the red outline
+    pokemonImage.onload = function() {
+        addRedOutline(pokemonImage);
+    };
+    
+    // Now set the source; the onload event will trigger once the image is loaded
     pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
 }
 
@@ -203,6 +214,47 @@ function validateLevelInput(input) {
     } else if (input.value < 1) {
         input.value = 1;
     }
+}
+
+function addRedOutline(imageElement, outlineThickness = 1) {
+    const canvas = document.createElement('canvas');
+    canvas.width = imageElement.width;
+    canvas.height = imageElement.height;
+
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(imageElement, 0, 0);
+
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const data = imageData.data;
+
+    for (let y = outlineThickness; y < canvas.height - outlineThickness; y++) {
+        for (let x = outlineThickness; x < canvas.width - outlineThickness; x++) {
+            const index = (y * canvas.width + x) * 4;
+            const alpha = data[index + 3];
+
+            if (alpha > 200) {
+                let isEdge = false;
+                for (let offsetY = -outlineThickness; offsetY <= outlineThickness && !isEdge; offsetY++) {
+                    for (let offsetX = -outlineThickness; offsetX <= outlineThickness && !isEdge; offsetX++) {
+                        if (offsetX === 0 && offsetY === 0) continue; // skip center pixel
+                        const neighborIndex = (y + offsetY) * canvas.width * 4 + (x + offsetX) * 4;
+                        if (data[neighborIndex + 3] < 50) {
+                            isEdge = true;
+                        }
+                    }
+                }
+                
+                if (isEdge) {
+                    data[index] = 255;     // Red
+                    data[index + 1] = 0;   // Green
+                    data[index + 2] = 0;   // Blue
+                }
+            }
+        }
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+    imageElement.src = canvas.toDataURL();
 }
 
 function createPokemonSlotStructure() {
