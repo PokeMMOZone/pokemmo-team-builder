@@ -156,19 +156,24 @@ function updateTypeMove4(slot, types) {
 }
 
 function updatePokemonImage(slot, selectedPokemonId) {
-    // const pokemonImage = slot.querySelector('.pokemon-image');
-    // pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
 
     const pokemonImage = slot.querySelector('.pokemon-image');
     pokemonImage.crossOrigin = "anonymous";
 
-    // Set an onload event for the image to ensure it's fully loaded before adding the red outline
-    pokemonImage.onload = function() {
-        addRedOutline(pokemonImage);
-    };
-    
-    // Now set the source; the onload event will trigger once the image is loaded
-    pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
+    if (slot.querySelector('.alpha-checkbox').checked) {
+        pokemonImage.onload = function () {
+            addRedOutline(pokemonImage);
+        };
+    } else {
+        pokemonImage.onload = null;
+    }
+
+    if (slot.querySelector('.shiny-checkbox').checked) {
+        pokemonImage.src = `img/shiny/${selectedPokemonId}.png`;
+    } else {
+        pokemonImage.src = `img/pokemon/${selectedPokemonId}.png`;
+    }
+
 }
 
 function updateItemImage(slot, selectedItemId) {
@@ -243,7 +248,7 @@ function addRedOutline(imageElement, outlineThickness = 1) {
                         }
                     }
                 }
-                
+
                 if (isEdge) {
                     data[index] = 255;     // Red
                     data[index + 1] = 0;   // Green
@@ -270,6 +275,14 @@ function createPokemonSlotStructure() {
         <div>
             <label>Level:</label>
             <input type="number" min="1" max="100" value="50" class="level-input" style="width: 60px;">
+            <label>
+                <input type="checkbox" class="shiny-checkbox" id="shinycheckbox">
+            Shiny
+            </label>
+            <label>
+                <input type="checkbox" class="alpha-checkbox" id="alphacheckbox">
+            Alpha
+            </label>
         </div>
         <table class="pokemon-attributes-table">
             <tr>
@@ -592,6 +605,16 @@ function createPokemonSlot() {
             const typelabel4 = slot.querySelectorAll('.movetype-label4');
             updateTypeMove4(slot, getNextType(typelabel4[0].innerText));
         }
+    });
+
+    slot.querySelector('.shiny-checkbox').addEventListener('change', function () {
+        const selectedPokemon = pokemonData.find(poke => poke.id === dropdown.value);
+        updatePokemonImage(slot, selectedPokemon.id);
+    });
+
+    slot.querySelector('.alpha-checkbox').addEventListener('change', function () {
+        const selectedPokemon = pokemonData.find(poke => poke.id === dropdown.value);
+        updatePokemonImage(slot, selectedPokemon.id);
     });
 
     populateNatureDropdown(natureDropdown);
