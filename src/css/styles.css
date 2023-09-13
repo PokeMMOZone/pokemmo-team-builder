@@ -69,6 +69,20 @@ h1, h2, h3 {
     padding: 0;
 }
 
+a {
+    color: #56CCF2;
+    /* This is a shade of cyan */
+    text-decoration: none;
+    /* To remove the underline */
+}
+
+a:hover {
+    color: #2F80ED;
+    /* A shade of soft blue for hover effect */
+    text-decoration: underline;
+    /* Underline on hover for clarity */
+}
+
 main {
     padding: 0px;
 }
