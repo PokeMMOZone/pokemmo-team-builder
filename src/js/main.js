@@ -730,7 +730,7 @@ function showdownToJson(text) {
             pokemon.shiny = "No";
             pokemon.alpha = "No";
 
-        } else if (/^level:?\s+\d+$/i.test(line)) { 
+        } else if (/^level:?\s+\d+$/i.test(line)) {
             const levelMatch = line.match(/\d+/);
             if (levelMatch) {
                 pokemon.level = parseInt(levelMatch[0], 10);
@@ -811,7 +811,7 @@ function getCurrentTeamShowdownFormat() {
 
         const itemID = slot.querySelector('.item-dropdown').value;
         const item = itemsData.find(i => i.id === itemID)?.name;
-        
+
         const ability = slot.querySelector('.ability-dropdown').value;
         const gender = slot.querySelector('.gender-dropdown').value;
         const nature = slot.querySelector('.nature-dropdown').value;
@@ -839,7 +839,7 @@ function getCurrentTeamShowdownFormat() {
             nameString += ` @ ${item}`;
         }
         teamLines.push(nameString);
-        
+
         teamLines.push(`Ability: ${ability}`);
         teamLines.push(`Level: ${level}`);
         if (shiny) {
@@ -938,12 +938,12 @@ function getCurrentTeam() {
         } else {
             alphaVar = "No";
         }
-    
+
         if (slot.querySelector('.shiny-checkbox').checked) {
             shinyVar = "Yes";
         } else {
             shinyVar = "No";
-        }        
+        }
 
         const pokemon = {
             species: slot.querySelector('.species-dropdown').value,
@@ -987,18 +987,18 @@ function loadTeamData(data) {
 
         // Check if there's data for this slot
         if (pokemon) {
-            
-        if (pokemon.alpha === "Yes") {
-            slot.querySelector('.alpha-checkbox').checked = true;
-        } else {
-            slot.querySelector('.alpha-checkbox').checked = false;
-        }
-    
-        if (pokemon.shiny === "Yes") {
-            slot.querySelector('.shiny-checkbox').checked = true;
-        } else {
-            slot.querySelector('.shiny-checkbox').checked = false;
-        } 
+
+            if (pokemon.alpha === "Yes") {
+                slot.querySelector('.alpha-checkbox').checked = true;
+            } else {
+                slot.querySelector('.alpha-checkbox').checked = false;
+            }
+
+            if (pokemon.shiny === "Yes") {
+                slot.querySelector('.shiny-checkbox').checked = true;
+            } else {
+                slot.querySelector('.shiny-checkbox').checked = false;
+            }
 
             $(slot.querySelector('.species-dropdown')).val(pokemon.species).trigger('change').trigger('select2:select');
             slot.querySelector('.nickname-input').value = pokemon.nickname;
