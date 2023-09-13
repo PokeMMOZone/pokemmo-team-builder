@@ -872,7 +872,13 @@ function getCurrentTeamShowdownFormat() {
         }
 
         if (nature) {
-            teamLines.push(`${nature} Nature`);
+            const natureObj = pokemonNatures.find(n => n.name.includes(nature));
+            if (natureObj) {
+                let actualNature = natureObj.name.split(' ')[0]; // Extracts only the first word from the nature (i.e., "Adamant" from "Adamant (+Atk, -SpA)")
+                teamLines.push(`${actualNature} Nature`);
+            } else {
+                teamLines.push(`${nature} Nature`);
+            }
         }
 
         moves.forEach((move, idx) => {
