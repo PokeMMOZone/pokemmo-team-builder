@@ -800,14 +800,18 @@ function getCurrentTeamShowdownFormat() {
     const teamLines = [];
 
     slots.forEach(slot => {
-        const species = slot.querySelector('.species-dropdown').value;
-        if (species === '000') return; // Skip if species is 000
+        const speciesID = slot.querySelector('.species-dropdown').value;
+        const species = pokemonData.find(p => p.id === speciesID)?.name;
+        if (!species || species === 'Select a Pokémon') return; // Skip if no valid Pokémon is selected
 
         const nickname = slot.querySelector('.nickname-input').value;
         const level = slot.querySelector('.level-input').value;
         const alpha = slot.querySelector('.alpha-checkbox').checked ? "Yes" : null;
         const shiny = slot.querySelector('.shiny-checkbox').checked ? "Yes" : null;
-        const item = slot.querySelector('.item-dropdown').value === '000' ? null : slot.querySelector('.item-dropdown').value;
+
+        const itemID = slot.querySelector('.item-dropdown').value;
+        const item = itemsData.find(i => i.id === itemID)?.name;
+        
         const ability = slot.querySelector('.ability-dropdown').value;
         const gender = slot.querySelector('.gender-dropdown').value;
         const nature = slot.querySelector('.nature-dropdown').value;
@@ -831,7 +835,7 @@ function getCurrentTeamShowdownFormat() {
         if (gender && (gender === "Male" || gender === "Female")) {
             nameString += ` (${gender.charAt(0)})`;
         }
-        if (item) {
+        if (item && item !== 'Select an Item') {
             nameString += ` @ ${item}`;
         }
         teamLines.push(nameString);
@@ -859,7 +863,7 @@ function getCurrentTeamShowdownFormat() {
         const ivLabels = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe'];
         const ivStrings = [];
         ivs.forEach((iv, idx) => {
-            if (iv && iv !== '31') { // 31 is the default IV in Pokemon games
+            if (iv && iv !== '31') { // 31 is the default IV in Pokémon games
                 ivStrings.push(`${iv} ${ivLabels[idx]}`);
             }
         });
@@ -879,7 +883,7 @@ function getCurrentTeamShowdownFormat() {
             }
         });
 
-        teamLines.push('');  // Add a blank line to separate Pokemon
+        teamLines.push('');  // Add a blank line to separate Pokémon
     });
 
     return teamLines.join('\n').trim();  // trim to remove potential trailing newline
