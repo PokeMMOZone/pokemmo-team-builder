@@ -726,23 +726,23 @@ function showdownToJson(text) {
             pokemon.shiny = "No";
             pokemon.alpha = "No";
 
-        } else if (line.match(/^Level:?\s+\d+$/)) { // Check if the line matches the pattern "Level 100" or "Lvl. 100"
-            const levelMatch = line.match(/\d+/);  // Extract the level from the line
+        } else if (/^level:?\s+\d+$/i.test(line)) { 
+            const levelMatch = line.match(/\d+/);
             if (levelMatch) {
-                pokemon.level = parseInt(levelMatch[0], 10); // Convert the extracted string to an integer
+                pokemon.level = parseInt(levelMatch[0], 10);
                 if (pokemon.level > 100) {
-                    pokemon.level = 100; // Ensure level is capped at 100
+                    pokemon.level = 100;
                 } else if (pokemon.level < 1) {
-                    pokemon.level = 1; // Ensure level is at least 1
+                    pokemon.level = 1;
                 }
             }
-        } else if (line.startsWith('Shiny:')) {
+        } else if (/^shiny:/i.test(line)) {
             pokemon.shiny = line.split(': ')[1].trim();
-        } else if (line.startsWith('Alpha:')) {
+        } else if (/^alpha:/i.test(line)) {
             pokemon.alpha = line.split(': ')[1].trim();
-        } else if (line.startsWith('Ability:')) {
+        } else if (/^ability:/i.test(line)) {
             pokemon.ability = line.split(': ')[1];
-        } else if (line.startsWith('EVs:')) {
+        } else if (/^evs:/i.test(line)) {
             const evData = line.split(': ')[1].split(' / ');
             for (let ev of evData) {
                 const [value, stat] = ev.split(' ');
@@ -755,7 +755,7 @@ function showdownToJson(text) {
                     case 'Spe': pokemon.evs[5] = parseInt(value); break;
                 }
             }
-        } else if (line.startsWith('IVs:')) {
+        } else if (/^ivs:/i.test(line)) {
             const ivData = line.split(': ')[1].split(' / ');
             for (let iv of ivData) {
                 const [value, stat] = iv.split(' ');
@@ -768,15 +768,14 @@ function showdownToJson(text) {
                     case 'Spe': pokemon.ivs[5] = parseInt(value); break;
                 }
             }
-        } else if (line.endsWith(' Nature')) {
+        } else if (/\s+nature$/i.test(line)) {
             pokemon.nature = getFullNatureName(line.split(' ')[0]);
-
-        } else if (line.startsWith('- Hidden Power')) {
+        } else if (/^- hidden power/i.test(line)) {
             const typeMatch = line.match(/\[([a-zA-Z]+)\]/);
             const capitalizedType = typeMatch[1].charAt(0).toUpperCase() + typeMatch[1].slice(1).toLowerCase();
             if (typeMatch && typeMatch[1]) {
                 pokemon.moves.push(`Hidden Power`);
-                pokemon.hpTypes.push(capitalizedType);  // Store the detected type
+                pokemon.hpTypes.push(capitalizedType);
             }
         } else if (line.startsWith('- ')) {
             pokemon.moves.push(line.substring(2));
