@@ -795,6 +795,88 @@ function showdownToJson(text) {
     return { team: team };
 }
 
+function getCurrentTeamShowdownFormat() {
+    const slots = document.querySelectorAll('.pokemon-slot');
+    const teamLines = [];
+
+    slots.forEach(slot => {
+        const species = slot.querySelector('.species-dropdown').value;
+        if (species === '000') return; // Skip if species is 000
+
+        const nickname = slot.querySelector('.nickname-input').value;
+        const level = slot.querySelector('.level-input').value;
+        const alpha = slot.querySelector('.alpha-checkbox').checked ? "Yes" : "No";
+        const shiny = slot.querySelector('.shiny-checkbox').checked ? "Yes" : "No";
+        const item = slot.querySelector('.item-dropdown').value;
+        const ability = slot.querySelector('.ability-dropdown').value;
+        const gender = slot.querySelector('.gender-dropdown').value;
+        const nature = slot.querySelector('.nature-dropdown').value;
+        const ivs = Array.from(slot.querySelectorAll('.ivs input')).map(iv => iv.value);
+        const evs = Array.from(slot.querySelectorAll('.evs input')).map(ev => ev.value);
+        const moves = [
+            slot.querySelector('select[name="move1"]').value,
+            slot.querySelector('select[name="move2"]').value,
+            slot.querySelector('select[name="move3"]').value,
+            slot.querySelector('select[name="move4"]').value,
+        ];
+        const hpTypes = [
+            ...slot.querySelectorAll('.movetype-label1,.movetype-label2,.movetype-label3,.movetype-label4')
+        ].map(typeLabel => typeLabel.innerText);
+
+        // Convert to Showdown format
+        let nameString = species;
+        if (nickname) {
+            nameString = `${nickname} (${species})`;
+        }
+        if (gender && (gender === "Male" || gender === "Female")) {
+            nameString += ` (${gender.charAt(0)})`;
+        }
+        teamLines.push(nameString + (item ? ` @ ${item}` : ''));
+        teamLines.push(`Ability: ${ability}`);
+        teamLines.push(`Level: ${level}`);
+        teamLines.push(`Shiny: ${shiny}`);
+        teamLines.push(`Alpha: ${alpha}`);
+
+        const evLabels = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe'];
+        const evStrings = [];
+        evs.forEach((ev, idx) => {
+            if (ev && ev !== '0') {
+                evStrings.push(`${ev} ${evLabels[idx]}`);
+            }
+        });
+        if (evStrings.length) {
+            teamLines.push(`EVs: ${evStrings.join(' / ')}`);
+        }
+
+        const ivLabels = ['HP', 'Atk', 'Def', 'SpA', 'SpD', 'Spe'];
+        const ivStrings = [];
+        ivs.forEach((iv, idx) => {
+            if (iv && iv !== '31') { // 31 is the default IV in Pokemon games
+                ivStrings.push(`${iv} ${ivLabels[idx]}`);
+            }
+        });
+        if (ivStrings.length) {
+            teamLines.push(`IVs: ${ivStrings.join(' / ')}`);
+        }
+
+        if (nature) {
+            teamLines.push(`${nature} Nature`);
+        }
+
+        moves.forEach((move, idx) => {
+            if (move === 'Hidden Power') {
+                teamLines.push(`- Hidden Power [${hpTypes[idx]}]`);
+            } else if (move) {
+                teamLines.push(`- ${move}`);
+            }
+        });
+
+        teamLines.push('');  // Add a blank line to separate Pokemon
+    });
+
+    return teamLines.join('\n');
+}
+
 function loadSavedTeams() {
     const selectBox = $("#savedTeams");
     selectBox.empty();  // Remove all options
@@ -977,7 +1059,7 @@ $(document).ready(function () {
 
     // Copy the current team to clipboard in Showdown format
     $("#exportTeam").click(function () {
-        const exportData = "blah blah blah";
+        const exportData = getCurrentTeamShowdownFormat();
         $('#exportOutput').val(exportData);
         $('#exportModal').modal('show');
     });
