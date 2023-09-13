@@ -723,6 +723,8 @@ function showdownToJson(text) {
             pokemon.moves = [];
             pokemon.hpTypes = [];
             pokemon.nature = "Bashful";
+            pokemon.shiny = "No";
+            pokemon.alpha = "No";
 
         } else if (line.match(/^Level:?\s+\d+$/)) { // Check if the line matches the pattern "Level 100" or "Lvl. 100"
             const levelMatch = line.match(/\d+/);  // Extract the level from the line
@@ -734,6 +736,10 @@ function showdownToJson(text) {
                     pokemon.level = 1; // Ensure level is at least 1
                 }
             }
+        } else if (line.startsWith('Shiny:')) {
+            pokemon.shiny = line.split(': ')[1].trim();
+        } else if (line.startsWith('Alpha:')) {
+            pokemon.alpha = line.split(': ')[1].trim();
         } else if (line.startsWith('Ability:')) {
             pokemon.ability = line.split(': ')[1];
         } else if (line.startsWith('EVs:')) {
