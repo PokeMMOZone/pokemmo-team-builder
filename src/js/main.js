@@ -820,10 +820,27 @@ function getCurrentTeam() {
         const typelabel3 = slot.querySelectorAll('.movetype-label3');
         const typelabel4 = slot.querySelectorAll('.movetype-label4');
 
+        shinyVar = "No";
+        alphaVar = "No";
+
+        if (slot.querySelector('.alpha-checkbox').checked) {
+            alphaVar = "Yes";
+        } else {
+            alphaVar = "No";
+        }
+    
+        if (slot.querySelector('.shiny-checkbox').checked) {
+            shinyVar = "Yes";
+        } else {
+            shinyVar = "No";
+        }        
+
         const pokemon = {
             species: slot.querySelector('.species-dropdown').value,
             nickname: slot.querySelector('.nickname-input').value,
             level: slot.querySelector('.level-input').value,
+            alpha: alphaVar,
+            shiny: shinyVar,
             item: slot.querySelector('.item-dropdown').value,
             ability: slot.querySelector('.ability-dropdown').value,
             gender: slot.querySelector('.gender-dropdown').value,
@@ -860,6 +877,19 @@ function loadTeamData(data) {
 
         // Check if there's data for this slot
         if (pokemon) {
+            
+        if (pokemon.alpha === "Yes") {
+            slot.querySelector('.alpha-checkbox').checked = true;
+        } else {
+            slot.querySelector('.alpha-checkbox').checked = false;
+        }
+    
+        if (pokemon.shiny === "Yes") {
+            slot.querySelector('.shiny-checkbox').checked = true;
+        } else {
+            slot.querySelector('.shiny-checkbox').checked = false;
+        } 
+
             $(slot.querySelector('.species-dropdown')).val(pokemon.species).trigger('change').trigger('select2:select');
             slot.querySelector('.nickname-input').value = pokemon.nickname;
             slot.querySelector('.level-input').value = pokemon.level;
