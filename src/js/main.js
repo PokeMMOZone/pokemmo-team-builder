@@ -80,6 +80,10 @@ function calculateStat(base, iv, ev, level, natureMultiplier, isHP = false) {
     }
 }
 
+function capitalizeWords(str) {
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+}
+
 function updateCalculatedStats(slot) {
     const pokemonId = slot.querySelector('.species-dropdown').value;
     const level = parseInt(slot.querySelector('.level-input').value);
@@ -778,7 +782,8 @@ function showdownToJson(text) {
                 pokemon.hpTypes.push(capitalizedType);
             }
         } else if (line.startsWith('- ')) {
-            pokemon.moves.push(line.substring(2));
+            const move = capitalizeWords(line.substring(2));
+            pokemon.moves.push(move);
             pokemon.hpTypes.push("Normal");
         }
     }
