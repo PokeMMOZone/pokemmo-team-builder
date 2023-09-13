@@ -746,26 +746,26 @@ function showdownToJson(text) {
             const evData = line.split(': ')[1].split(' / ');
             for (let ev of evData) {
                 const [value, stat] = ev.split(' ');
-                switch (stat) {
-                    case 'HP': pokemon.evs[0] = parseInt(value); break;
-                    case 'Atk': pokemon.evs[1] = parseInt(value); break;
-                    case 'Def': pokemon.evs[2] = parseInt(value); break;
-                    case 'SpA': pokemon.evs[3] = parseInt(value); break;
-                    case 'SpD': pokemon.evs[4] = parseInt(value); break;
-                    case 'Spe': pokemon.evs[5] = parseInt(value); break;
+                switch (stat.toLowerCase()) {
+                    case 'hp': pokemon.evs[0] = parseInt(value); break;
+                    case 'atk': pokemon.evs[1] = parseInt(value); break;
+                    case 'def': pokemon.evs[2] = parseInt(value); break;
+                    case 'spa': pokemon.evs[3] = parseInt(value); break;
+                    case 'spd': pokemon.evs[4] = parseInt(value); break;
+                    case 'spe': pokemon.evs[5] = parseInt(value); break;
                 }
             }
         } else if (/^ivs:/i.test(line)) {
             const ivData = line.split(': ')[1].split(' / ');
             for (let iv of ivData) {
                 const [value, stat] = iv.split(' ');
-                switch (stat) {
-                    case 'HP': pokemon.ivs[0] = parseInt(value); break;
-                    case 'Atk': pokemon.ivs[1] = parseInt(value); break;
-                    case 'Def': pokemon.ivs[2] = parseInt(value); break;
-                    case 'SpA': pokemon.ivs[3] = parseInt(value); break;
-                    case 'SpD': pokemon.ivs[4] = parseInt(value); break;
-                    case 'Spe': pokemon.ivs[5] = parseInt(value); break;
+                switch (stat.toLowerCase()) {
+                    case 'hp': pokemon.ivs[0] = parseInt(value); break;
+                    case 'atk': pokemon.ivs[1] = parseInt(value); break;
+                    case 'def': pokemon.ivs[2] = parseInt(value); break;
+                    case 'spa': pokemon.ivs[3] = parseInt(value); break;
+                    case 'spd': pokemon.ivs[4] = parseInt(value); break;
+                    case 'spe': pokemon.ivs[5] = parseInt(value); break;
                 }
             }
         } else if (/\s+nature$/i.test(line)) {
