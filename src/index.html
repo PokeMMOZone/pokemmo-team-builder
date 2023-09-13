@@ -86,12 +86,43 @@
         </div>
     </div>
 
+    <!-- Credits Modal -->
+    <div class="modal fade" id="creditsModal" tabindex="-1" aria-labelledby="creditsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="creditsModalLabel">Credits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>PokeAPI:</strong> The data and images used in this project have been sourced from <a href="https://pokeapi.co/" target="_blank">PokeAPI</a>. We express our gratitude to the contributors and maintainers of this API for making such valuable resources available to the community.</p>
+                    
+                    <p><strong>PokePaste:</strong> A special thanks to <a href="https://pokepast.es/" target="_blank">PokePaste</a> for their comprehensive documentation on the Pokémon Showdown format. Their resources played an essential role in the development of certain features on this platform.</p>
+                    
+                    <p><strong>ChatGPT by OpenAI:</strong> A shoutout to <a href="https://www.openai.com/" target="_blank">ChatGPT by OpenAI</a> for their indispensable assistance with coding challenges faced during the development of this project.</p>
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer Section -->
     <footer class="bg-dark py-3 mt-4">
         <br>
-        <p class="text-center text-white mb-0">Copyright © 2023 <a href="https://Gamer2020.net" title="A look into my head!" rel="nofollow">Gamer2020</a>. All Rights Reserved.</p>
-        <p class="text-center text-white mb-0">Pokémon characters, images, and card images belong to Pokémon USA, Inc. and Nintendo. This website or it's creators are in no way affiliated with or endorsed by Nintendo LLC, Creatures, GAMEFREAK inc, The Pokémon Company, Pokémon USA, Inc., The Pokémon Company International, or Wizards of the Coast.</p>
-        <p class="text-center text-white mb-0">This website is in no way affiliated with PokeMMO. While an effort is made to correct wrong data, there is no guarantee information is accurate.</p>
+        <p class="text-center text-white mb-0">Copyright © 2023 <a href="https://Gamer2020.net"
+                title="A look into my head!" rel="nofollow">Gamer2020</a>. All Rights Reserved.</p>
+        <p class="text-center text-white mb-0">Pokémon characters, images, and card images belong to Pokémon USA, Inc.
+            and Nintendo. This website or it's creators are in no way affiliated with or endorsed by Nintendo LLC,
+            Creatures, GAMEFREAK inc, The Pokémon Company, Pokémon USA, Inc., The Pokémon Company International, or
+            Wizards of the Coast.</p>
+        <p class="text-center text-white mb-0">This website is in no way affiliated with PokeMMO. While an effort is
+            made to correct wrong data, there is no guarantee information is accurate.</p>
+        <button class="btn btn-link text-white" data-toggle="modal" data-target="#creditsModal">View Credits</button>
     </footer>
 
     <!-- jQuery -->

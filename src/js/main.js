@@ -1150,6 +1150,9 @@ $(document).ready(function () {
         loadSavedTeams();
     });
 
+    $('body').on('click', '[data-target="#creditsModal"]', function () {
+        $('#creditsModal').modal('show');
+    });
 
 });
 
