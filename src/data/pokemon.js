@@ -6230,7 +6230,7 @@ const pokemonData = [
         "id": "035",
         "name": "Clefairy",
         "type": [
-            "Fairy"
+            "Normal"
         ],
         "abilities": [
             "Cute Charm",
@@ -6402,7 +6402,7 @@ const pokemonData = [
         "id": "036",
         "name": "Clefable",
         "type": [
-            "Fairy"
+            "Normal"
         ],
         "abilities": [
             "Cute Charm",
@@ -6992,8 +6992,8 @@ const pokemonData = [
         "id": "039",
         "name": "Jigglypuff",
         "type": [
-            "Normal",
-            "Fairy"
+            "Normal"
+            // "Fairy"
         ],
         "abilities": [
             "Cute Charm",
@@ -7165,8 +7165,8 @@ const pokemonData = [
         "id": "040",
         "name": "Wigglytuff",
         "type": [
-            "Normal",
-            "Fairy"
+            "Normal"
+            // "Fairy"
         ],
         "abilities": [
             "Cute Charm",
@@ -19462,8 +19462,8 @@ const pokemonData = [
         "id": "122",
         "name": "Mr-mime",
         "type": [
-            "Psychic",
-            "Fairy"
+            "Psychic"
+            // "Fairy"
         ],
         "abilities": [
             "Soundproof",
@@ -26777,7 +26777,7 @@ const pokemonData = [
         "id": "173",
         "name": "Cleffa",
         "type": [
-            "Fairy"
+            "Normal"
         ],
         "abilities": [
             "Cute Charm",
@@ -26901,8 +26901,8 @@ const pokemonData = [
         "id": "174",
         "name": "Igglybuff",
         "type": [
-            "Normal",
-            "Fairy"
+            "Normal"
+            // "Fairy"
         ],
         "abilities": [
             "Cute Charm",
@@ -27023,7 +27023,7 @@ const pokemonData = [
         "id": "175",
         "name": "Togepi",
         "type": [
-            "Fairy"
+            "Normal"
         ],
         "abilities": [
             "Hustle",
@@ -27150,7 +27150,7 @@ const pokemonData = [
         "id": "176",
         "name": "Togetic",
         "type": [
-            "Fairy",
+            "Normal",
             "Flying"
         ],
         "abilities": [
@@ -28034,8 +28034,8 @@ const pokemonData = [
         "id": "183",
         "name": "Marill",
         "type": [
-            "Water",
-            "Fairy"
+            "Water"
+            // "Fairy"
         ],
         "abilities": [
             "Thick Fat",
@@ -28169,8 +28169,8 @@ const pokemonData = [
         "id": "184",
         "name": "Azumarill",
         "type": [
-            "Water",
-            "Fairy"
+            "Water"
+            // "Fairy"
         ],
         "abilities": [
             "Thick Fat",
@@ -31244,7 +31244,7 @@ const pokemonData = [
         "id": "209",
         "name": "Snubbull",
         "type": [
-            "Fairy"
+            "Normal"
         ],
         "abilities": [
             "Intimidate",
@@ -31368,7 +31368,7 @@ const pokemonData = [
         "id": "210",
         "name": "Granbull",
         "type": [
-            "Fairy"
+            "Normal"
         ],
         "abilities": [
             "Intimidate",
@@ -39992,8 +39992,8 @@ const pokemonData = [
         "id": "280",
         "name": "Ralts",
         "type": [
-            "Psychic",
-            "Fairy"
+            "Psychic"
+            // "Fairy"
         ],
         "abilities": [
             "Synchronize",
@@ -40122,8 +40122,8 @@ const pokemonData = [
         "id": "281",
         "name": "Kirlia",
         "type": [
-            "Psychic",
-            "Fairy"
+            "Psychic"
+            // "Fairy"
         ],
         "abilities": [
             "Synchronize",
@@ -40245,8 +40245,8 @@ const pokemonData = [
         "id": "282",
         "name": "Gardevoir",
         "type": [
-            "Psychic",
-            "Fairy"
+            "Psychic"
+            // "Fairy"
         ],
         "abilities": [
             "Synchronize",
@@ -42149,8 +42149,8 @@ const pokemonData = [
         "id": "298",
         "name": "Azurill",
         "type": [
-            "Normal",
-            "Fairy"
+            "Normal"
+            // "Fairy"
         ],
         "abilities": [
             "Thick Fat",
@@ -42843,8 +42843,8 @@ const pokemonData = [
         "id": "303",
         "name": "Mawile",
         "type": [
-            "Steel",
-            "Fairy"
+            "Steel"
+            // "Fairy"
         ],
         "abilities": [
             "Hyper Cutter",
@@ -59604,8 +59604,8 @@ const pokemonData = [
         "id": "439",
         "name": "Mime-jr",
         "type": [
-            "Psychic",
-            "Fairy"
+            "Psychic"
+            // "Fairy"
         ],
         "abilities": [
             "Soundproof",
@@ -63089,7 +63089,7 @@ const pokemonData = [
         "id": "468",
         "name": "Togekiss",
         "type": [
-            "Fairy",
+            "Normal",
             "Flying"
         ],
         "abilities": [
@@ -71945,8 +71945,8 @@ const pokemonData = [
         "id": "546",
         "name": "Cottonee",
         "type": [
-            "Grass",
-            "Fairy"
+            "Grass"
+            // "Fairy"
         ],
         "abilities": [
             "Prankster",
@@ -72032,8 +72032,8 @@ const pokemonData = [
         "id": "547",
         "name": "Whimsicott",
         "type": [
-            "Grass",
-            "Fairy"
+            "Grass"
+            // "Fairy"
         ],
         "abilities": [
             "Prankster",
