@@ -1093,9 +1093,8 @@ $(document).ready(function () {
         const teamData = getCurrentTeam();
         localStorage.setItem(teamName, JSON.stringify(teamData));
         // Refresh the list of saved teams
-        //loadSavedTeams();
+        loadSavedTeams();
         const selectBox = $("#savedTeams");
-        selectBox.append('<option value="' + teamName + '">' + teamName + '</option>');
         $(selectBox).val(teamName).trigger('change').trigger('select2:select');
     });
 
