@@ -4905,7 +4905,7 @@ const pokemonData = [
             "Helping Hand",
             "Fake Tears",
             "Volt Tackle"
-        ],        
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 90,
@@ -5136,7 +5136,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Earth Power"
-        ],        
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 75,
@@ -5359,7 +5359,7 @@ const pokemonData = [
             "Mud-Slap",
             "Earth Power",
             "Drill Run"
-        ],        
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 100,
@@ -5573,7 +5573,7 @@ const pokemonData = [
             "Poison Tail",
             "Headbutt",
             "Mud-Slap"
-        ],        
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 47,
@@ -5675,7 +5675,7 @@ const pokemonData = [
             "Poison Tail",
             "Headbutt",
             "Mud-Slap"
-        ],        
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 62,
@@ -5825,7 +5825,7 @@ const pokemonData = [
             "Icy Wind",
             "Outrage",
             "Drill Run"
-        ],        
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 92,
@@ -5927,7 +5927,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Drill Run"
-        ],        
+        ],
         "baseStats": {
             "hp": 46,
             "attack": 57,
@@ -6028,7 +6028,7 @@ const pokemonData = [
             "Helping Hand",
             "Drill Run"
         ],
-        
+
         "baseStats": {
             "hp": 61,
             "attack": 72,
@@ -6176,7 +6176,7 @@ const pokemonData = [
             "Icy Wind",
             "Outrage",
             "Superpower"
-        ],        
+        ],
         "baseStats": {
             "hp": 81,
             "attack": 102,
@@ -6341,7 +6341,7 @@ const pokemonData = [
             "Trick",
             "Hyper Voice",
             "zen headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 45,
@@ -6507,7 +6507,7 @@ const pokemonData = [
             "Hyper Voice",
             "Zen headbutt"
         ],
-    
+
         "baseStats": {
             "hp": 95,
             "attack": 70,
@@ -6610,7 +6610,7 @@ const pokemonData = [
             "Heat Wave",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 38,
             "attack": 41,
@@ -6816,7 +6816,7 @@ const pokemonData = [
             "Heat Wave",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 73,
             "attack": 76,
@@ -7085,7 +7085,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Psyshock",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 115,
             "attack": 45,
@@ -7252,7 +7252,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Psyshock",
             "Stored Power"
-        ],        
+        ],
         "baseStats": {
             "hp": 140,
             "attack": 70,
@@ -7356,7 +7356,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Headbutt",
             "Confuse Ray"
-        ],        
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 45,
@@ -7463,7 +7463,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Headbutt",
             "Confuse Ray"
-        ],        
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 80,
@@ -7549,7 +7549,7 @@ const pokemonData = [
             "Round",
             "Seed Bomb",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 50,
@@ -7632,7 +7632,7 @@ const pokemonData = [
             "Round",
             "Seed Bomb",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 65,
@@ -7721,7 +7721,7 @@ const pokemonData = [
             "Round",
             "Seed Bomb",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 80,
@@ -7831,7 +7831,7 @@ const pokemonData = [
             "Metal Claw",
             "Seed Bomb",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 70,
@@ -7939,7 +7939,7 @@ const pokemonData = [
             "Metal Claw",
             "Seed Bomb",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 95,
@@ -8033,7 +8033,7 @@ const pokemonData = [
             "Confuse Ray",
             "Energy Ball",
             "Acid Spray"
-        ],        
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 55,
@@ -8142,7 +8142,7 @@ const pokemonData = [
             "Acid Spray",
             "Tailwind",
             "Air Cutter"
-        ],        
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 65,
@@ -8242,7 +8242,7 @@ const pokemonData = [
             "Rock Blast",
             "Stone Edge",
             "Foul Play"
-        ],        
+        ],
         "baseStats": {
             "hp": 10,
             "attack": 55,
@@ -8447,7 +8447,7 @@ const pokemonData = [
             "Helping Hand",
             "Rock Blast",
             "Foul Play"
-        ],        
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 100,
@@ -8678,7 +8678,7 @@ const pokemonData = [
             "Fake Tears",
             "Power Gem",
             "Snarl"
-        ],        
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 45,
@@ -9304,7 +9304,7 @@ const pokemonData = [
             "Nasty Plot",
             "Low Sweep",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 52,
@@ -9443,7 +9443,7 @@ const pokemonData = [
             "Nasty Plot",
             "Grass Knot",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 82,
@@ -9578,7 +9578,7 @@ const pokemonData = [
             "Drain Punch",
             "Shadow Claw",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 80,
@@ -9715,7 +9715,7 @@ const pokemonData = [
             "Drain Punch",
             "Shadow Claw",
             "Stealth Rock"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 105,
@@ -9813,7 +9813,7 @@ const pokemonData = [
             "Mud-Slap",
             "Scary Face",
             "Thunder Fang"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 70,
@@ -9998,7 +9998,7 @@ const pokemonData = [
             "Hyper Voice",
             "Superpower",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 110,
@@ -10181,7 +10181,7 @@ const pokemonData = [
             "Headbutt",
             "Low Kick",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 50,
@@ -10292,7 +10292,7 @@ const pokemonData = [
             "Headbutt",
             "Low Kick",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 65,
@@ -10422,7 +10422,7 @@ const pokemonData = [
             "Helping Hand",
             "Headbutt",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 95,
@@ -10541,7 +10541,7 @@ const pokemonData = [
             "Trick",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 25,
             "attack": 20,
@@ -10666,7 +10666,7 @@ const pokemonData = [
             "Swift",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 35,
@@ -10797,7 +10797,7 @@ const pokemonData = [
             "Swift",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 50,
@@ -11022,7 +11022,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 80,
@@ -11137,7 +11137,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 100,
@@ -11261,7 +11261,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 130,
@@ -11383,7 +11383,7 @@ const pokemonData = [
             "Acid Spray",
             "Seed Bomb",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 75,
@@ -11478,7 +11478,7 @@ const pokemonData = [
             "Acid Spray",
             "Seed Bomb",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 90,
@@ -11583,7 +11583,7 @@ const pokemonData = [
             "Seed Bomb",
             "Headbutt",
             "Leaf Tornado"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 105,
@@ -11694,7 +11694,7 @@ const pokemonData = [
             "Confuse Ray",
             "Icy Wind",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 40,
@@ -11800,7 +11800,7 @@ const pokemonData = [
             "Confuse Ray",
             "Icy Wind",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 70,
@@ -11910,7 +11910,7 @@ const pokemonData = [
             "Mud-Slap",
             "Superpower",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 80,
@@ -12114,7 +12114,7 @@ const pokemonData = [
             "Mud-Slap",
             "Superpower",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 95,
@@ -12321,7 +12321,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 120,
@@ -12511,7 +12511,7 @@ const pokemonData = [
             "Low Kick",
             "Swift",
             "Heat Wave"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 85,
@@ -12679,7 +12679,7 @@ const pokemonData = [
             "Heat Wave",
             "Drill Run",
             "Fury Attack"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 100,
@@ -12893,7 +12893,7 @@ const pokemonData = [
             "Helping Hand",
             "Avalanche",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 65,
@@ -13147,7 +13147,7 @@ const pokemonData = [
             "Waterfall",
             "Helping Hand",
             "Metronome"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 75,
@@ -13485,7 +13485,7 @@ const pokemonData = [
             "Helping Hand",
             "Iron Head",
             "Heavy Slam"
-        ],    
+        ],
         "baseStats": {
             "hp": 25,
             "attack": 35,
@@ -13583,7 +13583,7 @@ const pokemonData = [
             "Helping Hand",
             "Iron Head",
             "Heavy Slam"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 60,
@@ -13699,7 +13699,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 52,
             "attack": 90,
@@ -13868,7 +13868,7 @@ const pokemonData = [
             "Mud-Slap",
             "Air Cutter",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 85,
@@ -13965,7 +13965,7 @@ const pokemonData = [
             "Air Cutter",
             "Headbutt",
             "Evolve"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 110,
@@ -14063,7 +14063,7 @@ const pokemonData = [
             "Echoed Voice",
             "Helping Hand",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 45,
@@ -14159,7 +14159,7 @@ const pokemonData = [
             "Frost Breath",
             "Helping Hand",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 70,
@@ -14275,7 +14275,7 @@ const pokemonData = [
             "Drain Punch",
             "Zen Headbutt",
             "Hex"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 80,
@@ -14520,7 +14520,7 @@ const pokemonData = [
             "Drain Punch",
             "Zen Headbutt",
             "Hex"
-        ],    
+        ],
         "baseStats": {
             "hp": 105,
             "attack": 105,
@@ -14737,7 +14737,7 @@ const pokemonData = [
             "Spikes",
             "Helping Hand",
             "Toxic Spikes"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 65,
@@ -14842,7 +14842,7 @@ const pokemonData = [
             "Helping Hand",
             "Body Slam",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 95,
@@ -14956,7 +14956,7 @@ const pokemonData = [
             "Gunk Shot",
             "Acid Spray",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 35,
@@ -15068,7 +15068,7 @@ const pokemonData = [
             "Acid Spray",
             "Toxic Spikes",
             "Metronome"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 50,
@@ -15204,7 +15204,7 @@ const pokemonData = [
             "Acid Spray",
             "Toxic Spikes",
             "Thunder Wave"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 65,
@@ -15447,7 +15447,7 @@ const pokemonData = [
             "Earth Power",
             "Iron Head",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 45,
@@ -15580,7 +15580,7 @@ const pokemonData = [
             "Imprison",
             "Stored Power",
             "Psybeam"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 48,
@@ -15715,7 +15715,7 @@ const pokemonData = [
             "Stored Power",
             "Hex",
             "Psybeam"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 73,
@@ -15821,7 +15821,7 @@ const pokemonData = [
             "Superpower",
             "Iron Defense",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 105,
@@ -15927,7 +15927,7 @@ const pokemonData = [
             "Superpower",
             "Iron Defense",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 130,
@@ -16040,7 +16040,7 @@ const pokemonData = [
             "Foul Play",
             "Helping Hand",
             "Recycle"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 30,
@@ -16200,7 +16200,7 @@ const pokemonData = [
             "Scary Face",
             "Helping Hand",
             "Recycle"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 50,
@@ -16373,7 +16373,7 @@ const pokemonData = [
             "Selfdestruct",
             "Seed Bomb",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 40,
@@ -16488,7 +16488,7 @@ const pokemonData = [
             "Headbutt",
             "Low Kick",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 95,
@@ -16714,7 +16714,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 50,
@@ -16834,7 +16834,7 @@ const pokemonData = [
             "Earth Power",
             "Iron Head",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 80,
@@ -17176,7 +17176,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 120,
@@ -17285,7 +17285,7 @@ const pokemonData = [
             "Low Kick",
             "Mud-Slap",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 105,
@@ -17424,7 +17424,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 55,
@@ -17519,7 +17519,7 @@ const pokemonData = [
             "Incinerate",
             "Psybeam",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 65,
@@ -17614,7 +17614,7 @@ const pokemonData = [
             "Incinerate",
             "Psybeam",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 90,
@@ -17826,7 +17826,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 85,
@@ -17977,7 +17977,7 @@ const pokemonData = [
             "Outrage",
             "Helping Hand",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 105,
             "attack": 130,
@@ -18135,7 +18135,7 @@ const pokemonData = [
             "Psybeam",
             "Swift",
             "Thief"
-        ],        
+        ],
         "baseStats": {
             "hp": 250,
             "attack": 5,
@@ -18239,7 +18239,7 @@ const pokemonData = [
             "Headbutt",
             "Seed Bomb",
             "Acid Spray"
-        ],        
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 55,
@@ -18383,7 +18383,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Helping Hand"
-        ],        
+        ],
         "baseStats": {
             "hp": 105,
             "attack": 95,
@@ -18590,7 +18590,7 @@ const pokemonData = [
             "Swift",
             "Icy Wind",
             "Outrage"
-        ],        
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 40,
@@ -18677,7 +18677,7 @@ const pokemonData = [
             "Swift",
             "Icy Wind",
             "Outrage"
-        ],        
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 65,
@@ -18774,7 +18774,7 @@ const pokemonData = [
             "Icy Wind",
             "Drill Run",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 67,
@@ -18869,7 +18869,7 @@ const pokemonData = [
             "Icy Wind",
             "Drill Run",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 92,
@@ -18969,7 +18969,7 @@ const pokemonData = [
             "Scald",
             "Icy Wind",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 45,
@@ -19085,7 +19085,7 @@ const pokemonData = [
             "Icy Wind",
             "Trick",
             "Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 75,
@@ -19230,7 +19230,7 @@ const pokemonData = [
             "Iron Defense",
             "Zen Headbutt",
             "Foul Play"
-        ],        
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 45,
@@ -19453,7 +19453,7 @@ const pokemonData = [
             "Scary Face",
             "Helping Hand",
             "Air Cutter"
-        ],        
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 110,
@@ -19588,7 +19588,7 @@ const pokemonData = [
             "Trick",
             "Hyper Voice",
             "Zen Headbutt"
-        ],        
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 50,
@@ -19697,7 +19697,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Helping Hand"
-        ],        
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 83,
@@ -19806,7 +19806,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Helping Hand"
-        ],        
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 95,
@@ -19914,7 +19914,7 @@ const pokemonData = [
             "Helping Hand",
             "Iron Defense",
             "Outrage"
-        ],        
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 125,
@@ -20122,7 +20122,7 @@ const pokemonData = [
             "Dig",
             "Thief",
             "Shadow Ball"
-        ],        
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 100,
@@ -20379,7 +20379,7 @@ const pokemonData = [
             "Hydro Pump",
             "Dragon Rage",
             "Reversal"
-        ],        
+        ],
         "baseStats": {
             "hp": 20,
             "attack": 10,
@@ -20499,7 +20499,7 @@ const pokemonData = [
             "Iron Head",
             "Sunny Day",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 125,
@@ -20716,7 +20716,7 @@ const pokemonData = [
             "Iron Head",
             "Drill Run",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 130,
             "attack": 85,
@@ -20862,7 +20862,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 55,
@@ -21059,7 +21059,7 @@ const pokemonData = [
             "Hyper Voice",
             "Icy Wind",
             "Bubble"
-        ],    
+        ],
         "baseStats": {
             "hp": 130,
             "attack": 65,
@@ -21172,7 +21172,7 @@ const pokemonData = [
             "Mud-Slap",
             "Hyper Voice",
             "False Swipe"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 65,
@@ -21283,7 +21283,7 @@ const pokemonData = [
             "Hyper Voice",
             "Superpower",
             "Heat Wave"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 130,
@@ -21391,7 +21391,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Foul Play",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 60,
@@ -21496,7 +21496,7 @@ const pokemonData = [
             "Icy Wind",
             "Iron Defense",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 40,
@@ -21604,7 +21604,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Spike Cannon"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 60,
@@ -21708,7 +21708,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 80,
@@ -21827,7 +21827,7 @@ const pokemonData = [
             "Earth Power",
             "Low Kick",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 115,
@@ -21940,7 +21940,7 @@ const pokemonData = [
             "Air Cutter",
             "Tailwind",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 105,
@@ -22196,7 +22196,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Gunk Shot",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 160,
             "attack": 110,
@@ -22891,7 +22891,7 @@ const pokemonData = [
             "Draco Meteor",
             "Helping Hand",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 41,
             "attack": 64,
@@ -22989,7 +22989,7 @@ const pokemonData = [
             "Draco Meteor",
             "Helping Hand",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 61,
             "attack": 84,
@@ -23132,7 +23132,7 @@ const pokemonData = [
             "Metronome",
             "Scary Face",
             "Encore"
-        ],    
+        ],
         "baseStats": {
             "hp": 91,
             "attack": 134,
@@ -24074,7 +24074,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 49,
@@ -24162,7 +24162,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 62,
@@ -24258,7 +24258,7 @@ const pokemonData = [
             "Seed Bomb",
             "Outrage",
             "Petal Dance"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 82,
@@ -24354,7 +24354,7 @@ const pokemonData = [
             "Fire Fang",
             "Zen Headbutt",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 39,
             "attack": 52,
@@ -24448,7 +24448,7 @@ const pokemonData = [
             "Fire Fang",
             "Zen Headbutt",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 58,
             "attack": 64,
@@ -24564,7 +24564,7 @@ const pokemonData = [
             "Iron Head",
             "Shadow Ball",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 78,
             "attack": 84,
@@ -24765,7 +24765,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -24879,7 +24879,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 80,
@@ -25004,7 +25004,7 @@ const pokemonData = [
             "Icy Wind",
             "Superpower",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 105,
@@ -25121,7 +25121,7 @@ const pokemonData = [
             "Helping Hand",
             "Trick",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 46,
@@ -25238,7 +25238,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 76,
@@ -25345,7 +25345,7 @@ const pokemonData = [
             "Hyper Voice",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 30,
@@ -25450,7 +25450,7 @@ const pokemonData = [
             "Hyper Voice",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 50,
@@ -25549,7 +25549,7 @@ const pokemonData = [
             "Headbutt",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 20,
@@ -25653,7 +25653,7 @@ const pokemonData = [
             "Headbutt",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 35,
@@ -25748,7 +25748,7 @@ const pokemonData = [
             "Bug Buzz",
             "Psybeam",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 60,
@@ -25841,7 +25841,7 @@ const pokemonData = [
             "Bug Buzz",
             "Psybeam",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 90,
@@ -25950,7 +25950,7 @@ const pokemonData = [
             "Tailwind",
             "Zen Headbutt",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 90,
@@ -26043,7 +26043,7 @@ const pokemonData = [
             "Wild Charge",
             "Psybeam",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 38,
@@ -26140,7 +26140,7 @@ const pokemonData = [
             "Wild Charge",
             "Psybeam",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 125,
             "attack": 58,
@@ -26251,7 +26251,7 @@ const pokemonData = [
             "Take Down",
             "Electro Ball",
             "Volt Tackle"
-        ],    
+        ],
         "baseStats": {
             "hp": 20,
             "attack": 40,
@@ -26377,7 +26377,7 @@ const pokemonData = [
             "Trick",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 25,
@@ -26495,7 +26495,7 @@ const pokemonData = [
             "Take Down",
             "Swift",
             "Encore"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 30,
@@ -26618,7 +26618,7 @@ const pokemonData = [
             "Trick",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 20,
@@ -26755,7 +26755,7 @@ const pokemonData = [
             "Heat Wave",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 40,
@@ -26872,7 +26872,7 @@ const pokemonData = [
             "Air Cutter",
             "Tailwind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 50,
@@ -26987,7 +26987,7 @@ const pokemonData = [
             "Air Cutter",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 75,
@@ -27076,7 +27076,7 @@ const pokemonData = [
             "Sunny Day",
             "Helping Hand",
             "Volt Switch"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 40,
@@ -27283,7 +27283,7 @@ const pokemonData = [
             "Low Kick",
             "Outrage",
             "Dragon Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 75,
@@ -27465,7 +27465,7 @@ const pokemonData = [
             "Helping Hand",
             "Seed Bomb",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 80,
@@ -27589,7 +27589,7 @@ const pokemonData = [
             "Take Down",
             "Metronome",
             "Bulldoze"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 20,
@@ -27705,7 +27705,7 @@ const pokemonData = [
             "Hyper Voice",
             "Take Down",
             "Metronome"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 50,
@@ -27821,7 +27821,7 @@ const pokemonData = [
             "Giga Impact",
             "Grass Knot",
             "Low Sweep"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 100,
@@ -27942,7 +27942,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 75,
@@ -28044,7 +28044,7 @@ const pokemonData = [
             "Tailwind",
             "Fling",
             "Leaf Storm"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 35,
@@ -28141,7 +28141,7 @@ const pokemonData = [
             "Tailwind",
             "Fling",
             "Leaf Storm"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 45,
@@ -28241,7 +28241,7 @@ const pokemonData = [
             "Tailwind",
             "Fling",
             "Leaf Storm"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 55,
@@ -28370,7 +28370,7 @@ const pokemonData = [
             "Seed Bomb",
             "Gunk Shot",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 70,
@@ -28455,7 +28455,7 @@ const pokemonData = [
             "Rain Dance",
             "Magical Leaf",
             "Leaf Storm"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 30,
@@ -28543,7 +28543,7 @@ const pokemonData = [
             "Take Down",
             "Rain Dance",
             "Magical Leaf"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 75,
@@ -28634,7 +28634,7 @@ const pokemonData = [
             "Headbutt",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 65,
@@ -28744,7 +28744,7 @@ const pokemonData = [
             "Avalanche",
             "Stone Edge",
             "Stealth Rock"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 45,
@@ -28948,7 +28948,7 @@ const pokemonData = [
             "Avalanche",
             "Toxic Spikes",
             "Stealth Rock"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 85,
@@ -29069,7 +29069,7 @@ const pokemonData = [
             "Imprison",
             "Magical Leaf",
             "Power Gem"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 65,
@@ -29192,7 +29192,7 @@ const pokemonData = [
             "Light Screen",
             "Scary Face",
             "Skill Swap"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 65,
@@ -29314,7 +29314,7 @@ const pokemonData = [
             "Hex",
             "Acrobatics",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 85,
@@ -29440,7 +29440,7 @@ const pokemonData = [
             "Foul Play",
             "Psybeam",
             "Metronome"
-        ],        
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 75,
@@ -29885,7 +29885,7 @@ const pokemonData = [
             "Imprison",
             "Giga Impact",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 80,
@@ -29985,7 +29985,7 @@ const pokemonData = [
             "Rock Blast",
             "Poison Jab",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -30102,7 +30102,7 @@ const pokemonData = [
             "Iron Head",
             "Thunder Wave",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 90,
@@ -30231,7 +30231,7 @@ const pokemonData = [
             "Earth Power",
             "Giga Impact",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 70,
@@ -30349,7 +30349,7 @@ const pokemonData = [
             "Swift",
             "Tailwind",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 75,
@@ -30465,7 +30465,7 @@ const pokemonData = [
             "Earth Power",
             "Iron Head",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 85,
@@ -30679,7 +30679,7 @@ const pokemonData = [
             "Mud-Slap",
             "Superpower",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 80,
@@ -30807,7 +30807,7 @@ const pokemonData = [
             "Mud-Slap",
             "Superpower",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 120,
@@ -30922,7 +30922,7 @@ const pokemonData = [
             "Poison Tail",
             "Giga Impact",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 95,
@@ -31127,7 +31127,7 @@ const pokemonData = [
             "Helping Hand",
             "Air Cutter",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 130,
@@ -31320,7 +31320,7 @@ const pokemonData = [
             "Helping Hand",
             "Iron Defense",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 20,
             "attack": 10,
@@ -31436,7 +31436,7 @@ const pokemonData = [
             "Iron Defense",
             "Outrage",
             "Bug Buzz"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 125,
@@ -31671,7 +31671,7 @@ const pokemonData = [
             "Giga Impact",
             "Nasty Plot",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 95,
@@ -31874,7 +31874,7 @@ const pokemonData = [
             "Low Kick",
             "Helping Hand",
             "Avalanche"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 80,
@@ -31997,7 +31997,7 @@ const pokemonData = [
             "Seed Bomb",
             "Gunk Shot",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 130,
@@ -32087,7 +32087,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 40,
@@ -32186,7 +32186,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 50,
@@ -32279,7 +32279,7 @@ const pokemonData = [
             "Headbutt",
             "Superpower",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 50,
@@ -32380,7 +32380,7 @@ const pokemonData = [
             "Headbutt",
             "Superpower",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 100,
@@ -32495,7 +32495,7 @@ const pokemonData = [
             "Selfdestruct",
             "Mud-Slap",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 55,
@@ -32687,7 +32687,7 @@ const pokemonData = [
             "Helping Hand",
             "Seed Bomb",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 65,
@@ -32792,7 +32792,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 105,
@@ -32905,7 +32905,7 @@ const pokemonData = [
             "Giga Impact",
             "Foul Play",
             "Acrobatics"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 55,
@@ -33017,7 +33017,7 @@ const pokemonData = [
             "Gunk Shot",
             "Iron Head",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 40,
@@ -33122,7 +33122,7 @@ const pokemonData = [
             "Tailwind",
             "Iron Head",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 80,
@@ -33235,7 +33235,7 @@ const pokemonData = [
             "Helping Hand",
             "Mud Shot",
             "Flare Blitz"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 60,
@@ -33347,7 +33347,7 @@ const pokemonData = [
             "Helping Hand",
             "Mud Shot",
             "Flare Blitz"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 90,
@@ -33531,7 +33531,7 @@ const pokemonData = [
             "Outrage",
             "Draco Meteor",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 95,
@@ -33626,7 +33626,7 @@ const pokemonData = [
             "Mud Shot",
             "Iron Head",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 60,
@@ -33739,7 +33739,7 @@ const pokemonData = [
             "Mud Shot",
             "Iron Head",
             "Fury Attack"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 120,
@@ -33849,7 +33849,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Foul Play",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 80,
@@ -33971,7 +33971,7 @@ const pokemonData = [
             "Trick",
             "Earth Power",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 73,
             "attack": 95,
@@ -34087,7 +34087,7 @@ const pokemonData = [
             "Low Kick",
             "Swift",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 35,
@@ -34191,7 +34191,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 95,
@@ -34306,7 +34306,7 @@ const pokemonData = [
             "Helping Hand",
             "Trick",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 30,
@@ -34406,7 +34406,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 63,
@@ -34504,7 +34504,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 75,
@@ -34622,7 +34622,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 80,
@@ -34779,7 +34779,7 @@ const pokemonData = [
             "Swift",
             "Thief",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 255,
             "attack": 10,
@@ -34871,7 +34871,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 85,
@@ -34964,7 +34964,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 115,
             "attack": 115,
@@ -35168,7 +35168,7 @@ const pokemonData = [
             "Mud Shot",
             "Rock Blast",
             "Giga Impact"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 64,
@@ -35269,7 +35269,7 @@ const pokemonData = [
             "Mud Shot",
             "Rock Blast",
             "Giga Impact"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 84,
@@ -35419,7 +35419,7 @@ const pokemonData = [
             "Helping Hand",
             "Mud Shot",
             "Power Gem"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 134,
@@ -36025,7 +36025,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 45,
@@ -36131,7 +36131,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -36251,7 +36251,7 @@ const pokemonData = [
             "Mud-Slap",
             "Seed Bomb",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 85,
@@ -36458,7 +36458,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 60,
@@ -36570,7 +36570,7 @@ const pokemonData = [
             "Mud-Slap",
             "Heat Wave",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 85,
@@ -36698,7 +36698,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 120,
@@ -36903,7 +36903,7 @@ const pokemonData = [
             "Icy Wind",
             "Superpower",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 70,
@@ -37007,7 +37007,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Ice Punch"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 85,
@@ -37121,7 +37121,7 @@ const pokemonData = [
             "Ice Punch",
             "Outrage",
             "Work Up"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 110,
@@ -37309,7 +37309,7 @@ const pokemonData = [
             "Mud-Slap",
             "Hyper Voice",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 55,
@@ -37402,7 +37402,7 @@ const pokemonData = [
             "Mud-Slap",
             "Hyper Voice",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 90,
@@ -37507,7 +37507,7 @@ const pokemonData = [
             "Hyper Voice",
             "Seed Bomb",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 38,
             "attack": 30,
@@ -37700,7 +37700,7 @@ const pokemonData = [
             "Hyper Voice",
             "Seed Bomb",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 78,
             "attack": 70,
@@ -37853,7 +37853,7 @@ const pokemonData = [
             "Tackle",
             "Poison Sting",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 35,
@@ -37940,7 +37940,7 @@ const pokemonData = [
             "Swift",
             "Iron Defense",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 70,
@@ -37972,7 +37972,7 @@ const pokemonData = [
             "Tackle",
             "Poison Sting",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 35,
@@ -38062,7 +38062,7 @@ const pokemonData = [
             "Iron Defense",
             "Tailwind",
             "Psybeam"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 50,
@@ -38149,7 +38149,7 @@ const pokemonData = [
             "Headbutt",
             "Icy Wind",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 30,
@@ -38259,7 +38259,7 @@ const pokemonData = [
             "Thunder Punch",
             "Hyper Voice",
             "Razor Leaf"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 50,
@@ -38378,7 +38378,7 @@ const pokemonData = [
             "Ice Punch",
             "Thunder Punch",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 70,
@@ -38469,7 +38469,7 @@ const pokemonData = [
             "Selfdestruct",
             "Seed Bomb",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 40,
@@ -38586,7 +38586,7 @@ const pokemonData = [
             "Low Kick",
             "Swift",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 70,
@@ -38720,7 +38720,7 @@ const pokemonData = [
             "Icy Wind",
             "Heat Wave",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 100,
@@ -38805,7 +38805,7 @@ const pokemonData = [
             "Heat Wave",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 55,
@@ -38888,7 +38888,7 @@ const pokemonData = [
             "Heat Wave",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 85,
@@ -38983,7 +38983,7 @@ const pokemonData = [
             "Helping Hand",
             "Brave Bird",
             "Acrobatics"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 30,
@@ -39088,7 +39088,7 @@ const pokemonData = [
             "Helping Hand",
             "Gunk Shot",
             "Acrobatics"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 50,
@@ -39211,7 +39211,7 @@ const pokemonData = [
             "Hyper Voice",
             "Zen Headbutt",
             "Metronome"
-        ],    
+        ],
         "baseStats": {
             "hp": 28,
             "attack": 25,
@@ -39329,7 +39329,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Metronome",
             "Hyper Beam"
-        ],    
+        ],
         "baseStats": {
             "hp": 38,
             "attack": 35,
@@ -39456,7 +39456,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Metronome",
             "Night Shade"
-        ],    
+        ],
         "baseStats": {
             "hp": 68,
             "attack": 65,
@@ -39654,7 +39654,7 @@ const pokemonData = [
             "Helping Hand",
             "Bug Buzz",
             "Acrobatics"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 30,
@@ -39765,7 +39765,7 @@ const pokemonData = [
             "Foul Play",
             "Acrobatics",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 60,
@@ -39850,7 +39850,7 @@ const pokemonData = [
             "Magical Leaf",
             "Zen Headbutt",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 40,
@@ -39975,7 +39975,7 @@ const pokemonData = [
             "Poison Jab",
             "Leaf Storm",
             "Bulldoze"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 130,
@@ -40089,7 +40089,7 @@ const pokemonData = [
             "Seed Bomb",
             "X-Scissor",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -40216,7 +40216,7 @@ const pokemonData = [
             "Outrage",
             "Hyper Voice",
             "Drain Punch"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 80,
@@ -40352,7 +40352,7 @@ const pokemonData = [
             "Drain Punch",
             "Heavy Slam",
             "Wild Charge"
-        ],    
+        ],
         "baseStats": {
             "hp": 150,
             "attack": 160,
@@ -40430,7 +40430,7 @@ const pokemonData = [
             "Hone Claws",
             "Round",
             "Struggle Bug"
-        ],    
+        ],
         "baseStats": {
             "hp": 31,
             "attack": 45,
@@ -40522,7 +40522,7 @@ const pokemonData = [
             "Struggle Bug",
             "Swift",
             "Air Cutter"
-        ],    
+        ],
         "baseStats": {
             "hp": 61,
             "attack": 90,
@@ -40619,7 +40619,7 @@ const pokemonData = [
             "Struggle Bug",
             "Trick",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 1,
             "attack": 90,
@@ -40714,7 +40714,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 64,
             "attack": 51,
@@ -40818,7 +40818,7 @@ const pokemonData = [
             "Icy Wind",
             "Zen Headbutt",
             "Low Kick"
-        ],    
+        ],
         "baseStats": {
             "hp": 84,
             "attack": 71,
@@ -40935,7 +40935,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Low Kick",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 104,
             "attack": 91,
@@ -41052,7 +41052,7 @@ const pokemonData = [
             "Drain Punch",
             "Zen Headbutt",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 72,
             "attack": 60,
@@ -41169,7 +41169,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Iron Head",
             "Taunt"
-        ],    
+        ],
         "baseStats": {
             "hp": 144,
             "attack": 120,
@@ -41265,7 +41265,7 @@ const pokemonData = [
             "Icy Wind",
             "Hyper Voice",
             "Take Down"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 20,
@@ -41361,7 +41361,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 45,
@@ -41469,7 +41469,7 @@ const pokemonData = [
             "Helping Hand",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 45,
@@ -41578,7 +41578,7 @@ const pokemonData = [
             "Helping Hand",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 65,
@@ -41732,7 +41732,7 @@ const pokemonData = [
             "X-Scissor",
             "Energy Ball",
             "Giga Impact"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 75,
@@ -41976,7 +41976,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 85,
@@ -42190,7 +42190,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 70,
@@ -42286,7 +42286,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 90,
@@ -42419,7 +42419,7 @@ const pokemonData = [
             "Low Kick",
             "Icy Wind",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 110,
@@ -42664,7 +42664,7 @@ const pokemonData = [
             "Close Combat",
             "Trick Room",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 40,
@@ -42794,7 +42794,7 @@ const pokemonData = [
             "Aura Sphere",
             "Trick Room",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -42981,7 +42981,7 @@ const pokemonData = [
             "Headbutt",
             "Swift",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 45,
@@ -43072,7 +43072,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 75,
@@ -43247,7 +43247,7 @@ const pokemonData = [
             "Thunder Punch",
             "Headbutt",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 50,
@@ -43347,7 +43347,7 @@ const pokemonData = [
             "Thunder Punch",
             "Headbutt",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 40,
@@ -43446,7 +43446,7 @@ const pokemonData = [
             "Trick",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 73,
@@ -43548,7 +43548,7 @@ const pokemonData = [
             "Air Cutter",
             "Tailwind",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 47,
@@ -43646,7 +43646,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 60,
@@ -43751,7 +43751,7 @@ const pokemonData = [
             "Fling",
             "Toxic Spikes",
             "Poison Jab"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 43,
@@ -43861,7 +43861,7 @@ const pokemonData = [
             "Metronome",
             "Brick Break",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 73,
@@ -43952,7 +43952,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 90,
@@ -44056,7 +44056,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 120,
@@ -44236,7 +44236,7 @@ const pokemonData = [
             "Icy Wind",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 130,
             "attack": 70,
@@ -44327,7 +44327,7 @@ const pokemonData = [
             "Hyper Voice",
             "Zen Headbutt",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 170,
             "attack": 90,
@@ -44431,7 +44431,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Flash Cannon",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -44538,7 +44538,7 @@ const pokemonData = [
             "Flare Blitz",
             "Zen Headbutt",
             "Selfdestruct"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 100,
@@ -44730,7 +44730,7 @@ const pokemonData = [
             "Flare Blitz",
             "Zen Headbutt",
             "Heavy Slam"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 85,
@@ -44839,7 +44839,7 @@ const pokemonData = [
             "Flash Cannon",
             "Stored Power",
             "Snarl"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 25,
@@ -44972,7 +44972,7 @@ const pokemonData = [
             "Seed Bomb",
             "Earth Power",
             "Low Sweep"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 45,
@@ -45096,7 +45096,7 @@ const pokemonData = [
             "Superpower",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -45178,7 +45178,7 @@ const pokemonData = [
             "Struggle Bug",
             "Headbutt",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 100,
@@ -45279,7 +45279,7 @@ const pokemonData = [
             "Air Cutter",
             "Tailwind",
             "Draco Meteor"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 70,
@@ -45394,7 +45394,7 @@ const pokemonData = [
             "Heat Wave",
             "Air Cutter",
             "Draco Meteor"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 100,
@@ -45510,7 +45510,7 @@ const pokemonData = [
             "Leaf Storm",
             "Foul Play",
             "Bulldoze"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 85,
@@ -45632,7 +45632,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Leaf Storm",
             "Bulldoze"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 115,
@@ -45729,7 +45729,7 @@ const pokemonData = [
             "Brave Bird",
             "Acrobatics",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 40,
@@ -45839,7 +45839,7 @@ const pokemonData = [
             "Snowscape",
             "Will-O-Wisp",
             "Draco Meteor"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 70,
@@ -46076,7 +46076,7 @@ const pokemonData = [
             "Gunk Shot",
             "Grass Knot",
             "Low Sweep"
-        ],    
+        ],
         "baseStats": {
             "hp": 73,
             "attack": 115,
@@ -46191,7 +46191,7 @@ const pokemonData = [
             "Iron Head",
             "Acid Spray",
             "Snarl"
-        ],    
+        ],
         "baseStats": {
             "hp": 73,
             "attack": 100,
@@ -46304,7 +46304,7 @@ const pokemonData = [
             "Earth Power",
             "Zen Headbutt",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 55,
@@ -46420,7 +46420,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 95,
@@ -46510,7 +46510,7 @@ const pokemonData = [
             "Helping Hand",
             "Stone Edge",
             "Stealth Rock"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 48,
@@ -46612,7 +46612,7 @@ const pokemonData = [
             "Sunny Day",
             "Helping Hand",
             "Stealth Rock"
-        ],    
+        ],
         "baseStats": {
             "hp": 110,
             "attack": 78,
@@ -46718,7 +46718,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 43,
             "attack": 80,
@@ -46832,7 +46832,7 @@ const pokemonData = [
             "Icy Wind",
             "Iron Defense",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 63,
             "attack": 120,
@@ -46935,7 +46935,7 @@ const pokemonData = [
             "Trick",
             "Zen Headbutt",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 40,
@@ -47047,7 +47047,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Drill Run",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 70,
@@ -47136,7 +47136,7 @@ const pokemonData = [
             "Mud-Slap",
             "Seed Bomb",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 66,
             "attack": 41,
@@ -47232,7 +47232,7 @@ const pokemonData = [
             "Mud-Slap",
             "Seed Bomb",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 86,
             "attack": 81,
@@ -47322,7 +47322,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 95,
@@ -47422,7 +47422,7 @@ const pokemonData = [
             "Low Kick",
             "Superpower",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 125,
@@ -47497,7 +47497,7 @@ const pokemonData = [
             "Confuse Ray",
             "Swift",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 20,
             "attack": 15,
@@ -47594,7 +47594,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 60,
@@ -47686,7 +47686,7 @@ const pokemonData = [
             "Swift",
             "Icy Wind",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 70,
@@ -48102,7 +48102,7 @@ const pokemonData = [
             "Icy Wind",
             "Trick",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 90,
@@ -48208,7 +48208,7 @@ const pokemonData = [
             "Helping Hand",
             "Nasty Plot",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 44,
             "attack": 75,
@@ -48316,7 +48316,7 @@ const pokemonData = [
             "Mud-Slap",
             "Foul Play",
             "Swords Dance"
-        ],    
+        ],
         "baseStats": {
             "hp": 64,
             "attack": 115,
@@ -48510,7 +48510,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 20,
             "attack": 40,
@@ -48630,7 +48630,7 @@ const pokemonData = [
             "Helping Hand",
             "Trick",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 70,
@@ -48739,7 +48739,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Dragon Tail",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 99,
             "attack": 68,
@@ -48850,7 +48850,7 @@ const pokemonData = [
             "Trick",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 50,
@@ -48981,7 +48981,7 @@ const pokemonData = [
             "Superpower",
             "Zen Headbutt",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 130,
@@ -49137,7 +49137,7 @@ const pokemonData = [
             "Encore",
             "Mirror Coat",
             "Tickle"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 23,
@@ -49219,7 +49219,7 @@ const pokemonData = [
             "Frost Breath",
             "Take Down",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 50,
@@ -49320,7 +49320,7 @@ const pokemonData = [
             "Selfdestruct",
             "Iron Head",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 80,
@@ -49487,7 +49487,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 40,
@@ -49574,7 +49574,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 60,
@@ -49669,7 +49669,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 110,
             "attack": 80,
@@ -49738,7 +49738,7 @@ const pokemonData = [
             "Scald",
             "Confuse Ray",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 35,
             "attack": 64,
@@ -49819,7 +49819,7 @@ const pokemonData = [
             "Icy Wind",
             "Swift",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 104,
@@ -49899,7 +49899,7 @@ const pokemonData = [
             "Icy Wind",
             "Swift",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 84,
@@ -49994,7 +49994,7 @@ const pokemonData = [
             "Icy Wind",
             "Earth Power",
             "Zen Headbutt"
-        ],     
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 90,
@@ -50074,7 +50074,7 @@ const pokemonData = [
             "Scald",
             "Swift",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 43,
             "attack": 30,
@@ -50168,7 +50168,7 @@ const pokemonData = [
             "Thunder Fang",
             "Iron Head",
             "Dragon Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 75,
@@ -50261,7 +50261,7 @@ const pokemonData = [
             "Thunder Fang",
             "Iron Head",
             "Dragon Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 95,
@@ -50372,7 +50372,7 @@ const pokemonData = [
             "Heat Wave",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 135,
@@ -50493,7 +50493,7 @@ const pokemonData = [
             "Iron Defense",
             "Zen Headbutt",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 55,
@@ -50595,7 +50595,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 75,
@@ -50700,7 +50700,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 135,
@@ -52948,7 +52948,7 @@ const pokemonData = [
             "Heavy Slam",
             "Round",
             "Work Up"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 68,
@@ -53038,7 +53038,7 @@ const pokemonData = [
             "Superpower",
             "Seed Bomb",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 89,
@@ -53142,7 +53142,7 @@ const pokemonData = [
             "Seed Bomb",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 109,
@@ -53249,7 +53249,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 44,
             "attack": 58,
@@ -53364,7 +53364,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 64,
             "attack": 78,
@@ -53491,7 +53491,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 76,
             "attack": 104,
@@ -53590,7 +53590,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 53,
             "attack": 51,
@@ -53686,7 +53686,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Icy Wind"
-        ],    
+        ],
         "baseStats": {
             "hp": 64,
             "attack": 66,
@@ -53797,7 +53797,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 84,
             "attack": 86,
@@ -53886,7 +53886,7 @@ const pokemonData = [
             "Helping Hand",
             "Acrobatics",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 55,
@@ -53969,7 +53969,7 @@ const pokemonData = [
             "Helping Hand",
             "Acrobatics",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 75,
@@ -54057,7 +54057,7 @@ const pokemonData = [
             "Acrobatics",
             "Struggle Bug",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 120,
@@ -54154,7 +54154,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 59,
             "attack": 45,
@@ -54260,7 +54260,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 79,
             "attack": 85,
@@ -54297,7 +54297,7 @@ const pokemonData = [
             "Uproar",
             "Endeavor",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 37,
             "attack": 25,
@@ -54385,7 +54385,7 @@ const pokemonData = [
             "Giga Drain",
             "Baton Pass",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 77,
             "attack": 85,
@@ -54472,7 +54472,7 @@ const pokemonData = [
             "Helping Hand",
             "Confuse Ray",
             "Sunny Day"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 65,
@@ -54556,7 +54556,7 @@ const pokemonData = [
             "Helping Hand",
             "Confuse Ray",
             "Sunny Day"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 85,
@@ -54645,7 +54645,7 @@ const pokemonData = [
             "Body Slam",
             "Confuse Ray",
             "Sunny Day"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 120,
@@ -54731,7 +54731,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 30,
@@ -54827,7 +54827,7 @@ const pokemonData = [
             "Swift",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 70,
@@ -54930,7 +54930,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 67,
             "attack": 125,
@@ -55040,7 +55040,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 97,
             "attack": 165,
@@ -55134,7 +55134,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 42,
@@ -55232,7 +55232,7 @@ const pokemonData = [
             "Mud-Slap",
             "Outrage",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 52,
@@ -55264,7 +55264,7 @@ const pokemonData = [
             "String Shot",
             "Snore",
             "Electroweb"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 29,
@@ -55353,7 +55353,7 @@ const pokemonData = [
             "Dig",
             "Magical Leaf",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 59,
@@ -55441,7 +55441,7 @@ const pokemonData = [
             "Bulldoze",
             "Mud-Slap",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 79,
@@ -55529,7 +55529,7 @@ const pokemonData = [
             "Silver Wind",
             "Iron Defense",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 69,
@@ -55612,7 +55612,7 @@ const pokemonData = [
             "Mud-Slap",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 94,
@@ -55650,7 +55650,7 @@ const pokemonData = [
             "Air Cutter",
             "Tailwind",
             "Sleep Talk"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 30,
@@ -55755,7 +55755,7 @@ const pokemonData = [
             "Taunt",
             "Helping Hand",
             "Hurricane"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 80,
@@ -55859,7 +55859,7 @@ const pokemonData = [
             "Giga Impact",
             "Thunder Fang",
             "Wild Charge"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 45,
@@ -55962,7 +55962,7 @@ const pokemonData = [
             "Fling",
             "Ice Fang",
             "Low Sweep"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 65,
@@ -56068,7 +56068,7 @@ const pokemonData = [
             "Fling",
             "Low Sweep",
             "Snarl"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 105,
@@ -56146,7 +56146,7 @@ const pokemonData = [
             "Grass Knot",
             "Round",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 35,
@@ -56220,7 +56220,7 @@ const pokemonData = [
             "Grass Knot",
             "Round",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 60,
@@ -56316,7 +56316,7 @@ const pokemonData = [
             "Stone Edge",
             "Stealth Rock",
             "Bulldoze"
-        ],    
+        ],
         "baseStats": {
             "hp": 76,
             "attack": 48,
@@ -56418,7 +56418,7 @@ const pokemonData = [
             "Rock Blast",
             "Helping Hand",
             "Stealth Rock"
-        ],    
+        ],
         "baseStats": {
             "hp": 111,
             "attack": 83,
@@ -56544,7 +56544,7 @@ const pokemonData = [
             "Seed Bomb",
             "Gunk Shot",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 100,
@@ -56660,7 +56660,7 @@ const pokemonData = [
             "Aerial Ace",
             "Trick Room",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 50,
@@ -56776,7 +56776,7 @@ const pokemonData = [
             "Air Slash",
             "Trick Room",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 150,
             "attack": 80,
@@ -56891,7 +56891,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 66,
@@ -57012,7 +57012,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 76,
@@ -57236,7 +57236,7 @@ const pokemonData = [
             "Grass Knot",
             "Psyshock",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -57351,7 +57351,7 @@ const pokemonData = [
             "Acrobatics",
             "Hurricane",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 125,
@@ -57452,7 +57452,7 @@ const pokemonData = [
             "Mud-Slap",
             "Hyper Voice",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 49,
             "attack": 55,
@@ -57552,7 +57552,7 @@ const pokemonData = [
             "Mud-Slap",
             "Hyper Voice",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 71,
             "attack": 82,
@@ -57653,7 +57653,7 @@ const pokemonData = [
             "Trick",
             "Hyper Voice",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 30,
@@ -57763,7 +57763,7 @@ const pokemonData = [
             "Toxic Spikes",
             "Gunk Shot",
             "Acid Spray"
-        ],    
+        ],
         "baseStats": {
             "hp": 63,
             "attack": 63,
@@ -57872,7 +57872,7 @@ const pokemonData = [
             "Toxic Spikes",
             "Gunk Shot",
             "Acid Spray"
-        ],    
+        ],
         "baseStats": {
             "hp": 103,
             "attack": 93,
@@ -57975,7 +57975,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Iron Head",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 57,
             "attack": 24,
@@ -58087,7 +58087,7 @@ const pokemonData = [
             "Stored Power",
             "Zen Headbutt",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 67,
             "attack": 89,
@@ -58183,7 +58183,7 @@ const pokemonData = [
             "Stone Edge",
             "Grass Knot",
             "Bulldoze"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 80,
@@ -58298,7 +58298,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 20,
             "attack": 25,
@@ -58397,7 +58397,7 @@ const pokemonData = [
             "Incinerate",
             "Work Up",
             "Take Down"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 5,
@@ -58483,7 +58483,7 @@ const pokemonData = [
             "Heat Wave",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 76,
             "attack": 65,
@@ -58584,7 +58584,7 @@ const pokemonData = [
             "Trick Room",
             "Psyshock",
             "Stored Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 92,
@@ -58680,7 +58680,7 @@ const pokemonData = [
             "Fire Fang",
             "Dragon Tail",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 58,
             "attack": 70,
@@ -58777,7 +58777,7 @@ const pokemonData = [
             "Fire Fang",
             "Power Gem",
             "Dragon Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 68,
             "attack": 90,
@@ -58882,7 +58882,7 @@ const pokemonData = [
             "Helping Hand",
             "Power Gem",
             "Thunder Fang"
-        ],    
+        ],
         "baseStats": {
             "hp": 108,
             "attack": 130,
@@ -59092,7 +59092,7 @@ const pokemonData = [
             "Seed Bomb",
             "Zen Headbutt",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 135,
             "attack": 85,
@@ -59209,7 +59209,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Take Down",
             "Aerial Ace"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 70,
@@ -59339,7 +59339,7 @@ const pokemonData = [
             "Take Down",
             "Metronome",
             "Aerial Ace"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 110,
@@ -59527,7 +59527,7 @@ const pokemonData = [
             "Ice Fang",
             "Fire Fang",
             "Stone Edge"
-        ],    
+        ],
         "baseStats": {
             "hp": 68,
             "attack": 72,
@@ -59617,7 +59617,7 @@ const pokemonData = [
             "Iron Head",
             "Helping Hand",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 108,
             "attack": 112,
@@ -59719,7 +59719,7 @@ const pokemonData = [
             "Confuse Ray",
             "Headbutt",
             "Mud-Slap"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 50,
@@ -59832,7 +59832,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 90,
@@ -59963,7 +59963,7 @@ const pokemonData = [
             "Mud Shot",
             "Shadow Claw",
             "Acid Spray"
-        ],    
+        ],
         "baseStats": {
             "hp": 48,
             "attack": 61,
@@ -60091,7 +60091,7 @@ const pokemonData = [
             "Mud Shot",
             "Shadow Claw",
             "Acid Spray"
-        ],    
+        ],
         "baseStats": {
             "hp": 83,
             "attack": 106,
@@ -60183,7 +60183,7 @@ const pokemonData = [
             "Acid Spray",
             "Mud-Slap",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 74,
             "attack": 100,
@@ -60276,7 +60276,7 @@ const pokemonData = [
             "Thief",
             "Helping Hand",
             "Acrobatics"
-        ],    
+        ],
         "baseStats": {
             "hp": 49,
             "attack": 49,
@@ -60368,7 +60368,7 @@ const pokemonData = [
             "Helping Hand",
             "Acrobatics",
             "Encore"
-        ],    
+        ],
         "baseStats": {
             "hp": 69,
             "attack": 69,
@@ -60459,7 +60459,7 @@ const pokemonData = [
             "Helping Hand",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 20,
@@ -60551,7 +60551,7 @@ const pokemonData = [
             "Take Down",
             "Helping Hand",
             "Leaf Storm"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 62,
@@ -60660,7 +60660,7 @@ const pokemonData = [
             "Low Kick",
             "Scary Face",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 92,
@@ -60880,7 +60880,7 @@ const pokemonData = [
             "Baton Pass",
             "Helping Hand",
             "Water Pulse"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 120,
@@ -60984,7 +60984,7 @@ const pokemonData = [
             "Confuse Ray",
             "Helping Hand",
             "Tri Attack"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 70,
@@ -61123,7 +61123,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 110,
             "attack": 85,
@@ -61276,7 +61276,7 @@ const pokemonData = [
             "Earth Power",
             "Iron Head",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 115,
             "attack": 140,
@@ -61388,7 +61388,7 @@ const pokemonData = [
             "Mud-Slap",
             "Seed Bomb",
             "Acid Spray"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 100,
@@ -61505,7 +61505,7 @@ const pokemonData = [
             "Headbutt",
             "Mud-Slap",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 123,
@@ -61619,7 +61619,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Confuse Ray"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 95,
@@ -61757,7 +61757,7 @@ const pokemonData = [
             "Hyper Voice",
             "Tailwind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 50,
@@ -61856,7 +61856,7 @@ const pokemonData = [
             "Mud-Slap",
             "Air Cutter",
             "Tailwind"
-        ],    
+        ],
         "baseStats": {
             "hp": 86,
             "attack": 76,
@@ -61972,7 +61972,7 @@ const pokemonData = [
             "Hyper Voice",
             "Seed Bomb",
             "Mud Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 110,
@@ -62082,7 +62082,7 @@ const pokemonData = [
             "Work Up",
             "Mud Shot",
             "Powder Snow"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 60,
@@ -62205,7 +62205,7 @@ const pokemonData = [
             "Mud-Slap",
             "Tailwind",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 95,
@@ -62314,7 +62314,7 @@ const pokemonData = [
             "Superpower",
             "Earth Power",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 110,
             "attack": 130,
@@ -62427,7 +62427,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Foul Play",
             "Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 80,
@@ -62593,7 +62593,7 @@ const pokemonData = [
             "Hex",
             "Confuse Ray",
             "Slash"
-        ],    
+        ],
         "baseStats": {
             "hp": 68,
             "attack": 125,
@@ -62821,7 +62821,7 @@ const pokemonData = [
             "Mud-Slap",
             "Helping Hand",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 55,
@@ -62942,7 +62942,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 100,
@@ -63056,7 +63056,7 @@ const pokemonData = [
             "Scary Face",
             "Helping Hand",
             "Hex"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 80,
@@ -63140,7 +63140,7 @@ const pokemonData = [
             "Hyper Voice",
             "Foul Play",
             "Night Shade"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 50,
@@ -63225,7 +63225,7 @@ const pokemonData = [
             "Foul Play",
             "Night Shade",
             "Overheat"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -63310,7 +63310,7 @@ const pokemonData = [
             "Foul Play",
             "Night Shade",
             "Hydro Pump"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -63396,7 +63396,7 @@ const pokemonData = [
             "Night Shade",
             "Blizzard"
         ],
-    
+
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -63482,7 +63482,7 @@ const pokemonData = [
             "Night Shade",
             "Air Slash"
         ],
-    
+
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -63567,7 +63567,7 @@ const pokemonData = [
             "Foul Play",
             "Night Shade",
             "Leaf Storm"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -65239,7 +65239,7 @@ const pokemonData = [
             "Seed Bomb",
             "Earth Power",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 100,
             "attack": 100,
@@ -65714,7 +65714,7 @@ const pokemonData = [
             "Round",
             "Work Up",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 45,
@@ -65801,7 +65801,7 @@ const pokemonData = [
             "Round",
             "Work Up",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -65896,7 +65896,7 @@ const pokemonData = [
             "Work Up",
             "Seed Bomb",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 75,
@@ -65981,7 +65981,7 @@ const pokemonData = [
             "Helping Hand",
             "Superpower",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 63,
@@ -66076,7 +66076,7 @@ const pokemonData = [
             "Fire Punch",
             "Thunder Punch",
             "Low Kick"
-        ],    
+        ],
         "baseStats": {
             "hp": 90,
             "attack": 93,
@@ -66181,7 +66181,7 @@ const pokemonData = [
             "Thunder Punch",
             "Low Kick",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 110,
             "attack": 123,
@@ -66275,7 +66275,7 @@ const pokemonData = [
             "Thief",
             "Endure",
             "Avalanche"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 55,
@@ -66366,7 +66366,7 @@ const pokemonData = [
             "Endure",
             "Avalanche",
             "Brick Break"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 75,
@@ -66470,7 +66470,7 @@ const pokemonData = [
             "Body Slam",
             "Bulldoze",
             "Drill Run"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 100,
@@ -66640,7 +66640,7 @@ const pokemonData = [
             "Seed Bomb",
             "Zen Headbutt",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 55,
@@ -66743,7 +66743,7 @@ const pokemonData = [
             "Fire Punch",
             "Ice Punch",
             "Thunder Punch"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 85,
@@ -66825,7 +66825,7 @@ const pokemonData = [
             "Snarl",
             "Mud-Slap",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 60,
@@ -66904,7 +66904,7 @@ const pokemonData = [
             "Snarl",
             "Mud-Slap",
             "Hyper Voice"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 80,
@@ -66986,7 +66986,7 @@ const pokemonData = [
             "Hyper Voice",
             "Superpower",
             "Iron Head"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 110,
@@ -67083,7 +67083,7 @@ const pokemonData = [
             "Seed Bomb",
             "Gunk Shot",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 41,
             "attack": 50,
@@ -67181,7 +67181,7 @@ const pokemonData = [
             "Seed Bomb",
             "Gunk Shot",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 64,
             "attack": 88,
@@ -67273,7 +67273,7 @@ const pokemonData = [
             "Low Kick",
             "Helping Hand",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 53,
@@ -67368,7 +67368,7 @@ const pokemonData = [
             "Helping Hand",
             "Gunk Shot",
             "Superpower"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 98,
@@ -67462,7 +67462,7 @@ const pokemonData = [
             "Heat Wave",
             "Helping Hand",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 53,
@@ -67559,7 +67559,7 @@ const pokemonData = [
             "Helping Hand",
             "Superpower",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 98,
@@ -67654,7 +67654,7 @@ const pokemonData = [
             "Icy Wind",
             "Helping Hand",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 53,
@@ -67752,7 +67752,7 @@ const pokemonData = [
             "Helping Hand",
             "Superpower",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 98,
@@ -67849,7 +67849,7 @@ const pokemonData = [
             "Swift",
             "Helping Hand",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 76,
             "attack": 25,
@@ -67944,7 +67944,7 @@ const pokemonData = [
             "Swift",
             "Helping Hand",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 116,
             "attack": 55,
@@ -68022,7 +68022,7 @@ const pokemonData = [
             "Work Up",
             "Swift",
             "Heat Wave"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 55,
@@ -68095,7 +68095,7 @@ const pokemonData = [
             "Work Up",
             "Swift",
             "Heat Wave"
-        ],    
+        ],
         "baseStats": {
             "hp": 62,
             "attack": 77,
@@ -68173,7 +68173,7 @@ const pokemonData = [
             "Hurricane",
             "Swift",
             "Heat Wave"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 115,
@@ -68248,7 +68248,7 @@ const pokemonData = [
             "Round",
             "Volt Switch",
             "Low Kick"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 60,
@@ -68323,7 +68323,7 @@ const pokemonData = [
             "Round",
             "Volt Switch",
             "Low Kick"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 100,
@@ -68397,7 +68397,7 @@ const pokemonData = [
             "Round",
             "Bulldoze",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 75,
@@ -68468,7 +68468,7 @@ const pokemonData = [
             "Round",
             "Bulldoze",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 105,
@@ -68546,7 +68546,7 @@ const pokemonData = [
             "Superpower",
             "Selfdestruct",
             "Giga Impact"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 135,
@@ -68657,7 +68657,7 @@ const pokemonData = [
             "Trick",
             "Tailwind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 45,
@@ -68767,7 +68767,7 @@ const pokemonData = [
             "Trick",
             "Tailwind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 67,
             "attack": 57,
@@ -68847,7 +68847,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 85,
@@ -68935,7 +68935,7 @@ const pokemonData = [
             "Drill Run",
             "Iron Head",
             "Metal Claw"
-        ],    
+        ],
         "baseStats": {
             "hp": 110,
             "attack": 135,
@@ -69052,7 +69052,7 @@ const pokemonData = [
             "Low Kick",
             "Icy Wind",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 103,
             "attack": 60,
@@ -69274,7 +69274,7 @@ const pokemonData = [
             "Ice Punch",
             "Thunder Punch",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 80,
@@ -69366,7 +69366,7 @@ const pokemonData = [
             "Ice Punch",
             "Thunder Punch",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 85,
             "attack": 105,
@@ -69462,7 +69462,7 @@ const pokemonData = [
             "Ice Punch",
             "Thunder Punch",
             "Helping Hand"
-        ],    
+        ],
         "baseStats": {
             "hp": 105,
             "attack": 140,
@@ -69536,7 +69536,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 50,
@@ -69613,7 +69613,7 @@ const pokemonData = [
             "Mud-Slap",
             "Icy Wind",
             "Earth Power"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 65,
@@ -69711,7 +69711,7 @@ const pokemonData = [
             "Earth Power",
             "Ice Punch",
             "Low Kick"
-        ],    
+        ],
         "baseStats": {
             "hp": 105,
             "attack": 95,
@@ -69801,7 +69801,7 @@ const pokemonData = [
             "Low Kick",
             "Helping Hand",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 120,
             "attack": 100,
@@ -69889,7 +69889,7 @@ const pokemonData = [
             "Helping Hand",
             "Superpower",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 125,
@@ -69967,7 +69967,7 @@ const pokemonData = [
             "Round",
             "Iron Defense",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 53,
@@ -70044,7 +70044,7 @@ const pokemonData = [
             "Round",
             "Iron Defense",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 63,
@@ -70140,7 +70140,7 @@ const pokemonData = [
             "Retaliate",
             "Iron Defense",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 103,
@@ -70214,7 +70214,7 @@ const pokemonData = [
             "Hex",
             "Struggle Bug",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 30,
             "attack": 45,
@@ -70288,7 +70288,7 @@ const pokemonData = [
             "Hex",
             "Struggle Bug",
             "Poison Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 55,
@@ -70382,7 +70382,7 @@ const pokemonData = [
             "Bulldoze",
             "Superpower",
             "Poison Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 100,
@@ -70463,7 +70463,7 @@ const pokemonData = [
             "Swift",
             "Tailwind",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 40,
             "attack": 27,
@@ -70552,7 +70552,7 @@ const pokemonData = [
             "Round",
             "Swift",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 67,
@@ -70633,7 +70633,7 @@ const pokemonData = [
             "Round",
             "Seed Bomb",
             "Bullet Seed"
-        ],    
+        ],
         "baseStats": {
             "hp": 45,
             "attack": 35,
@@ -70718,7 +70718,7 @@ const pokemonData = [
             "Round",
             "Seed Bomb",
             "Bullet Seed"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 60,
@@ -70889,7 +70889,7 @@ const pokemonData = [
             "Hyper Beam",
             "Water Pulse",
             "Giga Impact"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 92,
@@ -70979,7 +70979,7 @@ const pokemonData = [
             "Hyper Beam",
             "Water Pulse",
             "Giga Impact"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 92,
@@ -71147,7 +71147,7 @@ const pokemonData = [
             "Fling",
             "Shadow Claw",
             "Grass Knot"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 72,
@@ -71255,7 +71255,7 @@ const pokemonData = [
             "Mud Shot",
             "Dragon Claw",
             "Dragon Tail"
-        ],    
+        ],
         "baseStats": {
             "hp": 60,
             "attack": 82,
@@ -71374,7 +71374,7 @@ const pokemonData = [
             "Helping Hand",
             "Mud Shot",
             "Gunk Shot"
-        ],    
+        ],
         "baseStats": {
             "hp": 95,
             "attack": 117,
@@ -71465,7 +71465,7 @@ const pokemonData = [
             "Round",
             "Heat Wave",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 90,
@@ -71654,7 +71654,7 @@ const pokemonData = [
             "Iron Defense",
             "Iron Head",
             "Trick"
-        ],    
+        ],
         "baseStats": {
             "hp": 105,
             "attack": 140,
@@ -72037,7 +72037,7 @@ const pokemonData = [
             "Helping Hand",
             "Hyper Voice",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 86,
@@ -72121,7 +72121,7 @@ const pokemonData = [
             "Struggle Bug",
             "Bulldoze",
             "Iron Defense"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 65,
@@ -72206,7 +72206,7 @@ const pokemonData = [
             "Bulldoze",
             "Iron Defense",
             "Heavy Slam"
-        ],    
+        ],
         "baseStats": {
             "hp": 70,
             "attack": 105,
@@ -72318,7 +72318,7 @@ const pokemonData = [
             "Zen Headbutt",
             "Iron Head",
             "Foul Play"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 75,
@@ -72433,7 +72433,7 @@ const pokemonData = [
             "Iron Head",
             "Foul Play",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 65,
             "attack": 90,
@@ -72538,7 +72538,7 @@ const pokemonData = [
             "Heat Wave",
             "Trick",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 72,
             "attack": 58,
@@ -72628,7 +72628,7 @@ const pokemonData = [
             "Trick",
             "Iron Defense",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 38,
             "attack": 30,
@@ -72799,7 +72799,7 @@ const pokemonData = [
             "Trick",
             "Iron Defense",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 58,
             "attack": 50,
@@ -72888,7 +72888,7 @@ const pokemonData = [
             "Iron Defense",
             "Earth Power",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 54,
             "attack": 78,
@@ -72980,7 +72980,7 @@ const pokemonData = [
             "Superpower",
             "Iron Head",
             "Low Kick"
-        ],    
+        ],
         "baseStats": {
             "hp": 74,
             "attack": 108,
@@ -73072,7 +73072,7 @@ const pokemonData = [
             "Ally Switch",
             "Bulldoze",
             "Zen Headbutt"
-        ],    
+        ],
         "baseStats": {
             "hp": 55,
             "attack": 112,
@@ -73168,7 +73168,7 @@ const pokemonData = [
             "Earth Power",
             "Zen Headbutt",
             "Outrage"
-        ],    
+        ],
         "baseStats": {
             "hp": 75,
             "attack": 140,
@@ -73247,7 +73247,7 @@ const pokemonData = [
             "Selfdestruct",
             "Seed Bomb",
             "Acid Spray"
-        ],    
+        ],
         "baseStats": {
             "hp": 50,
             "attack": 50,
@@ -73334,7 +73334,7 @@ const pokemonData = [
             "Round",
             "Selfdestruct",
             "Seed Bomb"
-        ],    
+        ],
         "baseStats": {
             "hp": 80,
             "attack": 95,
@@ -73384,28 +73384,43 @@ const pokemonData = [
         ],
         "moves": [
             "Scratch",
+            "Leer",
+            "Torment",
+            "Pursuit",
+            "Hone Claws",
+            "Fury Swipes",
+            "Scary Face",
+            "Faint Attack",
+            "Taunt",
+            "Knock Off",
+            "Fake Tears",
+            "Agility",
+            "Imprison",
+            "Night Daze",
+            "Embargo",
+            "Nasty Plot",
+            "Punishment",
+            "Foul Play",
+            "Memento",
+            "Extrasensory",
+            "Copycat",
+            "Snore",
+            "Spite",
+            "Uproar",
+            "Bounce",
+            "Covet",
+            "Sucker Punch",
             "Swords Dance",
             "Cut",
-            "Take Down",
-            "Leer",
             "Roar",
             "Counter",
             "Dig",
             "Toxic",
-            "Agility",
-            "Night Shade",
             "Double Team",
-            "Confuse Ray",
-            "Swift",
-            "Fury Swipes",
             "Rest",
             "Substitute",
             "Thief",
-            "Snore",
-            "Spite",
             "Protect",
-            "Scary Face",
-            "Feint Attack",
             "Sludge Bomb",
             "Detect",
             "Endure",
@@ -73414,58 +73429,38 @@ const pokemonData = [
             "Sleep Talk",
             "Return",
             "Frustration",
-            "Encore",
-            "Pursuit",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
             "Psych Up",
             "Shadow Ball",
-            "Uproar",
-            "Torment",
-            "Memento",
             "Facade",
-            "Taunt",
-            "Helping Hand",
-            "Trick",
             "Revenge",
-            "Knock Off",
-            "Imprison",
             "Snatch",
             "Secret Power",
-            "Hyper Voice",
-            "Fake Tears",
-            "Extrasensory",
             "Aerial Ace",
-            "Bounce",
-            "Covet",
             "Calm Mind",
             "U-turn",
             "Payback",
             "Assurance",
-            "Embargo",
             "Fling",
-            "Copycat",
-            "Punishment",
-            "Sucker Punch",
             "Dark Pulse",
-            "Nasty Plot",
-            "Shadow Claw",
             "Captivate",
             "Grass Knot",
-            "Hone Claws",
-            "Foul Play",
             "Round",
             "Hex",
             "Incinerate",
             "Retaliate",
-            "Night Daze",
             "Snarl",
-            "Confide",
-            "Skitter Smack",
-            "Burning Jealousy",
-            "Lash Out",
-            "Tera Blast"
+            "Swift",
+            "Trick",
+            "Hyper Voice",
+            "Take Down",
+            "Night Shade",
+            "Confuse Ray",
+            "Encore",
+            "Helping Hand",
+            "Shadow Claw"
         ],
         "baseStats": {
             "hp": 40,
@@ -73564,36 +73559,49 @@ const pokemonData = [
             "Illusion"
         ],
         "moves": [
-            "Mega Punch",
             "Scratch",
+            "Leer",
+            "Pursuit",
+            "Torment",
+            "Imprison",
+            "U-turn",
+            "Night Slash",
+            "Hone Claws",
+            "Night Daze",
+            "Fury Swipes",
+            "Scary Face",
+            "Faint Attack",
+            "Taunt",
+            "Knock Off",
+            "Fake Tears",
+            "Agility",
+            "Embargo",
+            "Punishment",
+            "Nasty Plot",
+            "Foul Play",
+            "Snore",
+            "Spite",
+            "Uproar",
+            "Bounce",
+            "Covet",
+            "Sucker Punch",
+            "Mega Punch",
             "Swords Dance",
             "Cut",
             "Mega Kick",
-            "Body Slam",
-            "Take Down",
-            "Leer",
             "Roar",
             "Flamethrower",
             "Hyper Beam",
-            "Low Kick",
+            "Counter",
             "Dig",
             "Toxic",
-            "Psychic",
-            "Agility",
-            "Night Shade",
             "Double Team",
-            "Confuse Ray",
-            "Swift",
-            "Fury Swipes",
             "Rest",
             "Substitute",
             "Thief",
-            "Snore",
-            "Spite",
             "Protect",
-            "Scary Face",
-            "Feint Attack",
             "Sludge Bomb",
+            "Detect",
             "Endure",
             "Swagger",
             "Attract",
@@ -73601,62 +73609,45 @@ const pokemonData = [
             "Return",
             "Frustration",
             "Encore",
-            "Pursuit",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
-            "Crunch",
             "Psych Up",
             "Shadow Ball",
             "Rock Smash",
-            "Uproar",
-            "Torment",
             "Facade",
-            "Taunt",
-            "Helping Hand",
-            "Trick",
-            "Revenge",
-            "Brick Break",
-            "Knock Off",
-            "Imprison",
             "Snatch",
             "Secret Power",
-            "Hyper Voice",
-            "Fake Tears",
             "Aerial Ace",
-            "Bounce",
-            "Covet",
             "Calm Mind",
-            "U-turn",
             "Payback",
             "Assurance",
-            "Embargo",
             "Fling",
-            "Punishment",
             "Dark Pulse",
-            "Night Slash",
             "Focus Blast",
             "Giga Impact",
-            "Nasty Plot",
             "Shadow Claw",
+            "Captivate",
             "Grass Knot",
-            "Hone Claws",
             "Low Sweep",
-            "Foul Play",
             "Round",
             "Hex",
             "Incinerate",
             "Retaliate",
-            "Night Daze",
             "Snarl",
-            "Confide",
-            "Laser Focus",
-            "Throat Chop",
-            "Skitter Smack",
-            "Burning Jealousy",
-            "Lash Out",
-            "Tera Blast"
-        ],
+            "Low Kick",
+            "Swift",
+            "Trick",
+            "Hyper Voice",
+            "Body Slam",
+            "Take Down",
+            "Psychic",
+            "Night Shade",
+            "Confuse Ray",
+            "Crunch",
+            "Helping Hand",
+            "Brick Break"
+        ],    
         "baseStats": {
             "hp": 60,
             "attack": 105,
@@ -73767,69 +73758,64 @@ const pokemonData = [
         ],
         "moves": [
             "Pound",
-            "Double Slap",
-            "Slam",
-            "Tail Whip",
             "Growl",
+            "Helping Hand",
+            "Echoed Voice",
             "Sing",
+            "Double Slap",
+            "Charm",
+            "Swift",
+            "Encore",
+            "After You",
+            "Wake-Up Slap",
+            "Tail Slap",
+            "Tickle",
+            "Captivate",
+            "Slam",
+            "Hyper Voice",
+            "Last Resort",
+            "Tail Whip",
+            "Flail",
+            "Snore",
+            "Uproar",
+            "Knock Off",
+            "Covet",
+            "Aqua Tail",
             "Thunderbolt",
             "Thunder Wave",
             "Dig",
             "Toxic",
             "Double Team",
-            "Swift",
             "Rest",
             "Substitute",
             "Thief",
-            "Snore",
-            "Flail",
             "Protect",
-            "Mud-Slap",
             "Endure",
-            "Charm",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Safeguard",
-            "Encore",
             "Iron Tail",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
-            "Uproar",
             "Facade",
-            "Helping Hand",
-            "Knock Off",
             "Secret Power",
-            "Hyper Voice",
             "Fake Tears",
-            "Tickle",
-            "Covet",
             "Calm Mind",
             "Shock Wave",
-            "Wake-Up Slap",
             "U-turn",
             "Fling",
-            "Last Resort",
-            "Aqua Tail",
-            "Seed Bomb",
-            "Gunk Shot",
-            "Captivate",
             "Grass Knot",
-            "After You",
             "Round",
-            "Echoed Voice",
             "Retaliate",
             "Work Up",
-            "Tail Slap",
-            "Play Rough",
-            "Confide",
-            "Dazzling Gleam",
-            "Baby-Doll Eyes",
-            "Triple Axel"
-        ],
+            "Mud-Slap",
+            "Seed Bomb",
+            "Gunk Shot"
+        ],    
         "baseStats": {
             "hp": 55,
             "attack": 50,
@@ -73858,6 +73844,27 @@ const pokemonData = [
             "Pound",
             "Slam",
             "Sing",
+            "Swift",
+            "Charm",
+            "Encore",
+            "Helping Hand",
+            "Hyper Voice",
+            "Tickle",
+            "Bullet Seed",
+            "Rock Blast",
+            "Last Resort",
+            "After You",
+            "Echoed Voice",
+            "Tail Slap",
+            "Snore",
+            "Uproar",
+            "Knock Off",
+            "Covet",
+            "Aqua Tail",
+            "Double Slap",
+            "Growl",
+            "Wake-Up Slap",
+            "Captivate",
             "Hyper Beam",
             "Thunderbolt",
             "Thunder Wave",
@@ -73866,60 +73873,39 @@ const pokemonData = [
             "Toxic",
             "Double Team",
             "Light Screen",
-            "Swift",
             "Rest",
             "Substitute",
             "Thief",
-            "Snore",
             "Protect",
             "Endure",
-            "Charm",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Safeguard",
-            "Encore",
             "Iron Tail",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
-            "Uproar",
             "Facade",
-            "Helping Hand",
-            "Knock Off",
             "Secret Power",
-            "Hyper Voice",
             "Fake Tears",
-            "Tickle",
-            "Bullet Seed",
-            "Covet",
             "Calm Mind",
-            "Rock Blast",
             "Shock Wave",
             "U-turn",
             "Fling",
-            "Last Resort",
-            "Aqua Tail",
-            "Seed Bomb",
             "Focus Blast",
             "Giga Impact",
-            "Gunk Shot",
+            "Captivate",
             "Grass Knot",
-            "After You",
             "Round",
-            "Echoed Voice",
             "Retaliate",
             "Work Up",
-            "Tail Slap",
-            "Play Rough",
-            "Confide",
-            "Dazzling Gleam",
-            "Baby-Doll Eyes",
-            "Laser Focus",
-            "Triple Axel"
-        ],
+            "Mud-Slap",
+            "Seed Bomb",
+            "Gunk Shot"
+        ],    
         "baseStats": {
             "hp": 75,
             "attack": 95,
@@ -73946,94 +73932,87 @@ const pokemonData = [
         ],
         "moves": [
             "Pound",
-            "Double Slap",
+            "Confusion",
+            "Tickle",
             "Psybeam",
+            "Double Slap",
+            "Charm",
+            "Embargo",
+            "Psyshock",
+            "Hypnosis",
+            "Faint Attack",
+            "Fake Tears",
+            "Psych Up",
+            "Heal Block",
+            "Psychic",
+            "Flatter",
+            "Telekinesis",
+            "Future Sight",
+            "Magic Room",
+            "Mean Look",
+            "Mirror Coat",
+            "Miracle Eye",
+            "Heal Pulse",
+            "Snore",
+            "Heal Bell",
+            "Fake Out",
+            "Uproar",
+            "Role Play",
+            "Magic Coat",
+            "Signal Beam",
+            "Covet",
+            "Gravity",
             "Thunderbolt",
             "Thunder Wave",
             "Toxic",
-            "Confusion",
-            "Psychic",
-            "Hypnosis",
             "Double Team",
             "Light Screen",
             "Reflect",
-            "Swift",
             "Dream Eater",
             "Flash",
             "Rest",
             "Rock Slide",
             "Substitute",
             "Thief",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Endure",
-            "Charm",
             "Swagger",
-            "Mean Look",
             "Attract",
             "Sleep Talk",
-            "Heal Bell",
             "Return",
             "Frustration",
             "Safeguard",
             "Hidden Power",
             "Rain Dance",
-            "Mirror Coat",
-            "Psych Up",
             "Shadow Ball",
-            "Future Sight",
-            "Fake Out",
-            "Uproar",
             "Torment",
-            "Flatter",
             "Facade",
             "Taunt",
-            "Helping Hand",
-            "Trick",
-            "Role Play",
-            "Magic Coat",
             "Recycle",
             "Skill Swap",
-            "Imprison",
             "Snatch",
             "Secret Power",
-            "Fake Tears",
             "Rock Tomb",
-            "Tickle",
-            "Signal Beam",
-            "Covet",
             "Calm Mind",
             "Shock Wave",
-            "Gravity",
-            "Miracle Eye",
             "Payback",
-            "Embargo",
-            "Fling",
-            "Heal Block",
             "Guard Swap",
             "Dark Pulse",
             "Energy Ball",
             "Nasty Plot",
-            "Zen Headbutt",
             "Trick Room",
             "Captivate",
             "Grass Knot",
             "Charge Beam",
-            "Psyshock",
-            "Telekinesis",
-            "Magic Room",
-            "Foul Play",
-            "Round",
             "Stored Power",
             "Ally Switch",
-            "Heal Pulse",
-            "Play Nice",
-            "Confide",
-            "Psychic Terrain",
-            "Expanding Force",
-            "Tera Blast"
-        ],
+            "Helping Hand",
+            "Trick",
+            "Zen Headbutt",
+            "Foul Play",
+            "Swift",
+            "Imprison"
+        ],    
         "baseStats": {
             "hp": 45,
             "attack": 30,
@@ -74060,89 +74039,84 @@ const pokemonData = [
         ],
         "moves": [
             "Pound",
-            "Double Slap",
+            "Confusion",
+            "Tickle",
             "Psybeam",
+            "Double Slap",
+            "Charm",
+            "Embargo",
+            "Psyshock",
+            "Hypnosis",
+            "Faint Attack",
+            "Fake Tears",
+            "Heal Block",
+            "Psych Up",
+            "Psychic",
+            "Telekinesis",
+            "Flatter",
+            "Future Sight",
+            "Magic Room",
+            "Snore",
+            "Heal Bell",
+            "Fake Out",
+            "Uproar",
+            "Role Play",
+            "Magic Coat",
+            "Signal Beam",
+            "Covet",
+            "Gravity",
             "Thunderbolt",
             "Thunder Wave",
             "Toxic",
-            "Confusion",
-            "Psychic",
-            "Hypnosis",
             "Double Team",
             "Light Screen",
             "Reflect",
-            "Metronome",
-            "Swift",
             "Dream Eater",
             "Flash",
             "Rest",
             "Rock Slide",
             "Substitute",
             "Thief",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Endure",
-            "Charm",
             "Swagger",
             "Attract",
             "Sleep Talk",
-            "Heal Bell",
             "Return",
             "Frustration",
             "Safeguard",
             "Hidden Power",
             "Rain Dance",
-            "Psych Up",
             "Shadow Ball",
-            "Future Sight",
-            "Uproar",
             "Torment",
-            "Flatter",
             "Facade",
             "Taunt",
-            "Helping Hand",
-            "Trick",
-            "Role Play",
-            "Magic Coat",
             "Recycle",
             "Skill Swap",
-            "Imprison",
             "Snatch",
             "Secret Power",
-            "Fake Tears",
             "Rock Tomb",
-            "Tickle",
-            "Signal Beam",
-            "Covet",
             "Calm Mind",
             "Shock Wave",
-            "Gravity",
             "Payback",
-            "Embargo",
-            "Fling",
-            "Heal Block",
             "Guard Swap",
             "Dark Pulse",
             "Energy Ball",
             "Nasty Plot",
-            "Zen Headbutt",
             "Trick Room",
+            "Captivate",
             "Grass Knot",
             "Charge Beam",
-            "Psyshock",
-            "Telekinesis",
-            "Magic Room",
-            "Foul Play",
-            "Round",
             "Stored Power",
             "Ally Switch",
-            "Play Nice",
-            "Confide",
-            "Psychic Terrain",
-            "Expanding Force",
-            "Tera Blast"
-        ],
+            "Helping Hand",
+            "Trick",
+            "Zen Headbutt",
+            "Foul Play",
+            "Swift",
+            "Imprison",
+            "Metronome"
+        ],    
         "baseStats": {
             "hp": 60,
             "attack": 45,
@@ -74169,98 +74143,91 @@ const pokemonData = [
         ],
         "moves": [
             "Pound",
-            "Double Slap",
-            "Body Slam",
+            "Confusion",
+            "Tickle",
             "Psybeam",
+            "Double Slap",
+            "Charm",
+            "Embargo",
+            "Psyshock",
+            "Hypnosis",
+            "Faint Attack",
+            "Fake Tears",
+            "Heal Block",
+            "Psych Up",
+            "Psychic",
+            "Telekinesis",
+            "Flatter",
+            "Future Sight",
+            "Magic Room",
+            "Snore",
+            "Heal Bell",
+            "Fake Out",
+            "Uproar",
+            "Role Play",
+            "Magic Coat",
+            "Signal Beam",
+            "Covet",
+            "Gravity",
             "Hyper Beam",
             "Thunderbolt",
             "Thunder Wave",
             "Toxic",
-            "Confusion",
-            "Psychic",
-            "Hypnosis",
             "Double Team",
             "Light Screen",
             "Reflect",
-            "Metronome",
-            "Swift",
             "Dream Eater",
             "Flash",
             "Rest",
             "Rock Slide",
             "Substitute",
             "Thief",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Endure",
-            "Charm",
             "Swagger",
             "Attract",
             "Sleep Talk",
-            "Heal Bell",
             "Return",
             "Frustration",
             "Safeguard",
             "Hidden Power",
             "Rain Dance",
-            "Psych Up",
             "Shadow Ball",
-            "Future Sight",
-            "Uproar",
             "Torment",
-            "Flatter",
             "Facade",
             "Taunt",
-            "Helping Hand",
-            "Trick",
-            "Role Play",
-            "Magic Coat",
             "Recycle",
             "Brick Break",
             "Skill Swap",
             "Imprison",
             "Snatch",
             "Secret Power",
-            "Fake Tears",
             "Rock Tomb",
-            "Tickle",
             "Cosmic Power",
-            "Signal Beam",
-            "Covet",
             "Calm Mind",
             "Shock Wave",
-            "Gravity",
             "Payback",
-            "Embargo",
-            "Fling",
-            "Heal Block",
             "Guard Swap",
             "Dark Pulse",
-            "Focus Blast",
             "Energy Ball",
             "Giga Impact",
             "Nasty Plot",
-            "Zen Headbutt",
             "Trick Room",
+            "Captivate",
             "Grass Knot",
             "Charge Beam",
-            "Psyshock",
-            "Telekinesis",
-            "Magic Room",
             "Low Sweep",
-            "Foul Play",
-            "Round",
             "Stored Power",
             "Ally Switch",
-            "Play Nice",
-            "Confide",
-            "Power-Up Punch",
-            "Laser Focus",
-            "Psychic Terrain",
-            "Expanding Force",
-            "Tera Blast"
-        ],
+            "Helping Hand",
+            "Trick",
+            "Zen Headbutt",
+            "Foul Play",
+            "Swift",
+            "Body Slam",
+            "Metronome",
+            "Focus Blast"
+        ],    
         "baseStats": {
             "hp": 70,
             "attack": 55,
@@ -74286,83 +74253,77 @@ const pokemonData = [
             "Regenerator"
         ],
         "moves": [
+            "Confusion",
+            "Psywave",
+            "Protect",
+            "Recover",
+            "Rollout",
+            "Endeavor",
+            "Snatch",
             "Psybeam",
+            "Hidden Power",
+            "Charm",
+            "Psyshock",
+            "Light Screen",
+            "Reflect",
+            "Ally Switch",
+            "Pain Split",
+            "Psychic",
+            "Skill Swap",
+            "Future Sight",
+            "Heal Block",
+            "Wonder Room",
+            "Acid Armor",
+            "Astonish",
+            "Snore",
+            "Role Play",
+            "Magic Coat",
+            "Signal Beam",
+            "Gravity",
+            "After You",
             "Thunder Wave",
             "Thunder",
             "Toxic",
-            "Confusion",
-            "Psychic",
-            "Night Shade",
             "Double Team",
-            "Recover",
-            "Confuse Ray",
-            "Light Screen",
-            "Reflect",
             "Dream Eater",
             "Flash",
-            "Psywave",
-            "Acid Armor",
             "Explosion",
             "Rest",
             "Rock Slide",
             "Substitute",
-            "Snore",
-            "Protect",
             "Endure",
-            "Charm",
-            "Rollout",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Safeguard",
-            "Pain Split",
             "Encore",
-            "Hidden Power",
             "Rain Dance",
             "Psych Up",
             "Shadow Ball",
-            "Future Sight",
             "Facade",
-            "Helping Hand",
-            "Trick",
-            "Role Play",
-            "Magic Coat",
-            "Endeavor",
-            "Skill Swap",
             "Imprison",
-            "Snatch",
             "Secret Power",
-            "Astonish",
             "Rock Tomb",
-            "Signal Beam",
-            "Iron Defense",
             "Calm Mind",
             "Shock Wave",
-            "Gravity",
             "Gyro Ball",
             "Embargo",
-            "Heal Block",
             "Power Swap",
             "Guard Swap",
             "Energy Ball",
-            "Zen Headbutt",
             "Flash Cannon",
             "Trick Room",
-            "Wonder Room",
-            "Psyshock",
             "Telekinesis",
-            "After You",
             "Round",
             "Stored Power",
-            "Ally Switch",
-            "Confide",
-            "Infestation",
-            "Psychic Terrain",
-            "Expanding Force",
-            "Steel Roller"
-        ],
+            "Night Shade",
+            "Helping Hand",
+            "Trick",
+            "Iron Defense",
+            "Zen Headbutt"
+        ],    
         "baseStats": {
             "hp": 45,
             "attack": 30,
@@ -74388,79 +74349,76 @@ const pokemonData = [
             "Regenerator"
         ],
         "moves": [
+            "Confusion",
+            "Recover",
+            "Reflect",
+            "Psywave",
+            "Protect",
+            "Rollout",
+            "Endeavor",
+            "Snatch",
             "Psybeam",
+            "Hidden Power",
+            "Charm",
+            "Psyshock",
+            "Light Screen",
+            "Ally Switch",
+            "Pain Split",
+            "Psychic",
+            "Skill Swap",
+            "Heal Block",
+            "Future Sight",
+            "Wonder Room",
+            "Snore",
+            "Role Play",
+            "Magic Coat",
+            "Signal Beam",
+            "Gravity",
+            "After You",
             "Thunder Wave",
             "Thunder",
             "Toxic",
-            "Confusion",
-            "Psychic",
             "Double Team",
-            "Recover",
-            "Light Screen",
-            "Reflect",
             "Dream Eater",
             "Flash",
-            "Psywave",
             "Explosion",
             "Rest",
             "Rock Slide",
             "Substitute",
-            "Snore",
-            "Protect",
             "Endure",
-            "Charm",
-            "Rollout",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Safeguard",
-            "Pain Split",
             "Encore",
-            "Hidden Power",
             "Rain Dance",
             "Psych Up",
             "Shadow Ball",
-            "Future Sight",
             "Facade",
-            "Helping Hand",
-            "Trick",
-            "Role Play",
-            "Magic Coat",
-            "Endeavor",
-            "Skill Swap",
             "Imprison",
-            "Snatch",
             "Secret Power",
             "Rock Tomb",
-            "Signal Beam",
-            "Iron Defense",
             "Calm Mind",
             "Shock Wave",
-            "Gravity",
             "Gyro Ball",
             "Embargo",
-            "Heal Block",
             "Power Swap",
             "Guard Swap",
             "Energy Ball",
-            "Zen Headbutt",
             "Flash Cannon",
             "Trick Room",
-            "Wonder Room",
-            "Psyshock",
             "Telekinesis",
-            "After You",
             "Round",
             "Stored Power",
-            "Ally Switch",
-            "Confide",
-            "Infestation",
-            "Psychic Terrain",
-            "Expanding Force",
-            "Steel Roller"
-        ],
+            "Night Shade",
+            "Helping Hand",
+            "Trick",
+            "Iron Defense",
+            "Zen Headbutt",
+            "Psybeam"
+        ],    
         "baseStats": {
             "hp": 65,
             "attack": 40,
@@ -74486,98 +74444,93 @@ const pokemonData = [
             "Regenerator"
         ],
         "moves": [
-            "Mega Punch",
-            "Fire Punch",
-            "Ice Punch",
-            "Thunder Punch",
+            "Confusion",
+            "Recover",
+            "Reflect",
+            "Psywave",
+            "Protect",
+            "Rollout",
+            "Endeavor",
+            "Snatch",
+            "Hammer Arm",
             "Psybeam",
+            "Hidden Power",
+            "Charm",
+            "Psyshock",
+            "Light Screen",
+            "Ally Switch",
+            "Pain Split",
+            "Psychic",
+            "Dizzy Punch",
+            "Skill Swap",
+            "Heal Block",
+            "Future Sight",
+            "Wonder Room",
+            "Snore",
+            "Role Play",
+            "Magic Coat",
+            "Knock Off",
+            "Signal Beam",
+            "Gravity",
+            "After You",
+            "Mega Punch",
             "Hyper Beam",
             "Strength",
             "Thunder Wave",
             "Thunder",
             "Toxic",
-            "Confusion",
-            "Psychic",
             "Double Team",
-            "Recover",
-            "Light Screen",
-            "Reflect",
             "Dream Eater",
-            "Dizzy Punch",
             "Flash",
-            "Psywave",
             "Explosion",
             "Rest",
             "Rock Slide",
             "Substitute",
-            "Snore",
-            "Protect",
             "Endure",
-            "Charm",
-            "Rollout",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Safeguard",
-            "Pain Split",
             "Encore",
-            "Hidden Power",
             "Rain Dance",
             "Psych Up",
             "Shadow Ball",
-            "Future Sight",
             "Rock Smash",
             "Facade",
             "Focus Punch",
-            "Helping Hand",
-            "Trick",
-            "Role Play",
-            "Superpower",
-            "Magic Coat",
-            "Knock Off",
-            "Endeavor",
-            "Skill Swap",
             "Imprison",
-            "Snatch",
             "Secret Power",
             "Rock Tomb",
-            "Signal Beam",
-            "Iron Defense",
             "Calm Mind",
             "Shock Wave",
-            "Gravity",
-            "Hammer Arm",
             "Gyro Ball",
             "Embargo",
             "Fling",
-            "Heal Block",
             "Power Swap",
             "Guard Swap",
             "Drain Punch",
             "Focus Blast",
             "Energy Ball",
             "Giga Impact",
-            "Zen Headbutt",
             "Flash Cannon",
             "Trick Room",
             "Grass Knot",
-            "Wonder Room",
-            "Psyshock",
             "Telekinesis",
-            "After You",
             "Round",
             "Stored Power",
-            "Ally Switch",
-            "Confide",
-            "Infestation",
-            "Power-Up Punch",
-            "Laser Focus",
-            "Psychic Terrain",
-            "Expanding Force",
-            "Steel Roller"
-        ],
+            "Night Shade",
+            "Helping Hand",
+            "Trick",
+            "Iron Defense",
+            "Zen Headbutt",
+            "Fire Punch",
+            "Ice Punch",
+            "Thunder Punch",
+            "Superpower",
+            "Psybeam"
+        ],    
         "baseStats": {
             "hp": 110,
             "attack": 65,
@@ -74604,21 +74557,38 @@ const pokemonData = [
             "Hydration"
         ],
         "moves": [
-            "Gust",
-            "Wing Attack",
-            "Fly",
             "Water Gun",
+            "Water Sport",
+            "Defog",
+            "Wing Attack",
+            "Water Pulse",
+            "Aerial Ace",
+            "Bubble Beam",
+            "Feather Dance",
+            "Aqua Ring",
+            "Air Slash",
+            "Roost",
+            "Rain Dance",
+            "Tailwind",
+            "Brave Bird",
+            "Hurricane",
+            "Gust",
+            "Mirror Move",
+            "Mud Sport",
+            "Lucky Chant",
+            "Me First",
+            "Aqua Jet",
+            "Snore",
+            "Uproar",
+            "Endeavor",
+            "Fly",
             "Surf",
             "Ice Beam",
-            "Bubble Beam",
             "Toxic",
             "Double Team",
-            "Mirror Move",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Icy Wind",
             "Swagger",
             "Steel Wing",
             "Attract",
@@ -74626,36 +74596,16 @@ const pokemonData = [
             "Return",
             "Frustration",
             "Hidden Power",
-            "Rain Dance",
-            "Uproar",
-            "Hail",
+            "Snowscape",
             "Facade",
-            "Endeavor",
             "Secret Power",
             "Dive",
-            "Feather Dance",
-            "Mud Sport",
-            "Air Cutter",
-            "Aerial Ace",
-            "Water Sport",
-            "Water Pulse",
-            "Roost",
             "Brine",
             "Pluck",
-            "Tailwind",
-            "Lucky Chant",
-            "Me First",
-            "Aqua Ring",
-            "Air Slash",
-            "Brave Bird",
-            "Defog",
-            "Aqua Jet",
-            "Round",
             "Scald",
-            "Hurricane",
-            "Confide",
-            "Liquidation"
-        ],
+            "Icy Wind",
+            "Air Cutter"
+        ],    
         "baseStats": {
             "hp": 62,
             "attack": 44,
@@ -74683,20 +74633,33 @@ const pokemonData = [
         ],
         "moves": [
             "Wing Attack",
-            "Fly",
             "Water Gun",
+            "Water Sport",
+            "Defog",
+            "Water Pulse",
+            "Aerial Ace",
+            "Bubble Beam",
+            "Feather Dance",
+            "Aqua Ring",
+            "Air Slash",
+            "Roost",
+            "Rain Dance",
+            "Tailwind",
+            "Brave Bird",
+            "Hurricane",
+            "Sky Attack",
+            "Snore",
+            "Uproar",
+            "Endeavor",
+            "Fly",
             "Surf",
             "Ice Beam",
-            "Bubble Beam",
             "Hyper Beam",
             "Toxic",
             "Double Team",
-            "Sky Attack",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Icy Wind",
             "Swagger",
             "Steel Wing",
             "Attract",
@@ -74704,31 +74667,17 @@ const pokemonData = [
             "Return",
             "Frustration",
             "Hidden Power",
-            "Rain Dance",
-            "Uproar",
-            "Hail",
+            "Snowscape",
             "Facade",
-            "Endeavor",
             "Secret Power",
             "Dive",
-            "Feather Dance",
-            "Aerial Ace",
-            "Water Sport",
-            "Water Pulse",
-            "Roost",
+            "Brine",
             "Pluck",
-            "Tailwind",
-            "Aqua Ring",
-            "Air Slash",
-            "Brave Bird",
             "Giga Impact",
-            "Defog",
-            "Round",
             "Scald",
-            "Hurricane",
-            "Confide",
-            "Liquidation"
-        ],
+            "Icy Wind",
+            "Air Cutter"
+        ],    
         "baseStats": {
             "hp": 75,
             "attack": 87,
@@ -74754,22 +74703,39 @@ const pokemonData = [
             "Weak Armor"
         ],
         "moves": [
+            "Harden",
+            "Astonish",
+            "Icicle Spear",
+            "Taunt",
             "Mist",
+            "Icy Wind",
+            "Avalanche",
+            "Snowscape",
+            "Mirror Shot",
+            "Uproar",
+            "Acid Armor",
+            "Mirror Coat",
             "Ice Beam",
             "Blizzard",
+            "Sheer Cold",
+            "Powder Snow",
+            "Ice Shard",
+            "Autotomize",
+            "Icicle Crash",
+            "Selfdestruct",
+            "Snore",
+            "Magic Coat",
+            "Hyper Voice",
+            "Signal Beam",
+            "Iron Defense",
+            "Magnet Rise",
             "Toxic",
             "Double Team",
-            "Harden",
             "Light Screen",
-            "Self-Destruct",
-            "Acid Armor",
             "Explosion",
             "Rest",
             "Substitute",
-            "Snore",
-            "Powder Snow",
             "Protect",
-            "Icy Wind",
             "Endure",
             "Swagger",
             "Attract",
@@ -74778,35 +74744,16 @@ const pokemonData = [
             "Frustration",
             "Hidden Power",
             "Rain Dance",
-            "Mirror Coat",
-            "Uproar",
-            "Hail",
             "Facade",
-            "Taunt",
-            "Magic Coat",
             "Imprison",
             "Secret Power",
-            "Hyper Voice",
-            "Astonish",
-            "Signal Beam",
-            "Sheer Cold",
-            "Icicle Spear",
-            "Iron Defense",
             "Water Pulse",
             "Natural Gift",
-            "Magnet Rise",
-            "Avalanche",
-            "Ice Shard",
-            "Mirror Shot",
             "Flash Cannon",
-            "Autotomize",
             "Round",
             "Ally Switch",
-            "Frost Breath",
-            "Icicle Crash",
-            "Confide",
-            "Aurora Veil"
-        ],
+            "Frost Breath"
+        ],    
         "baseStats": {
             "hp": 36,
             "attack": 50,
@@ -74833,20 +74780,31 @@ const pokemonData = [
         ],
         "moves": [
             "Mist",
+            "Harden",
+            "Uproar",
+            "Taunt",
+            "Astonish",
+            "Icicle Spear",
+            "Icy Wind",
+            "Avalanche",
+            "Snowscape",
+            "Mirror Shot",
+            "Acid Armor",
+            "Mirror Coat",
             "Ice Beam",
             "Blizzard",
+            "Sheer Cold",
+            "Snore",
+            "Magic Coat",
+            "Signal Beam",
+            "Magnet Rise",
             "Toxic",
             "Double Team",
-            "Harden",
             "Light Screen",
-            "Self-Destruct",
-            "Acid Armor",
             "Explosion",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Icy Wind",
             "Endure",
             "Swagger",
             "Attract",
@@ -74855,30 +74813,19 @@ const pokemonData = [
             "Frustration",
             "Hidden Power",
             "Rain Dance",
-            "Mirror Coat",
-            "Uproar",
-            "Hail",
             "Facade",
-            "Taunt",
-            "Magic Coat",
             "Imprison",
             "Secret Power",
-            "Hyper Voice",
-            "Astonish",
-            "Signal Beam",
-            "Sheer Cold",
-            "Icicle Spear",
-            "Iron Defense",
             "Water Pulse",
-            "Magnet Rise",
-            "Avalanche",
-            "Mirror Shot",
+            "Natural Gift",
             "Flash Cannon",
             "Round",
             "Ally Switch",
             "Frost Breath",
-            "Confide"
-        ],
+            "Selfdestruct",
+            "Hyper Voice",
+            "Iron Defense"
+        ],    
         "baseStats": {
             "hp": 51,
             "attack": 65,
@@ -74905,21 +74852,34 @@ const pokemonData = [
         ],
         "moves": [
             "Mist",
+            "Harden",
+            "Uproar",
+            "Taunt",
+            "Astonish",
+            "Weather Ball",
+            "Sheer Cold",
+            "Icicle Spear",
+            "Icicle Crash",
+            "Icy Wind",
+            "Avalanche",
+            "Snowscape",
+            "Mirror Shot",
+            "Acid Armor",
+            "Mirror Coat",
             "Ice Beam",
             "Blizzard",
+            "Snore",
+            "Magic Coat",
+            "Signal Beam",
+            "Magnet Rise",
             "Hyper Beam",
             "Toxic",
             "Double Team",
-            "Harden",
             "Light Screen",
-            "Self-Destruct",
-            "Acid Armor",
             "Explosion",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Icy Wind",
             "Endure",
             "Swagger",
             "Attract",
@@ -74928,35 +74888,22 @@ const pokemonData = [
             "Frustration",
             "Hidden Power",
             "Rain Dance",
-            "Mirror Coat",
             "Beat Up",
-            "Uproar",
-            "Hail",
             "Facade",
-            "Taunt",
-            "Magic Coat",
             "Imprison",
             "Secret Power",
-            "Hyper Voice",
-            "Astonish",
-            "Weather Ball",
-            "Signal Beam",
-            "Sheer Cold",
-            "Icicle Spear",
-            "Iron Defense",
             "Water Pulse",
-            "Magnet Rise",
+            "Natural Gift",
             "Giga Impact",
-            "Avalanche",
-            "Mirror Shot",
             "Flash Cannon",
             "Round",
             "Ally Switch",
             "Frost Breath",
-            "Icicle Crash",
-            "Freeze-Dry",
-            "Confide"
-        ],
+            "Selfdestruct",
+            "Icy Wind",
+            "Hyper Voice",
+            "Iron Defense"
+        ],    
         "baseStats": {
             "hp": 71,
             "attack": 95,
@@ -74983,19 +74930,31 @@ const pokemonData = [
             "Serene Grace"
         ],
         "moves": [
-            "Double Kick",
-            "Jump Kick",
-            "Sand Attack",
-            "Headbutt",
             "Tackle",
-            "Body Slam",
-            "Take Down",
-            "Double-Edge",
+            "Camouflage",
             "Growl",
+            "Sand-Attack",
+            "Double Kick",
             "Leech Seed",
+            "Faint Attack",
+            "Bullet Seed",
+            "Take Down",
+            "Jump Kick",
+            "Zen Headbutt",
+            "Aromatherapy",
+            "Energy Ball",
+            "Charm",
+            "Nature Power",
+            "Double-Edge",
             "Solar Beam",
+            "Odor Sleuth",
+            "Grass Whistle",
+            "Snore",
+            "Synthesis",
+            "Bounce",
+            "Last Resort",
+            "Worry Seed",
             "Thunder Wave",
-            "Dig",
             "Toxic",
             "Agility",
             "Double Team",
@@ -75003,12 +74962,8 @@ const pokemonData = [
             "Flash",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Giga Drain",
-            "Endure",
-            "Charm",
             "Swagger",
             "Attract",
             "Sleep Talk",
@@ -75016,43 +74971,30 @@ const pokemonData = [
             "Frustration",
             "Safeguard",
             "Baton Pass",
-            "Synthesis",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
             "Shadow Ball",
             "Facade",
-            "Nature Power",
-            "Helping Hand",
             "Secret Power",
-            "Camouflage",
-            "Aromatherapy",
             "Fake Tears",
-            "Odor Sleuth",
-            "Grass Whistle",
-            "Bullet Seed",
-            "Bounce",
-            "Magical Leaf",
             "Natural Gift",
-            "Last Resort",
-            "Worry Seed",
-            "Seed Bomb",
-            "Energy Ball",
-            "Zen Headbutt",
-            "Leaf Storm",
             "Grass Knot",
             "Round",
             "Echoed Voice",
             "Retaliate",
-            "Bulldoze",
             "Work Up",
             "Wild Charge",
-            "Grassy Terrain",
-            "Play Rough",
-            "Confide",
-            "Tera Blast",
-            "Trailblaze"
-        ],
+            "Headbutt",
+            "Seed Bomb",
+            "Body Slam",
+            "Dig",
+            "Endure",
+            "Helping Hand",
+            "Magical Leaf",
+            "Leaf Storm",
+            "Bulldoze"
+        ],    
         "baseStats": {
             "hp": 60,
             "attack": 60,
@@ -75079,21 +75021,34 @@ const pokemonData = [
             "Serene Grace"
         ],
         "moves": [
+            "Sand-Attack",
+            "Tackle",
+            "Growl",
+            "Megahorn",
+            "Camouflage",
+            "Double Kick",
+            "Leech Seed",
+            "Faint Attack",
+            "Bullet Seed",
+            "Take Down",
+            "Jump Kick",
+            "Zen Headbutt",
+            "Aromatherapy",
+            "Energy Ball",
+            "Charm",
+            "Nature Power",
+            "Horn Leech",
+            "Double-Edge",
+            "Solar Beam",
+            "Snore",
+            "Synthesis",
+            "Bounce",
+            "Last Resort",
+            "Worry Seed",
             "Swords Dance",
             "Cut",
-            "Double Kick",
-            "Jump Kick",
-            "Sand Attack",
-            "Tackle",
-            "Body Slam",
-            "Take Down",
-            "Double-Edge",
-            "Growl",
             "Hyper Beam",
-            "Leech Seed",
-            "Solar Beam",
             "Thunder Wave",
-            "Dig",
             "Toxic",
             "Agility",
             "Double Team",
@@ -75101,59 +75056,42 @@ const pokemonData = [
             "Flash",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Giga Drain",
-            "Endure",
-            "Charm",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Safeguard",
-            "Megahorn",
             "Baton Pass",
-            "Synthesis",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
             "Shadow Ball",
             "Rock Smash",
             "Facade",
-            "Nature Power",
-            "Helping Hand",
             "Secret Power",
-            "Camouflage",
-            "Aromatherapy",
             "Fake Tears",
-            "Bullet Seed",
-            "Bounce",
-            "Magical Leaf",
-            "Last Resort",
-            "Worry Seed",
-            "Seed Bomb",
-            "Energy Ball",
+            "Natural Gift",
             "Giga Impact",
-            "Zen Headbutt",
-            "Leaf Storm",
             "Grass Knot",
             "Round",
             "Echoed Voice",
             "Retaliate",
-            "Bulldoze",
             "Work Up",
             "Wild Charge",
-            "Horn Leech",
-            "Grassy Terrain",
-            "Play Rough",
-            "Confide",
-            "Smart Strike",
-            "Stomping Tantrum",
-            "Tera Blast",
-            "Trailblaze"
-        ],
+            "Headbutt",
+            "Seed Bomb",
+            "Body Slam",
+            "Dig",
+            "Endure",
+            "Helping Hand",
+            "Bullet Seed",
+            "Magical Leaf",
+            "Leaf Storm",
+            "Bulldoze"
+        ],    
         "baseStats": {
             "hp": 80,
             "attack": 100,
@@ -75179,74 +75117,67 @@ const pokemonData = [
             "Motor Drive"
         ],
         "moves": [
-            "Cut",
             "Tail Whip",
-            "Solar Beam",
             "Thunder Shock",
+            "Double Team",
+            "Quick Attack",
+            "Pursuit",
+            "Charge",
+            "Shock Wave",
+            "Acrobatics",
+            "Electro Ball",
+            "Spark",
+            "Encore",
+            "Volt Switch",
+            "Light Screen",
+            "Discharge",
+            "Agility",
+            "Astonish",
+            "Tickle",
+            "Snore",
+            "Knock Off",
+            "Signal Beam",
+            "Covet",
+            "Last Resort",
+            "Electroweb",
+            "Cut",
+            "Solar Beam",
             "Thunderbolt",
             "Thunder Wave",
             "Thunder",
             "Toxic",
-            "Agility",
-            "Quick Attack",
-            "Double Team",
-            "Light Screen",
-            "Swift",
             "Flash",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
             "Endure",
             "Charm",
             "Swagger",
-            "Spark",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Baton Pass",
-            "Encore",
-            "Pursuit",
             "Iron Tail",
             "Hidden Power",
             "Rain Dance",
             "Facade",
-            "Charge",
             "Taunt",
-            "Helping Hand",
-            "Knock Off",
             "Secret Power",
-            "Astonish",
-            "Tickle",
-            "Signal Beam",
             "Aerial Ace",
-            "Covet",
-            "Shock Wave",
             "Roost",
-            "Tailwind",
             "U-turn",
             "Fling",
-            "Last Resort",
             "Air Slash",
             "Energy Ball",
             "Defog",
-            "Discharge",
             "Charge Beam",
-            "Electro Ball",
             "Round",
-            "Acrobatics",
-            "Volt Switch",
-            "Electroweb",
             "Wild Charge",
-            "Ion Deluge",
-            "Confide",
-            "Eerie Impulse",
-            "Nuzzle",
-            "Speed Swap",
-            "Rising Voltage",
-            "Dual Wingbeat"
-        ],
+            "Swift",
+            "Helping Hand",
+            "Tailwind"
+        ],    
         "baseStats": {
             "hp": 55,
             "attack": 75,
@@ -75272,60 +75203,59 @@ const pokemonData = [
             "No Guard"
         ],
         "moves": [
-            "Swords Dance",
-            "Cut",
-            "Headbutt",
-            "Horn Attack",
-            "Fury Attack",
-            "Take Down",
-            "Double-Edge",
             "Leer",
             "Peck",
+            "Fury Cutter",
+            "Endure",
+            "False Swipe",
+            "Fury Attack",
+            "Acid Spray",
+            "Headbutt",
+            "Flail",
+            "Scary Face",
+            "Slash",
+            "X-Scissor",
+            "Swords Dance",
+            "Take Down",
+            "Bug Buzz",
+            "Double-Edge",
+            "Horn Attack",
+            "Pursuit",
+            "Night Slash",
+            "Snore",
+            "Faint Attack",
+            "Knock Off",
+            "Signal Beam",
+            "Bug Bite",
+            "Cut",
             "Counter",
             "Toxic",
             "Screech",
             "Double Team",
             "Rest",
-            "Slash",
             "Substitute",
-            "Snore",
-            "Flail",
             "Protect",
-            "Scary Face",
-            "Feint Attack",
             "Giga Drain",
-            "Endure",
-            "False Swipe",
             "Swagger",
-            "Fury Cutter",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
             "Megahorn",
             "Encore",
-            "Pursuit",
             "Hidden Power",
             "Rain Dance",
             "Facade",
-            "Knock Off",
             "Secret Power",
-            "Signal Beam",
             "Aerial Ace",
-            "Iron Defense",
             "Poison Jab",
-            "Night Slash",
-            "X-Scissor",
-            "Bug Buzz",
             "Energy Ball",
-            "Bug Bite",
-            "Acid Spray",
             "Round",
             "Struggle Bug",
-            "Drill Run",
-            "Confide",
-            "Infestation"
-        ],
+            "Headbutt",
+            "Iron Defense",
+            "Drill Run"
+        ],    
         "baseStats": {
             "hp": 50,
             "attack": 75,
@@ -75352,33 +75282,47 @@ const pokemonData = [
             "Overcoat"
         ],
         "moves": [
-            "Swords Dance",
-            "Cut",
-            "Headbutt",
-            "Fury Attack",
             "Take Down",
             "Double-Edge",
             "Twineedle",
             "Leer",
-            "Hyper Beam",
             "Peck",
+            "Flail",
+            "Scary Face",
+            "Endure",
+            "Fury Cutter",
+            "Quick Guard",
+            "False Swipe",
+            "Fury Attack",
+            "Acid Spray",
+            "Headbutt",
+            "Reversal",
+            "Iron Defense",
+            "Slash",
+            "X-Scissor",
+            "Swords Dance",
+            "Iron Head",
+            "Bug Buzz",
+            "Giga Impact",
+            "Metal Burst",
+            "Snore",
+            "Faint Attack",
+            "Knock Off",
+            "Signal Beam",
+            "Bug Bite",
+            "Cut",
+            "Hyper Beam",
+            "Counter",
             "Toxic",
             "Agility",
             "Screech",
             "Double Team",
             "Rest",
-            "Slash",
             "Substitute",
-            "Snore",
-            "Flail",
-            "Reversal",
             "Protect",
-            "Scary Face",
             "Giga Drain",
-            "Endure",
             "False Swipe",
             "Swagger",
-            "Fury Cutter",
             "Attract",
             "Sleep Talk",
             "Return",
@@ -75391,35 +75335,17 @@ const pokemonData = [
             "Facade",
             "Taunt",
             "Revenge",
-            "Knock Off",
             "Secret Power",
-            "Signal Beam",
             "Aerial Ace",
-            "Iron Defense",
-            "Metal Burst",
             "Close Combat",
             "Poison Jab",
-            "X-Scissor",
-            "Bug Buzz",
             "Focus Blast",
             "Energy Ball",
-            "Giga Impact",
-            "Iron Head",
-            "Bug Bite",
-            "Acid Spray",
             "Round",
-            "Quick Guard",
             "Struggle Bug",
-            "Drill Run",
             "Razor Shell",
-            "Fell Stinger",
-            "Confide",
-            "Infestation",
-            "Laser Focus",
-            "Smart Strike",
-            "Brutal Swing",
-            "Steel Beam"
-        ],
+            "Drill Run"
+        ],    
         "baseStats": {
             "hp": 70,
             "attack": 135,
@@ -75445,26 +75371,34 @@ const pokemonData = [
             "Regenerator"
         ],
         "moves": [
-            "Body Slam",
             "Absorb",
-            "Mega Drain",
+            "Astonish",
             "Growth",
-            "Solar Beam",
-            "Poison Powder",
             "Stun Spore",
-            "Toxic",
-            "Double Team",
-            "Defense Curl",
+            "Mega Drain",
             "Bide",
+            "Synthesis",
+            "Faint Attack",
+            "Clear Smog",
+            "Sweet Scent",
+            "Giga Drain",
+            "Ingrain",
+            "Toxic",
+            "Rage Powder",
+            "Solar Beam",
             "Spore",
+            "Poison Powder",
+            "Defense Curl",
+            "Snore",
+            "Gastro Acid",
+            "Worry Seed",
+            "After You",
+            "Body Slam",
             "Flash",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Sludge Bomb",
-            "Giga Drain",
             "Endure",
             "Rollout",
             "Swagger",
@@ -75472,36 +75406,23 @@ const pokemonData = [
             "Sleep Talk",
             "Return",
             "Frustration",
-            "Sweet Scent",
-            "Synthesis",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
             "Facade",
             "Nature Power",
-            "Ingrain",
             "Secret Power",
-            "Astonish",
-            "Bullet Seed",
-            "Magical Leaf",
             "Payback",
-            "Gastro Acid",
-            "Worry Seed",
-            "Seed Bomb",
             "Energy Ball",
-            "Leaf Storm",
             "Grass Knot",
             "Venoshock",
-            "Rage Powder",
-            "Foul Play",
-            "After You",
             "Round",
-            "Clear Smog",
-            "Grassy Terrain",
-            "Confide",
-            "Pollen Puff",
-            "Tera Blast"
-        ],
+            "Seed Bomb",
+            "Foul Play",
+            "Bullet Seed",
+            "Magical Leaf",
+            "Leaf Storm"
+        ],    
         "baseStats": {
             "hp": 69,
             "attack": 55,
@@ -75527,65 +75448,61 @@ const pokemonData = [
             "Regenerator"
         ],
         "moves": [
+            "Absorb",
+            "Growth",
+            "Stun Spore",
+            "Bide",
+            "Astonish",
+            "Mega Drain",
+            "Synthesis",
+            "Faint Attack",
+            "Clear Smog",
+            "Sweet Scent",
+            "Giga Drain",
+            "Ingrain",
+            "Toxic",
+            "Rage Powder",
+            "Solar Beam",
+            "Spore",
+            "Defense Curl",
+            "Snore",
+            "Gastro Acid",
+            "Worry Seed",
+            "After You",
             "Body Slam",
             "Hyper Beam",
-            "Absorb",
-            "Mega Drain",
-            "Growth",
-            "Solar Beam",
-            "Stun Spore",
-            "Toxic",
-            "Double Team",
-            "Bide",
-            "Spore",
             "Flash",
             "Rest",
             "Substitute",
-            "Snore",
             "Protect",
-            "Scary Face",
-            "Feint Attack",
             "Sludge Bomb",
-            "Giga Drain",
             "Endure",
+            "Rollout",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
-            "Sweet Scent",
-            "Synthesis",
             "Hidden Power",
             "Rain Dance",
             "Sunny Day",
             "Facade",
             "Nature Power",
-            "Ingrain",
             "Secret Power",
-            "Astonish",
-            "Bullet Seed",
-            "Magical Leaf",
             "Payback",
-            "Gastro Acid",
-            "Worry Seed",
-            "Seed Bomb",
             "Energy Ball",
             "Giga Impact",
-            "Leaf Storm",
             "Grass Knot",
             "Venoshock",
-            "Rage Powder",
-            "Foul Play",
-            "After You",
             "Round",
-            "Clear Smog",
             "Hex",
-            "Grassy Terrain",
-            "Confide",
-            "Pollen Puff",
-            "Stomping Tantrum",
-            "Tera Blast"
-        ],
+            "Seed Bomb",
+            "Foul Play",
+            "Bullet Seed",
+            "Magical Leaf",
+            "Leaf Storm",
+            "Scary Face"
+        ],    
         "baseStats": {
             "hp": 114,
             "attack": 85,
@@ -75612,36 +75529,46 @@ const pokemonData = [
             "Damp"
         ],
         "moves": [
-            "Bind",
-            "Poison Sting",
-            "Mist",
             "Water Gun",
+            "Absorb",
+            "Bubble",
+            "Water Sport",
+            "Poison Sting",
+            "Night Shade",
+            "Water Pulse",
+            "Bubble Beam",
+            "Rain Dance",
+            "Hex",
+            "Brine",
+            "Ominous Wind",
+            "Recover",
+            "Shadow Ball",
+            "Whirlpool",
             "Hydro Pump",
+            "Destiny Bond",
+            "Water Spout",
+            "Wring Out",
+            "Mist",
+            "Constrict",
+            "Acid Armor",
+            "Bind",
+            "Snore",
+            "Spite",
+            "Pain Split",
+            "Magic Coat",
             "Surf",
             "Ice Beam",
             "Blizzard",
-            "Bubble Beam",
-            "Absorb",
             "Toxic",
             "Psychic",
-            "Night Shade",
             "Double Team",
-            "Recover",
-            "Confuse Ray",
             "Waterfall",
-            "Constrict",
             "Dream Eater",
-            "Bubble",
             "Flash",
-            "Acid Armor",
             "Rest",
             "Substitute",
-            "Snore",
-            "Spite",
             "Protect",
             "Sludge Bomb",
-            "Destiny Bond",
-            "Icy Wind",
             "Giga Drain",
             "Endure",
             "Swagger",
@@ -75650,40 +75577,27 @@ const pokemonData = [
             "Return",
             "Frustration",
             "Safeguard",
-            "Pain Split",
             "Hidden Power",
             "Rain Dance",
             "Psych Up",
-            "Shadow Ball",
-            "Whirlpool",
-            "Hail",
+            "Snowscape",
             "Will-O-Wisp",
             "Facade",
             "Taunt",
-            "Trick",
-            "Magic Coat",
             "Imprison",
             "Secret Power",
             "Dive",
-            "Water Spout",
-            "Water Sport",
             "Shock Wave",
-            "Water Pulse",
-            "Brine",
-            "Wring Out",
             "Dark Pulse",
             "Energy Ball",
             "Trick Room",
-            "Ominous Wind",
             "Sludge Wave",
             "Round",
             "Scald",
-            "Hex",
-            "Confide",
-            "Dazzling Gleam",
-            "Strength Sap",
-            "Poltergeist"
-        ],
+            "Confuse Ray",
+            "Icy Wind",
+            "Trick"
+        ],    
         "baseStats": {
             "hp": 55,
             "attack": 40,
@@ -75710,34 +75624,45 @@ const pokemonData = [
             "Damp"
         ],
         "moves": [
-            "Bind",
             "Poison Sting",
             "Water Gun",
+            "Absorb",
+            "Night Shade",
+            "Bubble",
+            "Acid Armor",
+            "Water Spout",
+            "Water Sport",
+            "Wring Out",
+            "Water Pulse",
+            "Bubble Beam",
+            "Rain Dance",
+            "Hex",
+            "Brine",
+            "Ominous Wind",
+            "Recover",
+            "Shadow Ball",
+            "Whirlpool",
             "Hydro Pump",
+            "Destiny Bond",
+            "Bind",
+            "Snore",
+            "Spite",
+            "Pain Split",
+            "Magic Coat",
             "Surf",
             "Ice Beam",
             "Blizzard",
-            "Bubble Beam",
             "Hyper Beam",
-            "Absorb",
             "Toxic",
             "Psychic",
-            "Night Shade",
             "Double Team",
-            "Recover",
             "Waterfall",
             "Dream Eater",
-            "Bubble",
             "Flash",
-            "Acid Armor",
             "Rest",
             "Substitute",
-            "Snore",
-            "Spite",
             "Protect",
             "Sludge Bomb",
-            "Destiny Bond",
-            "Icy Wind",
             "Giga Drain",
             "Endure",
             "Swagger",
@@ -75746,41 +75671,29 @@ const pokemonData = [
             "Return",
             "Frustration",
             "Safeguard",
-            "Pain Split",
             "Hidden Power",
             "Rain Dance",
             "Psych Up",
-            "Shadow Ball",
-            "Whirlpool",
-            "Hail",
+            "Snowscape",
             "Will-O-Wisp",
             "Facade",
             "Taunt",
-            "Trick",
-            "Magic Coat",
             "Imprison",
             "Secret Power",
             "Dive",
-            "Water Spout",
             "Muddy Water",
-            "Water Sport",
             "Shock Wave",
-            "Water Pulse",
-            "Brine",
-            "Wring Out",
             "Dark Pulse",
             "Energy Ball",
             "Giga Impact",
             "Trick Room",
-            "Ominous Wind",
             "Sludge Wave",
             "Round",
             "Scald",
-            "Hex",
-            "Confide",
-            "Dazzling Gleam",
-            "Poltergeist"
-        ],
+            "Confuse Ray",
+            "Icy Wind",
+            "Trick"
+        ],    
         "baseStats": {
             "hp": 100,
             "attack": 60,
@@ -75807,15 +75720,35 @@ const pokemonData = [
         ],
         "moves": [
             "Pound",
-            "Double Slap",
-            "Body Slam",
-            "Take Down",
-            "Mist",
             "Hydro Pump",
+            "Helping Hand",
+            "Water Sport",
+            "Healing Wish",
+            "Wide Guard",
+            "Aqua Ring",
+            "Aqua Jet",
+            "Double Slap",
+            "Heal Pulse",
+            "Protect",
+            "Water Pulse",
+            "Wake-Up Slap",
+            "Soak",
+            "Wish",
+            "Brine",
+            "Safeguard",
+            "Whirlpool",
+            "Mist",
+            "Mirror Coat",
+            "Refresh",
+            "Tickle",
+            "Snore",
+            "Pain Split",
+            "Magic Coat",
+            "Knock Off",
+            "Bounce",
             "Surf",
             "Ice Beam",
             "Blizzard",
-            "Hyper Beam",
             "Toxic",
             "Psychic",
             "Double Team",
@@ -75823,61 +75756,33 @@ const pokemonData = [
             "Waterfall",
             "Rest",
             "Substitute",
-            "Snore",
-            "Protect",
-            "Icy Wind",
             "Endure",
             "Swagger",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
-            "Safeguard",
-            "Pain Split",
-            "Baton Pass",
             "Hidden Power",
             "Rain Dance",
-            "Mirror Coat",
             "Psych Up",
             "Shadow Ball",
-            "Whirlpool",
-            "Hail",
+            "Snowscape",
             "Facade",
-            "Helping Hand",
-            "Wish",
-            "Magic Coat",
-            "Knock Off",
-            "Skill Swap",
-            "Refresh",
             "Secret Power",
             "Dive",
-            "Tickle",
-            "Bounce",
-            "Water Sport",
             "Calm Mind",
-            "Water Pulse",
-            "Wake-Up Slap",
-            "Healing Wish",
-            "Brine",
-            "Aqua Ring",
-            "Giga Impact",
-            "Zen Headbutt",
-            "Aqua Jet",
-            "Wide Guard",
-            "Soak",
             "Round",
             "Scald",
-            "Heal Pulse",
-            "Acrobatics",
-            "Misty Terrain",
-            "Play Rough",
-            "Play Nice",
-            "Confide",
-            "Liquidation",
-            "Tera Blast",
-            "Snowscape",
-            "Chilling Water"
-        ],
+            "Icy Wind",
+            "Body Slam",
+            "Take Down",
+            "Hyper Beam",
+            "Baton Pass",
+            "Skill Swap",
+            "Giga Impact",
+            "Zen Headbutt",
+            "Acrobatics"
+        ],    
         "baseStats": {
             "hp": 165,
             "attack": 75,
@@ -75904,72 +75809,66 @@ const pokemonData = [
             "Swarm"
         ],
         "moves": [
-            "Cut",
-            "Poison Sting",
-            "Pin Missile",
-            "Disable",
             "Absorb",
             "String Shot",
-            "Thunderbolt",
+            "Leech Life",
+            "Spider Web",
+            "Fury Cutter",
+            "Electroweb",
+            "Bug Bite",
             "Thunder Wave",
-            "Toxic",
+            "Electro Ball",
             "Agility",
+            "Sucker Punch",
+            "Slash",
+            "Signal Beam",
+            "Discharge",
             "Screech",
+            "Gastro Acid",
+            "Bug Buzz",
+            "Poison Sting",
+            "Disable",
+            "Pursuit",
+            "Camouflage",
+            "Snore",
+            "Faint Attack",
+            "Bounce",
+            "Magnet Rise",
+            "Cut",
+            "Pin Missile",
+            "Thunderbolt",
+            "Toxic",
             "Double Team",
             "Light Screen",
-            "Swift",
-            "Leech Life",
             "Flash",
             "Rest",
-            "Slash",
             "Substitute",
             "Thief",
-            "Spider Web",
-            "Snore",
             "Protect",
-            "Feint Attack",
             "Giga Drain",
             "Endure",
             "Swagger",
-            "Fury Cutter",
             "Attract",
             "Sleep Talk",
             "Return",
             "Frustration",
-            "Pursuit",
             "Hidden Power",
             "Rain Dance",
             "Facade",
             "Secret Power",
-            "Camouflage",
-            "Signal Beam",
-            "Bounce",
             "Shock Wave",
-            "Gastro Acid",
-            "Sucker Punch",
-            "Magnet Rise",
             "Poison Jab",
             "X-Scissor",
-            "Bug Buzz",
             "Energy Ball",
             "Rock Climb",
-            "Discharge",
             "Cross Poison",
-            "Bug Bite",
             "Charge Beam",
-            "Electro Ball",
             "Round",
             "Volt Switch",
             "Struggle Bug",
-            "Electroweb",
             "Wild Charge",
-            "Confide",
-            "Infestation",
-            "Lunge",
-            "Speed Swap",
-            "Rising Voltage",
-            "Skitter Smack"
-        ],
+            "Swift"
+        ],    
         "baseStats": {
             "hp": 50,
             "attack": 47,
@@ -75996,33 +75895,43 @@ const pokemonData = [
             "Swarm"
         ],
         "moves": [
+            "Absorb",
+            "String Shot",
+            "Thunder Wave",
+            "Leech Life",
+            "Spider Web",
+            "Fury Cutter",
+            "Bug Bite",
+            "Electroweb",
+            "Electro Ball",
+            "Agility",
+            "Sucker Punch",
+            "Slash",
+            "Signal Beam",
+            "Discharge",
+            "Screech",
+            "Gastro Acid",
+            "Bug Buzz",
+            "Snore",
+            "Faint Attack",
+            "Bounce",
+            "Magnet Rise",
             "Cut",
             "Pin Missile",
             "Hyper Beam",
-            "Absorb",
-            "String Shot",
             "Thunderbolt",
-            "Thunder Wave",
             "Thunder",
             "Toxic",
-            "Agility",
-            "Screech",
             "Double Team",
             "Light Screen",
-            "Swift",
-            "Leech Life",
             "Flash",
             "Rest",
-            "Slash",
             "Substitute",
             "Thief",
-            "Spider Web",
-            "Snore",
             "Protect",
             "Giga Drain",
             "Endure",
             "Swagger",
-            "Fury Cutter",
             "Attract",
             "Sleep Talk",
             "Return",
@@ -76031,35 +75940,20 @@ const pokemonData = [
             "Rain Dance",
             "Facade",
             "Secret Power",
-            "Signal Beam",
-            "Bounce",
             "Shock Wave",
-            "Gastro Acid",
-            "Sucker Punch",
-            "Magnet Rise",
             "Poison Jab",
             "X-Scissor",
-            "Bug Buzz",
             "Energy Ball",
             "Giga Impact",
-            "Discharge",
+            "Rock Climb",
             "Cross Poison",
-            "Bug Bite",
             "Charge Beam",
-            "Electro Ball",
             "Round",
             "Volt Switch",
             "Struggle Bug",
-            "Electroweb",
             "Wild Charge",
-            "Sticky Web",
-            "Confide",
-            "Infestation",
-            "Throat Chop",
-            "Speed Swap",
-            "Rising Voltage",
-            "Skitter Smack"
-        ],
+            "Swift"
+        ],    
         "baseStats": {
             "hp": 70,
             "attack": 77,
