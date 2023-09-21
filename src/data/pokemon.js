@@ -19107,7 +19107,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Soundproof",
-            "Filter",
+            // "Filter",
             "Technician"
         ],
         "moves": [
@@ -36592,8 +36592,8 @@ const pokemonData = [
             "Fighting"
         ],
         "abilities": [
-            "Blaze",
-            "Speed Boost"
+            "Blaze"
+            // "Speed Boost"
         ],
         "moves": [
             "Fire Punch",
