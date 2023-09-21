@@ -61423,7 +61423,8 @@ const pokemonData = [
             "Scary Face",
             "Baton Pass",
             "Helping Hand",
-            "Water Pulse"
+            "Water Pulse",
+            "Pursuit"
         ],
         "baseStats": {
             "hp": 70,
