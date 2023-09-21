@@ -17446,7 +17446,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Levitate",
-            "Neutralizing Gas",
+            "Reactive Gas",
             "Stench"
         ],
         "moves": [
@@ -17541,7 +17541,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Levitate",
-            "Neutralizing Gas",
+            "Reactive Gas",
             "Stench"
         ],
         "moves": [
@@ -17637,7 +17637,7 @@ const pokemonData = [
     //     ],
     //     "abilities": [
     //         "Levitate",
-    //         "Neutralizing Gas",
+    //         "Reactive Gas",
     //         "Misty Surge"
     //     ],
     //     "moves": [
