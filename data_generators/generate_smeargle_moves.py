@@ -3,7 +3,7 @@ import json
 
 # Variables for filenames
 INPUT_FILE = "./src/data/pokemon.js"
-OUTPUT_FILE = "smeargle.json"
+OUTPUT_FILE = "./data_generators/smeargle.json"
 
 def gather_moves(input_file, output_file):
     with open(input_file, 'r') as f:
