@@ -5159,7 +5159,7 @@ const pokemonData = [
     //     ],
     //     "abilities": [
     //         "Snow Cloak",
-    //         "Slush Rush"
+    //         "Snow Plow"
     //     ],
     //     "moves": [
     //         "Ice Punch",
@@ -5382,7 +5382,7 @@ const pokemonData = [
     //     ],
     //     "abilities": [
     //         "Snow Cloak",
-    //         "Slush Rush"
+    //         "Snow Plow"
     //     ],
     //     "moves": [
     //         "Ice Punch",
@@ -77910,7 +77910,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Snow Cloak",
-            "Slush Rush",
+            "Snow Plow",
             "Rattled"
         ],
         "moves": [
@@ -78006,7 +78006,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Snow Cloak",
-            "Slush Rush",
+            "Snow Plow",
             "Swift Swim"
         ],
         "moves": [
@@ -109006,7 +109006,7 @@ const pokemonData = [
     //     "abilities": [
     //         "Volt Absorb",
     //         "Static",
-    //         "Slush Rush"
+    //         "Snow Plow"
     //     ],
     //     "moves": [
     //         "Mega Punch",
@@ -109162,7 +109162,7 @@ const pokemonData = [
     //     "abilities": [
     //         "Water Absorb",
     //         "Ice Body",
-    //         "Slush Rush"
+    //         "Snow Plow"
     //     ],
     //     "moves": [
     //         "Body Slam",
@@ -117201,7 +117201,7 @@ const pokemonData = [
     //     ],
     //     "abilities": [
     //         "Thick Fat",
-    //         "Slush Rush",
+    //         "Snow Plow",
     //         "Sheer Force"
     //     ],
     //     "moves": [
