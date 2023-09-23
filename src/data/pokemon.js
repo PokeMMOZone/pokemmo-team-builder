@@ -32896,7 +32896,7 @@ const pokemonData = [
             "Bulldoze",
             "Headbutt",
             "Superpower",
-            "Earth Power"
+            "Earth Power",
             "Bite"
         ],
         "baseStats": {
