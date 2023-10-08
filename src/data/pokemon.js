@@ -39766,7 +39766,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Chlorophyll",
-            "Early Bird",
+            "Wind Rider",
             "Pickpocket"
         ],
         "moves": [
