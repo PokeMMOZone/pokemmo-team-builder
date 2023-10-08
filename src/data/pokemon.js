@@ -54871,6 +54871,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Torrent",
+            "Competitive",
             "Defiant"
         ],
         "moves": [
@@ -54970,6 +54971,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Torrent",
+            "Competitive",
             "Defiant"
         ],
         "moves": [
@@ -55074,6 +55076,7 @@ const pokemonData = [
         ],
         "abilities": [
             "Torrent",
+            "Competitive",
             "Defiant"
         ],
         "moves": [
